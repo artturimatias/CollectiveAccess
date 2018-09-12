@@ -899,8 +899,8 @@
               <name_plural>Shipping dimensions</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Siirtomitat</name_singular>
-              <name_plural>Siirtomitat</name_plural>
+              <name_singular>Logistiikkamitat</name_singular>
+              <name_plural>Logistiikkamitat</name_plural>
             </label>
           </labels>
         </item>
@@ -952,18 +952,6 @@
         </label>
       </labels>
       <items>
-        <item idno="excellent" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>excellent</name_singular>
-              <name_plural>excellent</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>erinomainen</name_singular>
-              <name_plural>erinomainen</name_plural>
-            </label>
-          </labels>
-        </item>
         <item idno="good" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
@@ -983,8 +971,8 @@
               <name_plural>fair</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>kohtuullinen</name_singular>
-              <name_plural>kohtuullinen</name_plural>
+              <name_singular>kohtalainen</name_singular>
+              <name_plural>kohtalainen</name_plural>
             </label>
           </labels>
         </item>
@@ -2737,10 +2725,10 @@
     <metadataElement code="telephone" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>Telephone/fax</name>
+          <name>Telephone</name>
         </label>
         <label locale="fi_FI">
-          <name>Téléphone/fax</name>
+          <name>Puhelinnumero</name>
         </label>
       </labels>
       <settings>
@@ -2792,7 +2780,7 @@
           <name>Email address</name>
         </label>
         <label locale="fi_FI">
-          <name>Adresse email</name>
+          <name>Sähköposti</name>
         </label>
       </labels>
       <settings>
@@ -2844,8 +2832,8 @@
           <description>Information about rights held in and over the resource.</description>
         </label>
         <label locale="fi_FI">
-          <name>Droits</name>
-          <description>Informations sur les droits détenus sur la ressource et les droits dérivés.</description>
+          <name>Oikeudet</name>
+          <description>Tekijänoikeustiedot</description>
         </label>
       </labels>
       <documentationUrl>http://dublincore.org/documents/dcmi-terms/#terms-rights</documentationUrl>
@@ -3352,7 +3340,7 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate name</setting>
-                <setting name="label" option="fi_FI">Autre nom</setting>
+                <setting name="label" option="fi_FI">Muu nimi</setting>
                 <setting name="add_label" locale="en_US">Add alternate name</setting>
                 <setting name="add_label" option="fi_FI">Lisää muu nimi</setting>
               </settings>
@@ -3568,9 +3556,9 @@
               <bundle>ca_attribute_lcsh_terms</bundle>
               <settings>
                 <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" option="fi_FI">Vedettes matières Bibliothèque du Congrès</setting>
+                <setting name="label" option="fi_FI">ibrary of Congress Subject Headings</setting>
                 <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" option="fi_FI">Ajouter une nouvelle vedette matière</setting>
+                <setting name="add_label" option="fi_FI">Add new subject heading</setting>
               </settings>
             </placement>
           </bundlePlacements>

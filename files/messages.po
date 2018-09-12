@@ -61,11 +61,11 @@ msgstr ""
 
 #: app/controllers/administrate/access/UsersController.php:104
 msgid "Saved changes to user"
-msgstr ""
+msgstr "Muutokset käyttäjään tallennettu"
 
 #: app/controllers/administrate/access/UsersController.php:244
 msgid "Deleted user"
-msgstr "Poista käyttäjä"
+msgstr "Käyttäjä poistettu"
 
 #: app/controllers/administrate/access/UsersController.php:295
 #: themes/default/views/administrate/access/user_list_html.php:72
@@ -162,7 +162,7 @@ msgstr ""
 
 #: app/controllers/administrate/setup/ElementsController.php:166
 msgid "Saved changes to metadata element"
-msgstr ""
+msgstr "Muutokset metadataelementtiin talletettu"
 
 #: app/controllers/administrate/setup/ElementsController.php:273
 msgid "Setting %2 is not valid: %1"
@@ -170,7 +170,7 @@ msgstr ""
 
 #: app/controllers/administrate/setup/ElementsController.php:349
 msgid "Deleted metadata element"
-msgstr ""
+msgstr "Metatietokenttä poistettu"
 
 #: app/controllers/administrate/setup/ElementsController.php:377
 msgid "This element is at the top of the list"
@@ -367,7 +367,7 @@ msgstr ""
 #: app/lib/ca/BaseQuickAddController.php:353
 #: app/models/ca_bundle_displays.php:2926
 msgid "Saved changes to %1"
-msgstr ""
+msgstr "Muutokset talletettu: %1"
 
 #: app/controllers/editor/objects/ObjectEditorController.php:68
 msgid "Could not add parent collection to object: %1"
@@ -1135,7 +1135,7 @@ msgstr ""
 #: themes/default/views/manage/site_pages/screen_html.php:45
 #: themes/default/views/manage/tag_list_html.php:51
 msgid "Delete"
-msgstr ""
+msgstr "Poista"
 
 #: app/helpers/displayHelpers.php:252
 #: app/plugins/ULAN/themes/default/views/import_settings_html.php:35
@@ -1292,7 +1292,7 @@ msgstr ""
 #: themes/default/views/logs/global_change_log_html.php:105
 #: themes/default/views/logs/my_change_log_html.php:105
 msgid "Deleted %1"
-msgstr ""
+msgstr "Poistettu: %1"
 
 #: app/helpers/displayHelpers.php:758 app/helpers/displayHelpers.php:1788
 msgid "Editing %1"
@@ -9896,7 +9896,7 @@ msgstr ""
 #: themes/default/views/logs/global_change_log_html.php:45
 #: themes/default/views/logs/my_change_log_html.php:45
 msgid "Deleted"
-msgstr ""
+msgstr "Poistettu"
 
 #: app/lib/core/ApplicationChangeLog.php:433
 msgid "Non-existent"
@@ -13734,7 +13734,7 @@ msgstr ""
 #: app/models/ca_relationship_types.php:346
 #: app/models/ca_storage_locations.php:360 app/models/ca_tour_stops.php:342
 msgid "Hierarchy navigation"
-msgstr ""
+msgstr "Puurakenne"
 
 #: app/models/ca_collections.php:384 app/models/ca_entities.php:365
 #: app/models/ca_list_items.php:572 app/models/ca_objects.php:553
@@ -24741,7 +24741,7 @@ msgstr ""
 #: themes/default/views/find/Search/widget_ca_tours_search_tools.php:63
 #: app/conf/navigation.conf:3539
 msgid "Saved searches"
-msgstr ""
+msgstr "Talletetu haut"
 
 #: app/widgets/savedSearches/savedSearchesWidget.php:38
 msgid "Performed saved search queries from your dashboard"
@@ -25439,7 +25439,7 @@ msgstr ""
 #: themes/default/views/system/preferences_quickadd_html.php:37
 #: themes/default/views/system/preferences_quicksearch_html.php:35
 msgid "Save"
-msgstr ""
+msgstr "Tallenna"
 
 #: themes/default/views/administrate/access/group_edit_html.php:58
 msgid "Group members"
@@ -26583,7 +26583,7 @@ msgstr ""
 
 #: themes/default/views/batch/editor/delete_html.php:108
 msgid "Deleted successfully"
-msgstr ""
+msgstr "Poistettu onnistuneesti"
 
 #: themes/default/views/batch/mediaimport/batch_queued_html.php:30
 msgid "Media import queued for background processing"
@@ -27722,7 +27722,7 @@ msgstr "Lisää %1 (pikalisäys)"
 #: themes/default/views/editor/tour_stops/screen_html.php:47
 #: themes/default/views/editor/tours/screen_html.php:44
 msgid "Save and return"
-msgstr ""
+msgstr "Tallenna ja palaa"
 
 #: themes/default/views/editor/interstitial/interstitial_html.php:50
 msgid "Edit %1 relationship"
@@ -27734,7 +27734,7 @@ msgstr ""
 
 #: themes/default/views/editor/interstitial/interstitial_html.php:100
 msgid "Saved changes to"
-msgstr ""
+msgstr "Muutokset tallennettu"
 
 #: themes/default/views/editor/interstitial/interstitial_html.php:100
 #: themes/default/views/find/Results/ajax_results_editable_complex_data_form_html.php:87
@@ -28056,12 +28056,12 @@ msgstr ""
 
 #: themes/default/views/find/Search/search_advanced_form_html.php:84
 msgid "Save search as"
-msgstr ""
+msgstr "Tallenna haku nimellä"
 
 #: themes/default/views/find/Search/search_controls_html.php:45
 #: themes/default/views/find/Search/search_controls_html.php:60
 msgid "Save search"
-msgstr ""
+msgstr "Tallenna haku"
 
 #: themes/default/views/find/Search/search_tools_html.php:90
 #: themes/default/views/find/Search/search_tools_related_list_html.php:92
@@ -28401,7 +28401,7 @@ msgstr ""
 #: themes/default/views/manage/bundle_displays/save_placement_settings_json.php:29
 #: themes/default/views/manage/search_forms/save_element_settings_json.php:29
 msgid "Saved changes"
-msgstr ""
+msgstr "Muutokset tallennettu"
 
 #: themes/default/views/manage/export/download_export_binary.php:34
 msgid "Invalid parameters"
@@ -28485,7 +28485,7 @@ msgstr ""
 #: themes/default/views/manage/saved_searches_list_html.php:43
 #: themes/default/views/manage/watched_items_list_html.php:43
 msgid "Delete selected"
-msgstr ""
+msgstr "Poista valitut"
 
 #: themes/default/views/manage/saved_searches_list_html.php:55
 msgid "Search Type"
@@ -28521,7 +28521,7 @@ msgstr ""
 
 #: themes/default/views/manage/search_forms/ajax_element_settings_html.php:51
 msgid "Save settings"
-msgstr ""
+msgstr "Tallenna asetukset"
 
 #: themes/default/views/manage/search_forms/delete_html.php:37
 msgid "Back to search form list"
@@ -28621,7 +28621,7 @@ msgstr ""
 
 #: themes/default/views/manage/user_sort_list_html.php:35
 msgid "Delete Selected"
-msgstr ""
+msgstr "Poista valitut"
 
 #: themes/default/views/manage/watched_items_list_html.php:55
 msgid "Item Type"
@@ -30137,7 +30137,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:263
 msgid "Delete object"
-msgstr ""
+msgstr "Poista kohde"
 
 #: app/conf/user_actions.conf:264
 msgid "Allow user to delete objects"
@@ -30434,7 +30434,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:424
 msgid "Delete object lot"
-msgstr ""
+msgstr "Poista hankinta"
 
 #: app/conf/user_actions.conf:425
 msgid "Allow user to delete object lots"
@@ -30536,7 +30536,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:483
 msgid "Delete entity"
-msgstr ""
+msgstr "Poista entiteetti"
 
 #: app/conf/user_actions.conf:484
 msgid "Allow user to delete entities"
@@ -30637,7 +30637,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:542
 msgid "Delete place"
-msgstr ""
+msgstr "Poista paikka"
 
 #: app/conf/user_actions.conf:543
 msgid "Allow user to delete places"
@@ -30740,7 +30740,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:601
 msgid "Delete occurrence"
-msgstr ""
+msgstr "Poista tapahtuma"
 
 #: app/conf/user_actions.conf:602
 msgid "Allow user to delete occurrences"
@@ -30842,7 +30842,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:660
 msgid "Delete collection"
-msgstr ""
+msgstr "Poista kokoelma"
 
 #: app/conf/user_actions.conf:661
 msgid "Allow user to delete collections"
@@ -30944,7 +30944,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:719
 msgid "Delete storage locations"
-msgstr ""
+msgstr "Poista varastosijainti"
 
 #: app/conf/user_actions.conf:720
 msgid "Allow user to delete storage locations"
@@ -31046,7 +31046,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:778
 msgid "Delete loans"
-msgstr ""
+msgstr "Poista laina"
 
 #: app/conf/user_actions.conf:779
 msgid "Allow user to delete loans"
@@ -31147,7 +31147,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:837
 msgid "Delete movements"
-msgstr ""
+msgstr "Poista siirto"
 
 #: app/conf/user_actions.conf:838
 msgid "Allow user to delete movements"
@@ -31379,7 +31379,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:967
 msgid "Delete lists and list items"
-msgstr ""
+msgstr "Poista lista ja kohteet"
 
 #: app/conf/user_actions.conf:968
 msgid "Allow user to delete non-system lists"
