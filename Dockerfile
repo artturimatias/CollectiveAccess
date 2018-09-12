@@ -55,6 +55,7 @@ RUN chown -R www-data:www-data /var/www
 COPY files/php.ini /etc/php/7.0/apache2/php.ini
 COPY files/messages.po /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
 COPY files/messages.mo /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
+COPY files/base.css /$CA_PROVIDENCE_DIR/themes/default/css/
 COPY files/fi_FI.lang /$CA_PROVIDENCE_DIR/app/lib/core/Parsers/TimeExpressionParser/
 COPY files/osc.xml /$CA_PROVIDENCE_DIR/install/profiles/xml/
 COPY files/entrypoint.sh /entrypoint.sh

@@ -57,7 +57,7 @@ msgstr ""
 
 #: app/controllers/administrate/access/UsersController.php:101
 msgid "Added user"
-msgstr ""
+msgstr "Käyttäjä lisätty"
 
 #: app/controllers/administrate/access/UsersController.php:104
 msgid "Saved changes to user"
@@ -158,7 +158,7 @@ msgstr ""
 
 #: app/controllers/administrate/setup/ElementsController.php:161
 msgid "Added metadata element"
-msgstr ""
+msgstr "Metadatakenttä lisätty"
 
 #: app/controllers/administrate/setup/ElementsController.php:166
 msgid "Saved changes to metadata element"
@@ -359,7 +359,7 @@ msgstr ""
 #: app/lib/ca/BaseEditorController.php:304
 #: app/lib/ca/BaseQuickAddController.php:339 install/index.php:75
 msgid "Added %1"
-msgstr ""
+msgstr "%1 lisätty"
 
 #: app/controllers/editor/objects/ObjectComponentController.php:280
 #: app/lib/ca/BaseEditorController.php:347
@@ -476,7 +476,7 @@ msgstr ""
 #: app/conf/navigation.conf:2965 app/conf/navigation.conf:3609
 #: app/conf/navigation.conf:3636 app/conf/navigation.conf:3659
 msgid "Search"
-msgstr ""
+msgstr "Haku"
 
 #: app/controllers/find/SearchCollectionsController.php:102
 #: app/controllers/find/SearchEntitiesController.php:102
@@ -506,7 +506,7 @@ msgstr ""
 #: app/conf/navigation.conf:2558 app/conf/navigation.conf:2624
 #: app/conf/navigation.conf:2918 app/conf/navigation.conf:2976
 msgid "Advanced search"
-msgstr ""
+msgstr "Tarkempi haku"
 
 #: app/controllers/find/SearchCollectionsController.php:112
 #: app/controllers/find/SearchEntitiesController.php:112
@@ -1201,7 +1201,7 @@ msgstr "Poista"
 #: themes/default/views/manage/tools/tool_settings_html.php:45
 #: themes/default/views/manage/user_sort_edit_html.php:53
 msgid "Cancel"
-msgstr ""
+msgstr "Peru"
 
 #: app/helpers/displayHelpers.php:280 app/helpers/displayHelpers.php:282
 msgid "Type is used by %1 %2"
@@ -5335,7 +5335,7 @@ msgstr ""
 
 #: app/lib/ca/BaseEditorController.php:246
 msgid "Added relationship"
-msgstr ""
+msgstr "Linkki lisätty"
 
 #: app/lib/ca/BaseEditorController.php:281
 #: app/lib/ca/BaseEditorController.php:474 app/lib/core/BaseModel.php:5950
@@ -9884,7 +9884,7 @@ msgstr ""
 #: themes/default/views/logs/global_change_log_html.php:45
 #: themes/default/views/logs/my_change_log_html.php:45
 msgid "Added"
-msgstr ""
+msgstr "Lisätty"
 
 #: app/lib/core/ApplicationChangeLog.php:290
 #: themes/default/views/logs/global_change_log_html.php:45
@@ -12784,7 +12784,7 @@ msgstr ""
 
 #: app/models/ca_bundle_displays.php:83
 msgid "Display type"
-msgstr ""
+msgstr "Näkymätyyppi"
 
 #: app/models/ca_bundle_displays.php:83
 msgid "Indicates type of item display is used for."
@@ -12900,7 +12900,7 @@ msgstr ""
 #: app/models/ca_bundle_displays.php:1269
 #: app/models/ca_bundle_displays.php:1414
 msgid "Display format"
-msgstr ""
+msgstr "Näkymäformaatti"
 
 #: app/models/ca_bundle_displays.php:1063
 #: app/models/ca_bundle_displays.php:1193
@@ -23828,7 +23828,7 @@ msgstr ""
 
 #: app/widgets/advancedSearchForm/advancedSearchFormWidget.php:43
 msgid "Advanced search form"
-msgstr ""
+msgstr "Tarkempi haku -lomake"
 
 #: app/widgets/advancedSearchForm/advancedSearchFormWidget.php:44
 msgid "Use advanced search forms in your dashboard"
@@ -23905,7 +23905,7 @@ msgstr ""
 #: app/widgets/recentlyCreated/recentlyCreatedWidget.php:265
 #: app/widgets/recordsByStatus/recordsByStatusWidget.php:246
 msgid "Display mode"
-msgstr ""
+msgstr "Näkymämoodi"
 
 #: app/widgets/clock/clockWidget.php:89
 msgid ""
@@ -24110,7 +24110,7 @@ msgstr ""
 
 #: app/widgets/message/messageWidget.php:38
 msgid "Display the message of the day."
-msgstr ""
+msgstr "Näytä päivän viesti"
 
 #: app/widgets/message/messageWidget.php:59
 msgid "No message set"
@@ -25830,7 +25830,7 @@ msgstr ""
 #: themes/default/views/administrate/setup/Browse/browse_controls_html.php:110
 #: themes/default/views/find/Browse/browse_controls_html.php:110
 msgid "Browse by"
-msgstr ""
+msgstr "Selaa "
 
 #: themes/default/views/administrate/setup/Browse/browse_start_html.php:31
 #: themes/default/views/find/Browse/browse_start_html.php:31
@@ -25856,7 +25856,7 @@ msgstr ""
 #: themes/default/views/find/Browse/widget_ca_tour_stops_browse_tools.php:30
 #: themes/default/views/find/Browse/widget_ca_tours_browse_tools.php:30
 msgid "Browse %1"
-msgstr ""
+msgstr "Selaa %1"
 
 #: themes/default/views/administrate/setup/Results/ca_list_items_results_list_html.php:87
 #: themes/default/views/administrate/setup/Results/ca_relationship_types_list_html.php:107
@@ -28814,7 +28814,7 @@ msgstr ""
 
 #: themes/default/views/pageFormat/pageFooter.php:86
 msgid "Browse hierarchy"
-msgstr ""
+msgstr "Puurakenne"
 
 #: themes/default/views/pageFormat/pageHeader.php:86
 msgid ""
@@ -29500,7 +29500,7 @@ msgstr "Käyttäjäprofiili"
 
 #: app/conf/navigation.conf:3329
 msgid "My watched items"
-msgstr ""
+msgstr "Tarkkailtavat kohteet"
 
 #: app/conf/navigation.conf:3349
 msgid "My project teams"
