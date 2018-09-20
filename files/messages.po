@@ -981,11 +981,11 @@ msgstr "Kirjautuminen epäonnistui"
 
 #: app/controllers/system/AuthController.php:71
 msgid "You are now logged in"
-msgstr ""
+msgstr "Kirjauduit sisään"
 
 #: app/controllers/system/AuthController.php:89
 msgid "You are now logged out"
-msgstr ""
+msgstr "Kirjauduit ulos"
 
 #: app/controllers/system/AuthController.php:153
 msgid "Passwords did not match. Please try again."
@@ -5281,7 +5281,7 @@ msgstr ""
 
 #: app/lib/ca/BaseAdvancedSearchController.php:79
 msgid "%1 advanced search"
-msgstr ""
+msgstr "% tehohaku"
 
 #: app/lib/ca/BaseAdvancedSearchController.php:204
 #: app/lib/ca/BaseAdvancedSearchController.php:339
@@ -8882,7 +8882,7 @@ msgstr ""
 
 #: app/lib/ca/Utils/CLIUtils.php:1809 app/lib/ca/Utils/CLIUtils.php:3689
 msgid "Password: "
-msgstr ""
+msgstr "Salasana: "
 
 #: app/lib/ca/Utils/CLIUtils.php:1813
 msgid "You must specify a password"
@@ -10901,7 +10901,7 @@ msgstr ""
 #: app/conf/browse.conf:308 app/conf/browse.conf:473 app/conf/browse.conf:657
 #: app/conf/browse.conf:746 app/conf/browse.conf:834
 msgid "entities"
-msgstr ""
+msgstr "toimijat"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:61
 #: app/models/ca_bookmarks.php:68 app/models/ca_bundle_displays.php:88
@@ -10996,7 +10996,7 @@ msgstr ""
 #: app/models/ca_users.php:83 themes/default/views/system/login_html.php:69
 #: themes/default/views/system/password_reset_form_html.php:78
 msgid "Password"
-msgstr ""
+msgstr "Salasana"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:87
 msgid "Password to authenticate with on remote system."
@@ -13536,7 +13536,7 @@ msgstr ""
 #: app/models/ca_storage_locations.php:335 app/models/ca_tour_stops.php:325
 #: app/models/ca_user_representation_annotations.php:286
 msgid "Related entities list"
-msgstr ""
+msgstr "Kohteeseen liittyvät toimijat"
 
 #: app/models/ca_collections.php:360 app/models/ca_entities.php:343
 #: app/models/ca_list_items.php:549 app/models/ca_loans.php:331
@@ -24391,7 +24391,7 @@ msgstr ""
 #: themes/default/views/system/preferences_quickadd_html.php:44
 #: themes/default/views/system/preferences_quicksearch_html.php:42
 msgid "Preferences"
-msgstr ""
+msgstr "Omat asetukset"
 
 #: app/widgets/recentRegistrations/views/main_html.php:76
 #: app/widgets/recentTags/views/main_html.php:69
@@ -24741,7 +24741,7 @@ msgstr ""
 #: themes/default/views/find/Search/widget_ca_tours_search_tools.php:63
 #: app/conf/navigation.conf:3539
 msgid "Saved searches"
-msgstr "Talletetu haut"
+msgstr "Talletetut haut"
 
 #: app/widgets/savedSearches/savedSearchesWidget.php:38
 msgid "Performed saved search queries from your dashboard"
@@ -24777,11 +24777,11 @@ msgstr ""
 
 #: app/widgets/savedSearches/views/main_html.php:83
 msgid "advanced"
-msgstr ""
+msgstr "tehohaku"
 
 #: app/widgets/savedSearches/views/main_html.php:83
 msgid "basic"
-msgstr ""
+msgstr "perushaku"
 
 #: app/widgets/searchBySet/searchBySetWidget.php:39
 msgid "Search By Set"
@@ -26729,11 +26729,11 @@ msgstr ""
 #: themes/default/views/batch/mediaimport/import_options_html.php:333
 #: themes/default/views/batch/mediaimport/import_options_html.php:342
 msgid "Show advanced options"
-msgstr ""
+msgstr "Näytä lisäasetukset"
 
 #: themes/default/views/batch/mediaimport/import_options_html.php:342
 msgid "Hide advanced options"
-msgstr ""
+msgstr "Piilota lisäasetukset"
 
 #: themes/default/views/batch/mediaimport/import_options_html.php:355
 msgid "Matching"
@@ -28879,7 +28879,7 @@ msgstr ""
 #: themes/default/views/system/forgot_password_html.php:62
 #: themes/default/views/system/login_html.php:66
 msgid "User Name"
-msgstr ""
+msgstr "Käyttäjätunnus"
 
 #: themes/default/views/system/logged_out_html.php:61
 msgid "Login again"

@@ -38,7 +38,7 @@ RUN apt-get install -y php-pear php7.0-dev graphicsmagick libgraphicsmagick1-dev
 
 RUN curl -SsL https://github.com/collectiveaccess/providence/archive/$CA_PROVIDENCE_VERSION.tar.gz | tar -C /var/www/ -xzf -
 RUN mv /var/www/providence-$CA_PROVIDENCE_VERSION /var/www/providence
-RUN cd $CA_PROVIDENCE_DIR && cp setup.php-dist setup.php
+#RUN cd $CA_PROVIDENCE_DIR && cp setup.php-dist setup.php
 
 RUN curl -SsL https://github.com/collectiveaccess/pawtucket2/archive/$CA_PAWTUCKET_VERSION.tar.gz | tar -C /var/www/ -xzf -
 RUN mv $CA_PAWTUCKET_DIR/pawtucket2-$CA_PAWTUCKET_VERSION/* /var/www
@@ -58,6 +58,7 @@ COPY files/messages.mo /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
 COPY files/base.css /$CA_PROVIDENCE_DIR/themes/default/css/
 COPY files/fi_FI.lang /$CA_PROVIDENCE_DIR/app/lib/core/Parsers/TimeExpressionParser/
 COPY files/osc.xml /$CA_PROVIDENCE_DIR/install/profiles/xml/
+COPY files/setup.php /$CA_PROVIDENCE_DIR/setup.php
 COPY files/entrypoint.sh /entrypoint.sh
 
 RUN chmod 777 /entrypoint.sh

@@ -2,6 +2,7 @@
 IMAGES := $(shell docker images -f "dangling=true" -q)
 CONTAINERS := $(shell docker ps -a -q -f status=exited)
 VOLUME := glampipe-data
+DB := c_access
 
 clean:
 	docker rm -f $(CONTAINERS)
@@ -20,5 +21,5 @@ start:
 	-v $(VOLUME):/var/www/providence/media \
 	-e DB_USER=root \
 	-e DB_PW=root \
-	-e DB_NAME=c_access \
+	-e DB_NAME=$(DB) \
 	artturimatias/collectiveaccess:1.7.6
