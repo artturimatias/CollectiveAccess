@@ -1285,7 +1285,7 @@ msgstr ""
 #: themes/default/views/library/checkin/items_html.php:26
 #: themes/default/views/library/checkout/items_html.php:27
 msgid "Results"
-msgstr ""
+msgstr "Hakutulokset"
 
 #: app/helpers/displayHelpers.php:752
 #: app/widgets/recentChanges/views/main_html.php:74
@@ -1296,7 +1296,7 @@ msgstr "Poistettu: %1"
 
 #: app/helpers/displayHelpers.php:758 app/helpers/displayHelpers.php:1788
 msgid "Editing %1"
-msgstr ""
+msgstr "Muokattavana %1"
 
 #: app/helpers/displayHelpers.php:760 app/helpers/displayHelpers.php:1790
 msgid "Viewing %1"
@@ -1377,11 +1377,11 @@ msgstr ""
 
 #: app/helpers/displayHelpers.php:948
 msgid "Previous Image"
-msgstr ""
+msgstr "Edellinen kuva"
 
 #: app/helpers/displayHelpers.php:949
 msgid "Next Image"
-msgstr ""
+msgstr "Seuraava kuva"
 
 #: app/helpers/displayHelpers.php:994
 msgid "Add/remove item to/from watch list."
@@ -1775,7 +1775,7 @@ msgstr ""
 
 #: app/helpers/displayHelpers.php:3005
 msgid "Sort by %1 %2"
-msgstr ""
+msgstr "Järjestä %1 %2"
 
 #: app/helpers/displayHelpers.php:3394
 msgid "No media"
@@ -3497,7 +3497,7 @@ msgstr ""
 #: themes/default/views/system/preferences_quickadd_html.php:38
 #: themes/default/views/system/preferences_quicksearch_html.php:36
 msgid "Reset"
-msgstr ""
+msgstr "Tyhjennä"
 
 #: app/helpers/themeHelpers.php:1045
 msgid "AND"
@@ -18931,7 +18931,7 @@ msgstr ""
 
 #: app/models/ca_object_labels.php:41 app/conf/browse.conf:20
 msgid "object titles"
-msgstr ""
+msgstr "nimet"
 
 #: app/models/ca_object_labels.php:79
 msgid "Name of object"
@@ -21495,7 +21495,7 @@ msgstr ""
 #: themes/default/views/manage/Results/ca_item_tags_paging_controls_html.php:47
 #: themes/default/views/manage/sets/paging_controls_html.php:49
 msgid "Previous"
-msgstr ""
+msgstr "Edellinen"
 
 #: app/plugins/ULAN/themes/default/views/import_settings_html.php:62
 #: app/plugins/WorldCat/themes/default/views/import_settings_html.php:62
@@ -21508,7 +21508,7 @@ msgstr ""
 #: themes/default/views/manage/Results/ca_item_tags_paging_controls_html.php:51
 #: themes/default/views/manage/sets/paging_controls_html.php:53
 msgid "Next"
-msgstr ""
+msgstr "Seuraava"
 
 #: app/plugins/ULAN/themes/default/views/import_settings_html.php:69
 msgid "Enter a ULAN search above to begin"
@@ -25815,7 +25815,7 @@ msgstr ""
 #: themes/default/views/administrate/setup/Browse/browse_controls_html.php:65
 #: themes/default/views/find/Browse/browse_controls_html.php:65
 msgid "Refine results by"
-msgstr ""
+msgstr "Tarkenna hakua"
 
 #: themes/default/views/administrate/setup/Browse/browse_controls_html.php:91
 #: themes/default/views/find/Browse/browse_controls_html.php:91
@@ -25903,7 +25903,7 @@ msgstr ""
 #: themes/default/views/manage/Results/ca_item_comments_no_results_html.php:33
 #: themes/default/views/manage/Results/ca_item_tags_no_results_html.php:33
 msgid "Your search found no %1"
-msgstr ""
+msgstr "Hakusi ei löytänyt kohdetta %1"
 
 #: themes/default/views/administrate/setup/Results/no_results_html.php:33
 #: themes/default/views/find/Results/no_results_html.php:35
@@ -25938,7 +25938,7 @@ msgstr ""
 #: themes/default/views/manage/Results/ca_item_comments_paging_controls_html.php:56
 #: themes/default/views/manage/Results/ca_item_tags_paging_controls_html.php:56
 msgid "Your %1 found"
-msgstr ""
+msgstr "%1 löysi"
 
 #: themes/default/views/administrate/setup/Results/search_options_html.php:89
 #: themes/default/views/find/Results/search_options_html.php:94
@@ -25979,7 +25979,7 @@ msgstr ""
 #: themes/default/views/find/Results/search_options_html.php:138
 #: themes/default/views/find/Results/search_options_related_list_html.php:132
 msgid "Refine Results"
-msgstr ""
+msgstr "Tarkenna hakua"
 
 #: themes/default/views/administrate/setup/Results/search_options_html.php:134
 #: themes/default/views/find/Results/search_options_html.php:139
@@ -27452,7 +27452,7 @@ msgstr ""
 
 #: themes/default/views/bundles/ca_set_items.php:64
 msgid "Sort by"
-msgstr ""
+msgstr "Järjestä"
 
 #: themes/default/views/bundles/ca_set_items.php:66
 msgid "identifier"
@@ -28004,15 +28004,15 @@ msgstr ""
 
 #: themes/default/views/find/Results/quick_search_results_html.php:36
 msgid "Sort by "
-msgstr ""
+msgstr "Järjestä"
 
 #: themes/default/views/find/Results/quick_search_results_html.php:40
 msgid "Top %1 results for <em>%2</em>"
-msgstr ""
+msgstr "Top %1 tulokset hakutermeillä: <em>%2</em>"
 
 #: themes/default/views/find/Results/quick_search_results_html.php:64
 msgid "Full Results"
-msgstr ""
+msgstr "Kaikki tulokset"
 
 #: themes/default/views/find/Results/results_editable_html.php:43
 msgid "Loading... "
@@ -28043,11 +28043,11 @@ msgstr ""
 #: themes/default/views/find/Search/search_advanced_controls_html.php:41
 #: themes/default/views/find/Search/search_advanced_controls_html.php:73
 msgid "Hide search form"
-msgstr ""
+msgstr "Piilota hakulomake"
 
 #: themes/default/views/find/Search/search_advanced_controls_html.php:46
 msgid "Form"
-msgstr ""
+msgstr "Lomake"
 
 #: themes/default/views/find/Search/search_advanced_controls_html.php:67
 #: themes/default/views/find/Search/search_advanced_controls_html.php:73
@@ -28489,7 +28489,7 @@ msgstr "Poista valitut"
 
 #: themes/default/views/manage/saved_searches_list_html.php:55
 msgid "Search Type"
-msgstr ""
+msgstr "Etsi tyyppejä"
 
 #: themes/default/views/manage/saved_searches_list_html.php:58
 msgid "Search term/name"
@@ -28509,7 +28509,7 @@ msgstr ""
 
 #: themes/default/views/manage/search_form_list_html.php:67
 msgid "Form name"
-msgstr ""
+msgstr "Lomakkeen nimi"
 
 #: themes/default/views/manage/search_form_list_html.php:109
 msgid "No forms have been configured"
@@ -28633,7 +28633,7 @@ msgstr ""
 
 #: themes/default/views/manage/widget_bundle_display_info_html.php:31
 msgid "Your displays"
-msgstr ""
+msgstr "Omat näkymäsi"
 
 #: themes/default/views/manage/widget_bundle_display_info_html.php:34
 msgid "1 display is available"
@@ -28681,7 +28681,7 @@ msgstr ""
 
 #: themes/default/views/manage/widget_saved_searches_info_html.php:31
 msgid "Your saved searches"
-msgstr ""
+msgstr "Talletetut hakusi"
 
 #: themes/default/views/manage/widget_saved_searches_info_html.php:34
 msgid "1 saved search"
@@ -28693,7 +28693,7 @@ msgstr ""
 
 #: themes/default/views/manage/widget_search_form_info_html.php:31
 msgid "Your search forms"
-msgstr ""
+msgstr "Hakulomakkeesi"
 
 #: themes/default/views/manage/widget_search_form_info_html.php:34
 msgid "1 form is available for editing"
@@ -28741,7 +28741,7 @@ msgstr ""
 
 #: themes/default/views/manage/widget_set_info_html.php:64
 msgid "Your %1"
-msgstr ""
+msgstr "Sinun %1"
 
 #: themes/default/views/manage/widget_set_info_html.php:67
 msgid "1 %1 is available"
@@ -28781,7 +28781,7 @@ msgstr ""
 
 #: themes/default/views/manage/widget_watched_items_info_html.php:33
 msgid "Your watched items"
-msgstr ""
+msgstr "Tarkkailemasi kohteet"
 
 #: themes/default/views/manage/widget_watched_items_info_html.php:44
 msgid "watchlist"
@@ -29241,7 +29241,7 @@ msgstr ""
 #: app/conf/browse.conf:877 app/conf/browse.conf:913 app/conf/browse.conf:938
 #: app/conf/browse.conf:985 app/conf/browse.conf:1019
 msgid "statuses"
-msgstr ""
+msgstr "tilat (status)"
 
 #: app/conf/browse.conf:247 app/conf/browse.conf:450 app/conf/browse.conf:550
 #: app/conf/browse.conf:634 app/conf/browse.conf:722 app/conf/browse.conf:811
@@ -29253,7 +29253,7 @@ msgstr ""
 #: app/conf/browse.conf:635 app/conf/browse.conf:723 app/conf/browse.conf:812
 #: app/conf/browse.conf:887 app/conf/browse.conf:947
 msgid "access statuses"
-msgstr ""
+msgstr "pääsyoikeudet"
 
 #: app/conf/browse.conf:270
 msgid "decade"
@@ -29860,7 +29860,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:101
 msgid "Searching and browsing"
-msgstr ""
+msgstr "Haku ja selaus"
 
 #: app/conf/user_actions.conf:102
 msgid "Actions allowing discovery of items using search and browse tools."
@@ -30145,7 +30145,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:267
 msgid "Search objects"
-msgstr ""
+msgstr "Etsi kohteita"
 
 #: app/conf/user_actions.conf:268
 msgid "Allow user to search objects"
@@ -30442,7 +30442,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:428
 msgid "Search object lots"
-msgstr ""
+msgstr "Etsi hankintoja"
 
 #: app/conf/user_actions.conf:429
 msgid "Allow user to search object lots"
@@ -30544,7 +30544,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:487
 msgid "Search entities"
-msgstr ""
+msgstr "Etsi toimijoita"
 
 #: app/conf/user_actions.conf:488
 msgid "Allow user to search entities"
@@ -30645,7 +30645,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:546
 msgid "Search places"
-msgstr ""
+msgstr "Etsi paikkoja"
 
 #: app/conf/user_actions.conf:547
 msgid "Allow user to search places"
@@ -30748,7 +30748,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:605
 msgid "Search occurrences"
-msgstr ""
+msgstr "Etsi tapahtumia"
 
 #: app/conf/user_actions.conf:606
 msgid "Allow user to search occurrences"
@@ -30850,7 +30850,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:664
 msgid "Search collections"
-msgstr ""
+msgstr "Etsi kokoelmia"
 
 #: app/conf/user_actions.conf:665
 msgid "Allow user to search collections"
@@ -30952,7 +30952,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:723
 msgid "Search storage locations"
-msgstr ""
+msgstr "Etsi varastosijainteja"
 
 #: app/conf/user_actions.conf:724
 msgid "Allow user to search storage locations"
@@ -31054,7 +31054,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:782
 msgid "Search loans"
-msgstr ""
+msgstr "Etsi lainoja"
 
 #: app/conf/user_actions.conf:783
 msgid "Allow user to search loans"
@@ -31155,7 +31155,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:841
 msgid "Search movements"
-msgstr ""
+msgstr "Etsi siirtoja"
 
 #: app/conf/user_actions.conf:842
 msgid "Allow user to search movements"

@@ -600,7 +600,7 @@
           <name>Entity label type values</name>
         </label>
         <label locale="fi_FI">
-          <name>Valeurs de type de libellés d\'entité</name>
+          <name></name>
         </label>
       </labels>
       <items>
@@ -611,8 +611,8 @@
               <name_plural>alternates</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>alternatif</name_singular>
-              <name_plural>alternatifs</name_plural>
+              <name_singular>vaihtoehto</name_singular>
+              <name_plural>vaihtoehtoiset</name_plural>
             </label>
           </labels>
         </item>
@@ -623,8 +623,8 @@
               <name_plural>use for</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>utiliser pour</name_singular>
-              <name_plural>utiliser pour</name_plural>
+              <name_singular>käytä</name_singular>
+              <name_plural>käytä</name_plural>
             </label>
           </labels>
         </item>
@@ -636,7 +636,7 @@
           <name>Entity sources</name>
         </label>
         <label locale="fi_FI">
-          <name>Sources d\'entités</name>
+          <name>Toimijalähteet</name>
         </label>
       </labels>
       <items>
@@ -647,8 +647,8 @@
               <name_plural>Entity Sources</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Source d\'entité</name_singular>
-              <name_plural>Sources d\'entités</name_plural>
+              <name_singular>Toimijalähde</name_singular>
+              <name_plural>Toimijalähteet</name_plural>
             </label>
           </labels>
         </item>
@@ -1546,7 +1546,7 @@
               <name>Web site name</name>
             </label>
             <label locale="fi_FI">
-              <name>Nom du site web</name>
+              <name>Verkkosivun nimi</name>
             </label>
           </labels>
           <settings/>
@@ -1557,7 +1557,7 @@
                   <name>Web site name</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Nom du site web</name>
+                  <name>Verkkosivun nimi</name>
                 </label>
               </labels>
               <settings>
@@ -1978,7 +1978,7 @@
               <description>Depth of object; enter in your preferred units (eg. 10cm</description>
             </label>
             <label locale="fi_FI">
-              <name>Syvyy</name>
+              <name>Syvyys</name>
               <description>Kohteen syvyys esim. 10cm</description>
             </label>
           </labels>
@@ -2387,7 +2387,7 @@
           <name>Color type</name>
         </label>
         <label locale="fi_FI">
-          <name>Type de couleur</name>
+          <name>Värityyppi</name>
         </label>
       </labels>
       <settings>
@@ -2421,7 +2421,7 @@
           <name>Runtime</name>
         </label>
         <label locale="fi_FI">
-          <name>Durée</name>
+          <name>Kesto</name>
         </label>
       </labels>
       <settings>
@@ -2446,7 +2446,7 @@
           <name>Media rights</name>
         </label>
         <label locale="fi_FI">
-          <name>Droits pour le média</name>
+          <name>Oikeudet</name>
         </label>
       </labels>
       <settings>
@@ -2468,7 +2468,7 @@
           <name>Nationality</name>
         </label>
         <label locale="fi_FI">
-          <name>Nationalité</name>
+          <name>Kansallisuus</name>
         </label>
       </labels>
       <settings>
@@ -2493,7 +2493,7 @@
           <name>Biography</name>
         </label>
         <label locale="fi_FI">
-          <name>Biographie</name>
+          <name>Biografia</name>
         </label>
       </labels>
       <settings>
@@ -2563,7 +2563,7 @@
                   <name>Address line 1</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Adresse ligne 1</name>
+                  <name>Osoite rivi 1</name>
                 </label>
               </labels>
               <settings>
@@ -2581,7 +2581,7 @@
               <name>Address line 2</name>
             </label>
             <label locale="fi_FI">
-              <name>Adresse ligne 2</name>
+              <name>Osoite rivi 2</name>
             </label>
           </labels>
           <settings/>
@@ -2592,7 +2592,7 @@
                   <name>Address line 2</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Adresse ligne 2</name>
+                  <name>Osoite rivi 2</name>
                 </label>
               </labels>
               <settings>
@@ -2610,7 +2610,7 @@
               <name>Address line 3</name>
             </label>
             <label locale="fi_FI">
-              <name>Adresse ligne 3</name>
+              <name>Osoite rivi 3</name>
             </label>
           </labels>
           <settings/>
@@ -2621,7 +2621,7 @@
                   <name>City</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Ville</name>
+                  <name>Kaupunki</name>
                 </label>
               </labels>
               <settings>
@@ -2637,7 +2637,7 @@
                   <name>State/province</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Etat/province</name>
+                  <name>State/province</name>
                 </label>
               </labels>
               <settings>
@@ -2653,7 +2653,7 @@
                   <name>Postal/zip code</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Code postal</name>
+                  <name>Postinumero</name>
                 </label>
               </labels>
               <settings>
@@ -2669,7 +2669,7 @@
                   <name>Country</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Pays</name>
+                  <name>Maa</name>
                 </label>
               </labels>
               <settings>
@@ -2687,7 +2687,7 @@
               <name>Address type</name>
             </label>
             <label locale="fi_FI">
-              <name>Type d\'adresse</name>
+              <name>Osoitetyyppi</name>
             </label>
           </labels>
           <settings/>
@@ -2698,7 +2698,7 @@
                   <name>Address type</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Type d\'adresse</name>
+                  <name>Osoitetyyppi</name>
                 </label>
               </labels>
               <settings>
@@ -2754,7 +2754,7 @@
           <name>Web site url</name>
         </label>
         <label locale="fi_FI">
-          <name>URL du site web</name>
+          <name>URL</name>
         </label>
       </labels>
       <settings>
@@ -3289,9 +3289,9 @@
               <bundle>ca_attribute_lcsh_terms</bundle>
               <settings>
                 <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" option="fi_FI">Vedettes matières Bibliothèque du Congrès</setting>
+                <setting name="label" option="fi_FI">Library of Congress Subject Headings</setting>
                 <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" option="fi_FI">Ajouter une nouvelle vedette matière</setting>
+                <setting name="add_label" option="fi_FI">Add new subject heading</setting>
               </settings>
             </placement>
           </bundlePlacements>
