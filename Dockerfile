@@ -58,6 +58,8 @@ COPY files/messages.mo /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
 COPY files/base.css /$CA_PROVIDENCE_DIR/themes/default/css/
 COPY files/fi_FI.lang /$CA_PROVIDENCE_DIR/app/lib/core/Parsers/TimeExpressionParser/
 COPY files/osc.xml /$CA_PROVIDENCE_DIR/install/profiles/xml/
+COPY files/global.conf /$CA_PROVIDENCE_DIR/app/conf/
+COPY files/menu_logo_osc.png /$CA_PROVIDENCE_DIR/themes/default/graphics/logos/menu_logo.png
 COPY files/setup.php /$CA_PROVIDENCE_DIR/setup.php
 COPY files/entrypoint.sh /entrypoint.sh
 

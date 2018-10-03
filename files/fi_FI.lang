@@ -1,10 +1,10 @@
 # *** use ONLY lowercase letters in lists: input will be forced to lowercase for comparison ***
 
 # List month names; used whenever name of month needs to be displayed
-monthList = [tammikuu, helmikuu, maaliskuu, huhtikuu, toukokuu, kes√kuu, hein√§kuu,elokuut, syyskuu, lokakuu, marraskuu, joulukuu]
+monthList = [tammikuu, helmikuu, maaliskuu, huhtikuu, toukokuu, kes‰kuu, hein‰kuu,elokuut, syyskuu, lokakuu, marraskuu, joulukuu]
 
 # *** the following list of months is for display and *SHOULD* be capitalized where appropriate
-monthListDisplay = [January, February, March, April, May, June, July, August, September, October, November, December]
+monthListDisplay = [tammikuu, helmikuu, maaliskuu, huhtikuu, toukokuu, kes‰kuu, hein‰kuu,elokuut, syyskuu, lokakuu, marraskuu, joulukuu]
 
 # Hash table mapping acceptable month names to the display names defined in 'monthList'
 monthTable = {
@@ -24,7 +24,7 @@ monthTable = {
 }
 
 # List of day names, starting with Sunday
-dayListDisplay = [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+dayListDisplay = [sunnuntai, maanantai, tiistai, keskiviiko, torstai, perjantai, lauantai]
 
 rangePreConjunctions = [from, between]
 rangeConjunctions = [‚Äì, -, to, and, .., through, or]
@@ -42,7 +42,7 @@ meridianTable = {
 	p.m. = pm
 }
 
-dateCircaIndicator = [circa, c, c., ca, ca., possibly, probably, about, early, late, mid]
+dateCircaIndicator = [noin, c, c., ca, ca., possibly, probably, about, early, late, mid]
 dateUncertaintyIndicator = [~]
 dateUncertaintyYearIndicator = [y]
 dateUncertaintyDayIndicator = [d]
@@ -68,11 +68,11 @@ ADBCTable = {
 	bce = BCE
 }
 
-nowDate = [now]
-todayDate = [today]
-yesterdayDate = [yesterday]
-tomorrowDate = [tomorrow]
-undatedDate = [undated, unknown]
+nowDate = [nyt]
+todayDate = [t‰n‰‰n]
+yesterdayDate = [eilen]
+tomorrowDate = [huomenna]
+undatedDate = [tuntematon, unknown]
 
 presentDate = [present, ?, ??, ???, ????]
 beforeQualifier = [before, prior to]
@@ -98,7 +98,7 @@ ordinalSuffixExceptions = {
 
 # in delimited dates (ex. 12/10/2009) is the first number a month or a day?
 # set to "0" for European style dates (day comes first); "1" for American-style dates (month comes first)
-monthComesFirstInDelimitedDate = 1
+monthComesFirstInDelimitedDate = 0
 
 # character(s) to append to day in full (not delimited) date
 # eg. in the date "1. February 2009", "." is the daySuffix

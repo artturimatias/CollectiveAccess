@@ -84,96 +84,208 @@
           <name>Object types</name>
         </label>
         <label locale="fi_FI">
-          <name>Objektityypit</name>
+          <name>Kohdetyypit</name>
         </label>
       </labels>
       <items>
         <item idno="document" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Document</name_singular>
-              <name_plural>Documents</name_plural>
+              <name_singular>Work</name_singular>
+              <name_plural>Works</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Dokumentti</name_singular>
-              <name_plural>Dokumentit</name_plural>
+              <name_singular>Teos</name_singular>
+              <name_plural>Teokset</name_plural>
             </label>
           </labels>
+          <items>
+			  <item idno="drawing" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Drawing</name_singular>
+				  <name_plural>Drawings</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Piirustus</name_singular>
+				  <name_plural>Piirustukset</name_plural>
+				</label>
+			  </labels>
+			</item>
+			<item idno="film_media" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Film &amp; Media</name_singular>
+				  <name_plural>Film &amp; Media</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Video/audio</name_singular>
+				  <name_plural>Video/audio</name_plural>
+				</label>
+			  </labels>
+			</item>
+			<item idno="painting" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Painting</name_singular>
+				  <name_plural>Paintings</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Maalaus</name_singular>
+				  <name_plural>Maalaukset</name_plural>
+				</label>
+			  </labels>
+			</item>
+			<item idno="photography" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Photography</name_singular>
+				  <name_plural>Photography</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Valokuva</name_singular>
+				  <name_plural>Valokuvat</name_plural>
+				</label>
+			  </labels>
+			</item>
+			<item idno="print" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Print</name_singular>
+				  <name_plural>Prints</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Grafiikka</name_singular>
+				  <name_plural>Grafiikat</name_plural>
+				</label>
+			  </labels>
+			</item>
+			<item idno="sculpture" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Sculpture</name_singular>
+				  <name_plural>Sculptures</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Veistos</name_singular>
+				  <name_plural>Veistokset</name_plural>
+				</label>
+			  </labels>
+			</item>        
+          </items>
         </item>
-        <item idno="drawing" enabled="1" default="1">
+
+      </items>
+    </list>
+
+    <list code="workflow_statuses" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Object workflow statuses</name>
+        </label>
+        <label locale="en_CA">
+          <name>Object workflow statuses</name>
+        </label>
+
+      </labels>
+      <items>
+        <item idno="new" enabled="1" default="1" value="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Drawing</name_singular>
-              <name_plural>Drawings</name_plural>
+              <name_singular>new</name_singular>
+              <name_plural>new</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Piirustus</name_singular>
-              <name_plural>Piirustukset</name_plural>
+              <name_singular>uusi</name_singular>
+              <name_plural>uudet</name_plural>
             </label>
+
           </labels>
         </item>
-        <item idno="film_media" enabled="1" default="1">
+        <item idno="editing_in_progress" enabled="1" default="0" value="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Film &amp; Media</name_singular>
-              <name_plural>Film &amp; Media</name_plural>
+              <name_singular>editing in progress</name_singular>
+              <name_plural>editing in progress</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Filmi &amp; Media</name_singular>
-              <name_plural>Filmi &amp; Media</name_plural>
+              <name_singular>keskeneräinen</name_singular>
+              <name_plural>keskeneräiset</name_plural>
             </label>
+
           </labels>
         </item>
-        <item idno="painting" enabled="1" default="1">
+
+
+        <item idno="completed" enabled="1" default="0" value="4">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Painting</name_singular>
-              <name_plural>Paintings</name_plural>
+              <name_singular>completed</name_singular>
+              <name_plural>completed</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Maalaus</name_singular>
-              <name_plural>Maalaukset</name_plural>
+              <name_singular>valmis</name_singular>
+              <name_plural>valmiit</name_plural>
             </label>
-          </labels>
-        </item>
-        <item idno="photography" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Photography</name_singular>
-              <name_plural>Photography</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Valokuva</name_singular>
-              <name_plural>Valokuvat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="print" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Print</name_singular>
-              <name_plural>Prints</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Grafiikka</name_singular>
-              <name_plural>Grafiikat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="sculpture" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Sculpture</name_singular>
-              <name_plural>Sculptures</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Veistos</name_singular>
-              <name_plural>Veistokset</name_plural>
-            </label>
+
           </labels>
         </item>
       </items>
     </list>
+
+    <list code="access_statuses" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Object access statuses</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Kohteen pääsyoikeudet</name>
+        </label>
+
+      </labels>
+      <items>
+        <item idno="internal_only" enabled="1" default="1" value="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>not accessible to public</name_singular>
+              <name_plural>not accessible to public</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>ei-julkinen</name_singular>
+              <name_plural>ei-julkiset</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="restricted_public_access" enabled="1" default="0" value="2">
+          <labels>
+
+            <label locale="en_US" preferred="1">
+              <name_singular>restricted public access</name_singular>
+              <name_plural>restricted public access</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>rajoitettu julkinen pääsy</name_singular>
+              <name_plural>rajoitetusti julkiset</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="public_access" enabled="1" default="0" value="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>accessible to public</name_singular>
+              <name_plural>accessible to public</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>julkinen</name_singular>
+              <name_plural>julkiset</name_plural>
+            </label>
+
+          </labels>
+        </item>
+      </items>
+    </list>
+
+
     <list code="object_statuses" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -184,30 +296,7 @@
         </label>
       </labels>
       <items>
-        <item idno="pending_accession" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>pending accession</name_singular>
-              <name_plural>pending accessions</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>acquisition en cours</name_singular>
-              <name_plural>acquisitions en cours</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="accession" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>accessioned</name_singular>
-              <name_plural>accessioned</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>accessioned</name_singular>
-              <name_plural>accessioned</name_plural>
-            </label>
-          </labels>
-        </item>
+
         <item idno="loan" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
@@ -215,35 +304,25 @@
               <name_plural>loans</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Laina</name_singular>
-              <name_plural>Lainat</name_plural>
+              <name_singular>lainassa</name_singular>
+              <name_plural>lainassa</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="nonaccession" enabled="1" default="0">
+
+        <item idno="missing" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>non-accessioned</name_singular>
-              <name_plural>non-accessioned</name_plural>
+              <name_singular>missing</name_singular>
+              <name_plural>missing</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>non-accessioned</name_singular>
-              <name_plural>non-accessioned</name_plural>
+              <name_singular>kadonnut</name_singular>
+              <name_plural>kadonnut</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="potential" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>potential acquisition</name_singular>
-              <name_plural>potential acquisitions</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>potential acquisition</name_singular>
-              <name_plural>potential acquisitions</name_plural>
-            </label>
-          </labels>
-        </item>
+
       </items>
     </list>
     <list code="object_acq_types" hierarchical="0" system="0" vocabulary="0">
@@ -600,7 +679,7 @@
           <name>Entity label type values</name>
         </label>
         <label locale="fi_FI">
-          <name></name>
+          <name>Entity label type values</name>
         </label>
       </labels>
       <items>
@@ -1086,126 +1165,7 @@
         </item>
       </items>
     </list>
-    <list code="date_types" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Date types</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Types de dates</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="created" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>created</name_singular>
-              <name_plural>created</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>tehty</name_singular>
-              <name_plural>tehty</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="published" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>published</name_singular>
-              <name_plural>published</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>julkaistu</name_singular>
-              <name_plural>julkaistu</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="exhibited" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>exhibited</name_singular>
-              <name_plural>exhibited</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>näytteillä</name_singular>
-              <name_plural>näytteillä</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="organized" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>organized</name_singular>
-              <name_plural>organized</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>järjestetty</name_singular>
-              <name_plural>järjestetty</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="edited" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>edited</name_singular>
-              <name_plural>edited</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>muokattu</name_singular>
-              <name_plural>muokattu</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="reviewed" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>reviewed</name_singular>
-              <name_plural>reviewed</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>arvosteltu</name_singular>
-              <name_plural>arvosteltu</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="valid" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>valid</name_singular>
-              <name_plural>valid</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>validé</name_singular>
-              <name_plural>validés</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="available" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>available</name_singular>
-              <name_plural>available</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>disponible</name_singular>
-              <name_plural>disponibles</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="issued" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>issued</name_singular>
-              <name_plural>issued</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>issued</name_singular>
-              <name_plural>issued</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
     <list code="object_media_license_types" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -1375,20 +1335,7 @@
             <setting name="fieldHeight">1</setting>
           </settings>
         </metadataElement>
-        <metadataElement code="dates_type" datatype="List" list="date_types">
-          <labels>
-            <label locale="en_US">
-              <name>Type</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Tyyppi</name>
-            </label>
-          </labels>
-          <documentationUrl>http://dublincore.org/documents/dcmi-terms/#terms-date</documentationUrl>
-          <settings>
-            <setting name="fieldWidth">40</setting>
-          </settings>
-        </metadataElement>
+
       </elements>
       <typeRestrictions>
         <restriction code="r1">
@@ -4212,8 +4159,8 @@
               <typename_reverse>artist</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>taiteilijana on</typename>
-              <typename_reverse>on taiteilija</typename_reverse>
+              <typename>taiteilija</typename>
+              <typename_reverse>taiteilija</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>

@@ -13366,7 +13366,7 @@ msgstr ""
 #: app/models/ca_tours.php:117
 #: app/models/ca_user_representation_annotations.php:129
 msgid "Editing in progress"
-msgstr ""
+msgstr "Editoitavana"
 
 #: app/models/ca_collections.php:152 app/models/ca_entities.php:160
 #: app/models/ca_list_items.php:188 app/models/ca_loans.php:144
@@ -28505,7 +28505,7 @@ msgstr ""
 
 #: themes/default/views/manage/search_form_list_html.php:38
 msgid "New search form for "
-msgstr ""
+msgstr "Uusi hakuelomake "
 
 #: themes/default/views/manage/search_form_list_html.php:67
 msgid "Form name"
