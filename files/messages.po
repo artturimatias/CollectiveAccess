@@ -5288,7 +5288,7 @@ msgstr "% tehohaku"
 #: app/lib/ca/BaseSearchController.php:277
 #: app/lib/ca/BaseSearchController.php:529
 msgid "search"
-msgstr ""
+msgstr "haku"
 
 #: app/lib/ca/BaseBrowseController.php:180
 msgid "%1 browse"
@@ -5579,7 +5579,7 @@ msgstr ""
 
 #: app/lib/ca/BaseSearchController.php:134
 msgid "%1 search"
-msgstr ""
+msgstr "%1 haku"
 
 #: app/lib/ca/BaseSearchController.php:155
 msgid "Set order: %1"
@@ -5852,7 +5852,7 @@ msgstr ""
 
 #: app/lib/ca/Browse/BrowseEngine.php:162
 msgid "Searches"
-msgstr ""
+msgstr "Haut"
 
 #: app/lib/ca/Browse/BrowseEngine.php:166
 #: app/models/ca_data_importer_items.php:464
@@ -23836,11 +23836,11 @@ msgstr ""
 
 #: app/widgets/advancedSearchForm/advancedSearchFormWidget.php:68
 msgid "Search form"
-msgstr ""
+msgstr "Hakulomake"
 
 #: app/widgets/advancedSearchForm/advancedSearchFormWidget.php:69
 msgid "Search form to display"
-msgstr ""
+msgstr "Hakulomake"
 
 #: app/widgets/advancedSearchForm/advancedSearchFormWidget.php:124
 msgid "Advanced search form widget"
@@ -24749,15 +24749,15 @@ msgstr ""
 
 #: app/widgets/savedSearches/views/main_html.php:43
 msgid "Object Searches"
-msgstr ""
+msgstr "Kohdehaut"
 
 #: app/widgets/savedSearches/views/main_html.php:48
 msgid "Entity Searches"
-msgstr ""
+msgstr "Toimijahaut"
 
 #: app/widgets/savedSearches/views/main_html.php:53
 msgid "Place Searches"
-msgstr ""
+msgstr "Paikkahaut"
 
 #: app/widgets/savedSearches/views/main_html.php:58
 msgid "Object Lot Searches"
@@ -24769,11 +24769,11 @@ msgstr ""
 
 #: app/widgets/savedSearches/views/main_html.php:68
 msgid "Collection Searches"
-msgstr ""
+msgstr "Kokoelmahaut"
 
 #: app/widgets/savedSearches/views/main_html.php:73
 msgid "Occurrence Searches"
-msgstr ""
+msgstr "Tapahtumahaut"
 
 #: app/widgets/savedSearches/views/main_html.php:83
 msgid "advanced"
@@ -24785,7 +24785,7 @@ msgstr "perushaku"
 
 #: app/widgets/searchBySet/searchBySetWidget.php:39
 msgid "Search By Set"
-msgstr ""
+msgstr "Etsi setin mukaan"
 
 #: app/widgets/searchBySet/searchBySetWidget.php:40
 msgid "Search for items in your sets."
@@ -26060,7 +26060,7 @@ msgstr ""
 #: themes/default/views/administrate/setup/Search/search_sets_html.php:33
 #: themes/default/views/find/Search/search_sets_html.php:39
 msgid "Set Tools"
-msgstr ""
+msgstr "Settityökalut"
 
 #: themes/default/views/administrate/setup/Search/search_sets_html.php:42
 #: themes/default/views/administrate/setup/Search/search_tools_html.php:90
@@ -26170,7 +26170,7 @@ msgstr ""
 #: themes/default/views/find/Search/widget_ca_tour_stops_search_tools.php:32
 #: themes/default/views/find/Search/widget_ca_tours_search_tools.php:32
 msgid "Search %1"
-msgstr ""
+msgstr "Hae %1"
 
 #: themes/default/views/administrate/setup/Search/widget_ca_list_items_search_tools.php:91
 #: themes/default/views/find/Search/widget_ca_collections_search_tools.php:92
@@ -26186,7 +26186,7 @@ msgstr ""
 #: themes/default/views/find/Search/widget_ca_tour_stops_search_tools.php:90
 #: themes/default/views/find/Search/widget_ca_tours_search_tools.php:90
 msgid "Search by set"
-msgstr ""
+msgstr "Hae setin mukaan"
 
 #: themes/default/views/administrate/setup/Search/widget_ca_list_items_search_tools.php:116
 #: themes/default/views/find/Browse/widget_ca_objects_browse_tools.php:43
@@ -28489,7 +28489,7 @@ msgstr "Poista valitut"
 
 #: themes/default/views/manage/saved_searches_list_html.php:55
 msgid "Search Type"
-msgstr "Etsi tyyppejä"
+msgstr "Hae tyyppejä"
 
 #: themes/default/views/manage/saved_searches_list_html.php:58
 msgid "Search term/name"
@@ -28973,7 +28973,7 @@ msgstr ""
 
 #: themes/default/views/system/preferences_quicksearch_html.php:63
 msgid "Searches to display"
-msgstr ""
+msgstr "näytettävät haut"
 
 #: app/conf/annotation_types.conf:12 app/conf/annotation_types.conf:37
 msgid "Start"
@@ -29532,7 +29532,7 @@ msgstr "Omat hakutyökalut"
 
 #: app/conf/navigation.conf:3532
 msgid "Search forms"
-msgstr ""
+msgstr "Hakulomakkeet"
 
 #: app/conf/navigation.conf:3546
 msgid "User sorts"
