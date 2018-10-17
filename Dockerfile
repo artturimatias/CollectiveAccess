@@ -36,6 +36,10 @@ RUN apt-get update && apt-get install -y apache2 \
 RUN apt-get install -y php-pear php7.0-dev graphicsmagick libgraphicsmagick1-dev \
 	&& pecl install gmagick-2.0.4RC1
 
+# better PDF (wkhtmltopdf)
+RUN wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.xenial_amd64.deb && apt install ./wkhtmltox_0.12.5-1.xenial_amd64.deb 
+
+
 RUN curl -SsL https://github.com/collectiveaccess/providence/archive/$CA_PROVIDENCE_VERSION.tar.gz | tar -C /var/www/ -xzf -
 RUN mv /var/www/providence-$CA_PROVIDENCE_VERSION /var/www/providence
 #RUN cd $CA_PROVIDENCE_DIR && cp setup.php-dist setup.php
@@ -59,6 +63,9 @@ COPY files/base.css /$CA_PROVIDENCE_DIR/themes/default/css/
 COPY files/fi_FI.lang /$CA_PROVIDENCE_DIR/app/lib/core/Parsers/TimeExpressionParser/
 COPY files/osc.xml /$CA_PROVIDENCE_DIR/install/profiles/xml/
 COPY files/global.conf /$CA_PROVIDENCE_DIR/app/conf/
+COPY files/browse.conf /$CA_PROVIDENCE_DIR/app/conf/
+COPY files/search.conf /$CA_PROVIDENCE_DIR/app/conf/
+COPY files/TileViewer.php /$CA_PROVIDENCE_DIR/app/lib/core/Media/MediaViewers/
 COPY files/menu_logo_osc.png /$CA_PROVIDENCE_DIR/themes/default/graphics/logos/menu_logo.png
 COPY files/setup.php /$CA_PROVIDENCE_DIR/setup.php
 COPY files/entrypoint.sh /entrypoint.sh

@@ -88,7 +88,7 @@
         </label>
       </labels>
       <items>
-        <item idno="document" enabled="1" default="1">
+        <item idno="artwork" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Work</name_singular>
