@@ -16,7 +16,7 @@ build:
 	docker build -t artturimatias/collectiveaccess:$(VERSION) .
 	
 start:
-	docker run --name collectiveaccess \
+	docker run -d --name collectiveaccess \
 	--link mariadb:mysql \
 	-p 80:80 \
 	-v $(VOLUME):/var/www/providence/media \
