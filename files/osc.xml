@@ -7,77 +7,7 @@
     <locale lang="en" country="US">English</locale>
   </locales>
   <lists>
-    <list code="aat_vocabulary" hierarchical="1" system="0" vocabulary="1">
-      <labels>
-        <label locale="en_US">
-          <name>Art &amp;amp; Architecture Thesaurus</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Art &amp;amp; Architecture Thesaurus</name>
-        </label>
-      </labels>
-      <items/>
-    </list>
-    <list code="object_sources" hierarchical="1" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Object sources</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Kohdelähteet</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="permanent" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Permanent Collection</name_singular>
-              <name_plural>Permanent Collections</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Pysyvä kokoelma</name_singular>
-              <name_plural>Pysyvät kokoelmat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="temporary" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Temporary Collection</name_singular>
-              <name_plural>Temporary Collections</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Väliaikainen kokoelma</name_singular>
-              <name_plural>Väliaikaiset kokoelmat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="study" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Study Collection</name_singular>
-              <name_plural>Study Collections</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>opetuskokoelma</name_singular>
-              <name_plural>Opetuskokoelmat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="external" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>External Collection</name_singular>
-              <name_plural>External Collections</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Ulkoinen kokoelma</name_singular>
-              <name_plural>Ulkoiset kokoelmat</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+    
     <list code="object_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -373,42 +303,7 @@
         </item>
       </items>
     </list>
-    <list code="object_label_types" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Object label type values</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Object label type values</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="alt" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>alternate</name_singular>
-              <name_plural>alternates</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>vaihtoehtoinen</name_singular>
-              <name_plural>vaihtoehtoiset</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="uf" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>use for</name_singular>
-              <name_plural>use for</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>use for</name_singular>
-              <name_plural>use for</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
     <list code="object_lot_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -469,126 +364,8 @@
         </item>
       </items>
     </list>
-    <list code="object_lot_statuses" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Object lot status values</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Hankintojen tilatstatukset</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="pending_accession" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>pending accession</name_singular>
-              <name_plural>pending accessions</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>pending accession</name_singular>
-              <name_plural>pending accessions</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="accession" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>accessioned</name_singular>
-              <name_plural>accessioned</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>accessioned</name_singular>
-              <name_plural>accessioned</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="loan" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>loan</name_singular>
-              <name_plural>loans</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>laina</name_singular>
-              <name_plural>lainat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="nonaccession" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>non-accessioned</name_singular>
-              <name_plural>non-accessioned</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>non-accessioned</name_singular>
-              <name_plural>non-accessioned</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="potential" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>potential acquisition</name_singular>
-              <name_plural>potential acquisitions</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>potential acquisition</name_singular>
-              <name_plural>potential acquisitions</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="deaccessioned" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>deaccessioned</name_singular>
-              <name_plural>deaccessioned</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>sorti de l\'inventaire</name_singular>
-              <name_plural>sortis de l\'inventaire</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
-    <list code="object_lot_label_types" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Object lot label type values</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Object lot label type values</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="alt" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Alternate</name_singular>
-              <name_plural>Alternates</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Alternate</name_singular>
-              <name_plural>Alternates</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="uf" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>use for</name_singular>
-              <name_plural>use for</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>utiliser pour</name_singular>
-              <name_plural>utiliser pour</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
+
     <list code="place_hierarchies" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -613,30 +390,7 @@
         </item>
       </items>
     </list>
-    <list code="place_sources" hierarchical="1" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Place sources</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Paikkatiedon lähteet</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="places" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Place Authority</name_singular>
-              <name_plural>Place Authority</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Place Authority</name_singular>
-              <name_plural>Place Authority</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
     <list code="entity_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -673,126 +427,8 @@
         </item>
       </items>
     </list>
-    <list code="entity_label_types" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Entity label type values</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Entity label type values</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="alt" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>alternate</name_singular>
-              <name_plural>alternates</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>vaihtoehto</name_singular>
-              <name_plural>vaihtoehtoiset</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="uf" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>use for</name_singular>
-              <name_plural>use for</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>käytä</name_singular>
-              <name_plural>käytä</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
-    <list code="entity_sources" hierarchical="1" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Entity sources</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Toimijalähteet</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="i1" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Entity Sources</name_singular>
-              <name_plural>Entity Sources</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Toimijalähde</name_singular>
-              <name_plural>Toimijalähteet</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
-    <list code="collection_types" hierarchical="1" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Collection types</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Kokoelmatyypit</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="internal" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Internal</name_singular>
-              <name_plural>Internal</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Sisäinen</name_singular>
-              <name_plural>Sisäinen</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="external" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>External</name_singular>
-              <name_plural>External</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Ulkoinen</name_singular>
-              <name_plural>Ulkoinen</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
-    <list code="collection_sources" hierarchical="1" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Collection sources</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Kokoelmalähteet</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="i1" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Collection Sources</name_singular>
-              <name_plural>Collection Sources</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Kokoelmalähteet</name_singular>
-              <name_plural>Kokoelmalähteet</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
+
     <list code="occurrence_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -841,30 +477,7 @@
         </item>
       </items>
     </list>
-    <list code="occurrence_sources" hierarchical="1" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Occurrence sources</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Tapahtumalähteet</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="i1" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Occurrence Source</name_singular>
-              <name_plural>Occurrence Source</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Tapahtumalähde</name_singular>
-              <name_plural>Tapahtumalähde</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
     <list code="storage_location_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -985,42 +598,7 @@
         </item>
       </items>
     </list>
-    <list code="alternate_pub_number_types" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Alternate Publication Number Types</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Autres types de numérotations de publication</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="issn" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>ISSN</name_singular>
-              <name_plural>ISSN</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>ISSN</name_singular>
-              <name_plural>ISSN</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="isbn" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>ISBN</name_singular>
-              <name_plural>ISBN</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>ISBN</name_singular>
-              <name_plural>ISBN</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
     <list code="conditions" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -3039,15 +2617,8 @@
             <placement code="idno">
               <bundle>idno</bundle>
             </placement>
-            <placement code="source_id">
-              <bundle>source_id</bundle>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-            </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-            </placement>
+
+
             <placement code="nonpreferred_labels">
               <bundle>nonpreferred_labels</bundle>
               <settings>
@@ -3057,45 +2628,49 @@
                 <setting name="add_label" option="fi_FI">Lisää muu teosnimi</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_work_description">
-              <bundle>ca_attribute_work_description</bundle>
+            <placement code="ca_attribute_description">
+              <bundle>ca_attribute_description</bundle>
             </placement>
             <placement code="ca_attribute_work_medium">
               <bundle>ca_attribute_work_medium</bundle>
             </placement>
-            <placement code="ca_attribute_work_dimensions">
-              <bundle>ca_attribute_work_dimensions</bundle>
+
+
+            <placement code="status">
+              <bundle>status</bundle>
             </placement>
-            <placement code="ca_attribute_colorType">
-              <bundle>ca_attribute_colorType</bundle>
+            <placement code="access">
+              <bundle>access</bundle>
             </placement>
-            <placement code="ca_attribute_runtime">
-              <bundle>ca_attribute_runtime</bundle>
-            </placement>
-            <placement code="ca_attribute_edition_number">
-              <bundle>ca_attribute_edition_number</bundle>
-            </placement>
-            <placement code="ca_attribute_inscription">
-              <bundle>ca_attribute_inscription</bundle>
-            </placement>
-            <placement code="ca_attribute_date">
-              <bundle>ca_attribute_date</bundle>
-            </placement>
-            <placement code="ca_attribute_external_link">
-              <bundle>ca_attribute_external_link</bundle>
-            </placement>
-            <placement code="ca_entities">
-              <bundle>ca_entities</bundle>
-            </placement>
+
           </bundlePlacements>
         </screen>
+   
+         <screen idno="measuremnts" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Measurements</name>
+            </label>
+            <label locale="fi_FI">
+              <name>Mitat</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+			     
+              <placement code="ca_attribute_work_dimensions">
+              <bundle>ca_attribute_work_dimensions</bundle>
+            </placement> 
+			  </bundlePlacements>
+		</screen>  
+
+        
         <screen idno="admin" default="0">
           <labels>
             <label locale="en_US">
               <name>Administrative info</name>
             </label>
             <label locale="fi_FI">
-              <name>Hallinnointitiedot</name>
+              <name>Hallinnointi</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3105,10 +2680,32 @@
             <placement code="ca_attribute_custodial_notes">
               <bundle>ca_attribute_custodial_notes</bundle>
             </placement>
-            <placement code="ca_attribute_condition">
-              <bundle>ca_attribute_condition</bundle>
+
+
+            <placement code="ca_object_lots">
+              <bundle>ca_object_lots</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Part of lot:</setting>
+                <setting name="label" option="fi_FI">kuuluu hankintaan</setting>
+              </settings>
             </placement>
-            <placement code="ca_attribute_history">
+          </bundlePlacements>
+        </screen>
+        
+        <screen idno="history" default="0">
+        
+           <labels>
+            <label locale="en_US">
+              <name>History</name>
+            </label>
+            <label locale="fi_FI">
+              <name>historia</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+ 
+ 
+             <placement code="ca_attribute_history">
               <bundle>ca_attribute_history</bundle>
             </placement>
             <placement code="ca_attribute_accession_date">
@@ -3116,29 +2713,35 @@
             </placement>
             <placement code="ca_attribute_purchase_price">
               <bundle>ca_attribute_purchase_price</bundle>
-            </placement>
-            <placement code="ca_attribute_provenance">
-              <bundle>ca_attribute_provenance</bundle>
-            </placement>
-            <placement code="ca_attribute_exhibition_name">
-              <bundle>ca_attribute_exhibition_name</bundle>
-            </placement>
-            <placement code="ca_object_lots">
-              <bundle>ca_object_lots</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Part of lot:</setting>
-                <setting name="label" option="fi_FI">Partie du lot</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
+            </placement>   
+            </bundlePlacements>    
         </screen>
+ 
+ 
+         <screen idno="condition" default="0">
+        
+           <labels>
+            <label locale="en_US">
+              <name>Condition</name>
+            </label>
+            <label locale="fi_FI">
+              <name>Kunto</name>
+            </label>
+          </labels>
+			<bundlePlacements>
+			<placement code="ca_attribute_condition">
+              <bundle>ca_attribute_condition</bundle>
+            </placement>  
+			</bundlePlacements>
+		</screen>
+        
         <screen idno="media" default="0">
           <labels>
             <label locale="en_US">
               <name>Media</name>
             </label>
             <label locale="fi_FI">
-              <name>Tiedostot</name>
+              <name>tiedostot</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3147,13 +2750,14 @@
             </placement>
           </bundlePlacements>
         </screen>
+        
         <screen idno="storage" default="0">
           <labels>
             <label locale="en_US">
               <name>Storage</name>
             </label>
             <label locale="fi_FI">
-              <name>Varastosijainti</name>
+              <name>sijainti</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3171,6 +2775,8 @@
             </placement>
           </bundlePlacements>
         </screen>
+        
+        
         <screen idno="sets" default="0">
           <labels>
             <label locale="en_US">
@@ -3186,13 +2792,15 @@
             </placement>
           </bundlePlacements>
         </screen>
+        
+        
         <screen idno="relationships" default="0">
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
             </label>
             <label locale="fi_FI">
-              <name>Linkitykset</name>
+              <name>Linkit</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3219,6 +2827,7 @@
             </placement>
           </bundlePlacements>
         </screen>
+        
         <screen idno="keywords" default="0">
           <labels>
             <label locale="en_US">
@@ -3232,15 +2841,7 @@
             <placement code="ca_list_items">
               <bundle>ca_list_items</bundle>
             </placement>
-            <placement code="ca_attribute_lcsh_terms">
-              <bundle>ca_attribute_lcsh_terms</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" option="fi_FI">Library of Congress Subject Headings</setting>
-                <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" option="fi_FI">Add new subject heading</setting>
-              </settings>
-            </placement>
+
           </bundlePlacements>
         </screen>
       </screens>
