@@ -216,6 +216,46 @@
     </list>
 
 
+    <list code="teosaihenimi" hierarchical="0" system="0" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>Subject of work</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Taideteoksen aihe</name>
+        </label>
+      </labels>
+      <items>
+
+        <item idno="portrait" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>portrait</name_singular>
+              <name_plural>portraits</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>muotokuva</name_singular>
+              <name_plural>muotokuvat</name_plural>
+            </label>
+          </labels>
+        </item>
+
+        <item idno="abstract" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>abstract</name_singular>
+              <name_plural>abstrac</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>abstract</name_singular>
+              <name_plural>abstract</name_plural>
+            </label>
+          </labels>
+        </item>
+
+      </items>
+    </list>
+
     <list code="object_statuses" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -593,6 +633,43 @@
             <label locale="fi_FI" preferred="1">
               <name_singular>Logistiikkamitat</name_singular>
               <name_plural>Logistiikkamitat</name_plural>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+
+    <list code="currency" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Currency</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Valuutta</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="euro" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>euro</name_singular>
+              <name_plural>euros</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>euro</name_singular>
+              <name_plural>euro</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="markka" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>markka</name_singular>
+              <name_plural>markka</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>markka</name_singular>
+              <name_plural>markkaa</name_plural>
             </label>
           </labels>
         </item>
@@ -1235,6 +1312,191 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+    <metadataElement code="conservation_description" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>Conservation/Treatment History</name>
+        </label>
+      </labels>
+      <elements>
+        <metadataElement code="general_conservation_line1" datatype="Container">
+          <labels>
+            <label locale="en_US">
+              <name>Conservation Line 2</name>
+            </label>
+          </labels>
+          <settings/>
+          <elements>
+            <metadataElement code="general_conservation_specific" datatype="Entities">
+              <labels>
+                <label locale="en_US">
+                  <name>Agent</name>
+                  <description>The identification of the person who performed a specific conservation procedure, including his or her name, role or title, and institutional affiliation.</description>
+                </label>
+              </labels>
+              <settings>
+                <setting name="fieldWidth">70</setting>
+              </settings>
+            </metadataElement>
+          </elements>
+        </metadataElement>
+        <metadataElement code="general_conservation_line2" datatype="Container">
+          <labels>
+            <label locale="en_US">
+              <name>Conservation Line 3</name>
+            </label>
+          </labels>
+          <settings/>
+          <elements>
+            <metadataElement code="general_conservation_date" datatype="DateRange">
+              <labels>
+                <label locale="en_US">
+                  <name>Date</name>
+                </label>
+              </labels>
+              <settings>
+                <setting name="useDatePicker">1</setting>
+                <setting name="fieldWidth">40</setting>
+              </settings>
+            </metadataElement>
+            <metadataElement code="general_conservation_place" datatype="Text">
+              <labels>
+                <label locale="en_US">
+                  <name>Place</name>
+                </label>
+              </labels>
+              <settings>
+                <setting name="fieldWidth">40</setting>
+                <setting name="fieldHeight">1</setting>
+              </settings>
+            </metadataElement>
+          </elements>
+        </metadataElement>
+        <metadataElement code="general_conservation_line3" datatype="Container">
+          <labels>
+            <label locale="en_US">
+              <name>Conservation Line 4</name>
+            </label>
+          </labels>
+          <settings/>
+          <elements>
+            <metadataElement code="general_conservation_comments" datatype="Text">
+              <labels>
+                <label locale="en_US">
+                  <name>Description</name>
+                </label>
+              </labels>
+              <settings>
+                <setting name="fieldWidth">100</setting>
+                <setting name="fieldHeight">3</setting>
+              </settings>
+            </metadataElement>
+          </elements>
+        </metadataElement>
+        <metadataElement code="general_conservation_line4" datatype="Container">
+          <labels>
+            <label locale="en_US">
+              <name>Conservation Line 5</name>
+            </label>
+          </labels>
+          <settings/>
+          <elements>
+            <metadataElement code="general_conservation_remarks" datatype="Text">
+              <labels>
+                <label locale="en_US">
+                  <name>Remarks</name>
+                </label>
+              </labels>
+              <settings>
+                <setting name="fieldWidth">100</setting>
+                <setting name="fieldHeight">2</setting>
+              </settings>
+            </metadataElement>
+          </elements>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">100</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="hankintahinta" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>hankintahinta</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canBeUsedInSearchForm">0</setting>
+        <setting name="canBeUsedInDisplay">0</setting>
+      </settings>
+
+      <elements>
+        <metadataElement code="hinta" datatype="Numeric">
+          <labels>
+            <label locale="fi_FI">
+              <name>hinta</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minValue">0</setting>
+            <setting name="maxValue">0</setting>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="mustNotBeBlank">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="hankintasumma" datatype="List" list="currency">
+          <labels>
+            <label locale="fi_FI">
+              <name>hankintasumma</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="nullOptionText">Not set</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">0</setting>
+            <setting name="render">select</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="canBeUsedInSearchForm">0</setting>
+            <setting name="canBeUsedInDisplay">0</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+          </settings>
+        </metadataElement>
+        </elements>
+      <typeRestrictions>
+        <restriction code="r1">
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+     </metadataElement>
+    
     <metadataElement code="geonames" datatype="GeoNames">
       <labels>
         <label locale="en_US">
@@ -1883,29 +2145,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="purchase_price" datatype="Currency">
-      <labels>
-        <label locale="en_US">
-          <name>Purchase price</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Ostohinta</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">1</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="colorType" datatype="List" list="color_type">
       <labels>
         <label locale="en_US">
@@ -2706,14 +2946,14 @@
  
  
              <placement code="ca_attribute_history">
-              <bundle>ca_attribute_history</bundle>
+              <bundle>ca_attribute_provenance</bundle>
             </placement>
             <placement code="ca_attribute_accession_date">
               <bundle>ca_attribute_accession_date</bundle>
             </placement>
-            <placement code="ca_attribute_purchase_price">
-              <bundle>ca_attribute_purchase_price</bundle>
-            </placement>   
+            <placement code="ca_attribute_hankintahinta2">
+              <bundle>ca_attribute_hankintahinta</bundle>
+            </placement> 
             </bundlePlacements>    
         </screen>
  
@@ -2822,9 +3062,7 @@
             <placement code="ca_attribute_georeference">
               <bundle>ca_attribute_georeference</bundle>
             </placement>
-            <placement code="ca_attribute_geonames">
-              <bundle>ca_attribute_geonames</bundle>
-            </placement>
+
           </bundlePlacements>
         </screen>
         

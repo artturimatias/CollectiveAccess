@@ -1,10 +1,10 @@
 # *** use ONLY lowercase letters in lists: input will be forced to lowercase for comparison ***
 
 # List month names; used whenever name of month needs to be displayed
-monthList = [tammikuu, helmikuu, maaliskuu, huhtikuu, toukokuu, kes‰kuu, hein‰kuu,elokuut, syyskuu, lokakuu, marraskuu, joulukuu]
+monthList = [tammikuuta, helmikuuta, maaliskuuta, huhtikuuta, toukokuuta, kesakuuta, heinakuu,elokuu, syyskuu, lokakuu, marraskuu, joulukuu]
 
 # *** the following list of months is for display and *SHOULD* be capitalized where appropriate
-monthListDisplay = [tammikuu, helmikuu, maaliskuu, huhtikuu, toukokuu, kes‰kuu, hein‰kuu,elokuut, syyskuu, lokakuu, marraskuu, joulukuu]
+monthListDisplay = [tammikuuta, helmikuuta, maaliskuuta, huhtikuuta, toukokuuta, kes√§kuuta, hein√§kuuta,elokuuta, syyskuuta, lokakuuta, marraskuuta, joulukuuta]
 
 # Hash table mapping acceptable month names to the display names defined in 'monthList'
 monthTable = {
@@ -27,7 +27,7 @@ monthTable = {
 dayListDisplay = [sunnuntai, maanantai, tiistai, keskiviiko, torstai, perjantai, lauantai]
 
 rangePreConjunctions = [from, between]
-rangeConjunctions = [‚Äì, -, to, and, .., through, or]
+rangeConjunctions = [-]
 
 dateTimeConjunctions = [at,@]
 
@@ -42,7 +42,7 @@ meridianTable = {
 	p.m. = pm
 }
 
-dateCircaIndicator = [noin, c, c., ca, ca., possibly, probably, about, early, late, mid]
+dateCircaIndicator = [noin, n., c, c., ca, ca., possibly, probably, about, early, late, mid]
 dateUncertaintyIndicator = [~]
 dateUncertaintyYearIndicator = [y]
 dateUncertaintyDayIndicator = [d]
@@ -69,7 +69,7 @@ ADBCTable = {
 }
 
 nowDate = [nyt]
-todayDate = [t‰n‰‰n]
+todayDate = [t√§n√§√§n]
 yesterdayDate = [eilen]
 tomorrowDate = [huomenna]
 undatedDate = [tuntematon, unknown]
@@ -84,7 +84,7 @@ bornQualifier = [b., b, born]
 centuryIndicator = [century, cent]
 
 # Text to indicate decade (as in "1920s")
-decadeIndicator = [s]
+decadeIndicator = [\-luku]
 
 # list of numeric suffixes, starting with the one for zero
 # (eg. 0th, 1st, 2nd, 3rd would be a list like so: [th, st, nd, rd])
@@ -103,7 +103,7 @@ monthComesFirstInDelimitedDate = 0
 # character(s) to append to day in full (not delimited) date
 # eg. in the date "1. February 2009", "." is the daySuffix
 # Note: you can put arbitrary text here - only punctuation
-daySuffix = 
+daySuffix = .
 
 # Definite articles
 definiteArticles = [the]
@@ -112,7 +112,7 @@ definiteArticles = [the]
 indefiniteArticles = [a, an]
 
 # Seasons
-winterSeason = [winter]
-springSeason = [spring]
-summerSeason = [summer]
-autumnSeason = [autumn, fall]
+winterSeason = [talvi]
+springSeason = [kev√§t]
+summerSeason = [kes√§]
+autumnSeason = [syksy]
