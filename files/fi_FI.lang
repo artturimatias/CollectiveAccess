@@ -1,7 +1,7 @@
 # *** use ONLY lowercase letters in lists: input will be forced to lowercase for comparison ***
 
 # List month names; used whenever name of month needs to be displayed
-monthList = [tammikuuta, helmikuuta, maaliskuuta, huhtikuuta, toukokuuta, kesakuuta, heinakuu,elokuu, syyskuu, lokakuu, marraskuu, joulukuu]
+monthList = [tammikuuta, helmikuuta, maaliskuuta, huhtikuuta, toukokuuta, kesakuuta, heinakuuta,elokuuta, syyskuuta, lokakuuta, marraskuuta, joulukuuta]
 
 # *** the following list of months is for display and *SHOULD* be capitalized where appropriate
 monthListDisplay = [tammikuuta, helmikuuta, maaliskuuta, huhtikuuta, toukokuuta, kesäkuuta, heinäkuuta,elokuuta, syyskuuta, lokakuuta, marraskuuta, joulukuuta]
@@ -27,7 +27,7 @@ monthTable = {
 dayListDisplay = [sunnuntai, maanantai, tiistai, keskiviiko, torstai, perjantai, lauantai]
 
 rangePreConjunctions = [from, between]
-rangeConjunctions = [-]
+rangeConjunctions = [--]
 
 dateTimeConjunctions = [at,@]
 
@@ -75,16 +75,16 @@ tomorrowDate = [huomenna]
 undatedDate = [tuntematon, unknown]
 
 presentDate = [present, ?, ??, ???, ????]
-beforeQualifier = [before, prior to]
-diedQualifier = [d., d, died]
+beforeQualifier = [before, ennen]
+diedQualifier = [d., d, kuollut, k.]
 afterQualifier = [after, later than]
-bornQualifier = [b., b, born]
+bornQualifier = [b., b, syntynyt, s.]
 
 # Text to indicate century (as in "20th century")
 centuryIndicator = [century, cent]
 
 # Text to indicate decade (as in "1920s")
-decadeIndicator = [\-luku]
+decadeIndicator = [-luku]
 
 # list of numeric suffixes, starting with the one for zero
 # (eg. 0th, 1st, 2nd, 3rd would be a list like so: [th, st, nd, rd])

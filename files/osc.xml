@@ -14,7 +14,7 @@
           <name>Object types</name>
         </label>
         <label locale="fi_FI">
-          <name>Kohdetyypit</name>
+          <name>Esinetyypit</name>
         </label>
       </labels>
       <items>
@@ -78,6 +78,7 @@
 				</label>
 			  </labels>
 			</item>
+			
 			<item idno="print" enabled="1" default="1">
 			  <labels>
 				<label locale="en_US" preferred="1">
@@ -107,6 +108,47 @@
 
       </items>
     </list>
+
+
+    <list code="collection_types" hierarchical="1" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Collection types</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Kokoelmayypit</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="art_collection" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Art collection</name_singular>
+              <name_plural>Art collections</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Taidekokoelma</name_singular>
+              <name_plural>Taidekokoelmat</name_plural>
+            </label>
+          </labels>
+          </item>
+
+        <item idno="item_collection" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Item collection</name_singular>
+              <name_plural>item collection</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Esinekokoelma</name_singular>
+              <name_plural>Esinekokoelmat</name_plural>
+            </label>
+          </labels>
+          </item>
+
+      </items>
+    </list>
+
 
     <list code="workflow_statuses" hierarchical="0" system="0" vocabulary="0">
       <labels>
@@ -479,7 +521,7 @@
         </label>
       </labels>
       <items>
-        <item idno="exhibitions" enabled="1" default="1">
+        <item idno="exhibition" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>exhibition</name_singular>
@@ -491,27 +533,16 @@
             </label>
           </labels>
         </item>
-        <item idno="public_program" enabled="1" default="1">
+
+        <item idno="conference" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>public program</name_singular>
-              <name_plural>public program</name_plural>
+              <name_singular>conference</name_singular>
+              <name_plural>conferences</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>ohjelma</name_singular>
-              <name_plural>ohjelmat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="publication" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>publication</name_singular>
-              <name_plural>publications</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>julkaisu</name_singular>
-              <name_plural>julkaisut</name_plural>
+              <name_singular>Konferenssi</name_singular>
+              <name_plural>Konferenssi</name_plural>
             </label>
           </labels>
         </item>
@@ -1929,7 +1960,7 @@
           <name>Provenance</name>
         </label>
         <label locale="fi_FI">
-          <name>Provenassi</name>
+          <name>Historia</name>
         </label>
       </labels>
       <settings>
@@ -2648,181 +2679,39 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="publication_info" datatype="Container">
+
+    <metadataElement code="frame" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>Publication Information</name>
-          <description>Information about the publication.</description>
+          <name>Frame</name>
+          <description>Type of frame</description>
         </label>
         <label locale="fi_FI">
-          <name>Julkaisutiedot</name>
-          <description></description>
+          <name>Kehys</name>
+          <description>Kehyksen tiedot</description>
         </label>
       </labels>
       <settings>
-        <setting name="doesNotTakeLocale">1</setting>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
       </settings>
-      <elements>
-        <metadataElement code="publication_container" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>publication Container</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Julkaisutiedot</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">90</setting>
-          </settings>
-          <elements>
-            <metadataElement code="ISBN" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>ISBN Number</name>
-                  <description>The ISBN number for the book.</description>
-                </label>
-                <label locale="fi_FI">
-                  <name>ISBN</name>
-                  <description></description>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">1</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">255</setting>
-                <setting name="doesNotTakeLocale">1</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
-        <metadataElement code="publication_container_2" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>publication Container 2</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Julkaisutiedot 2</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">90</setting>
-          </settings>
-          <elements>
-            <metadataElement code="no_pages" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>Number of Pages</name>
-                  <description>How many pages there are in the book.</description>
-                </label>
-                <label locale="fi_FI">
-                  <name>Sivujen määrä</name>
-                  <description>How many pages there are in the book.</description>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">1</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">255</setting>
-                <setting name="doesNotTakeLocale">1</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
-        <metadataElement code="edition_of" datatype="Text">
-          <labels>
-            <label locale="en_US">
-              <name>Edition of</name>
-              <description>How many books were published</description>
-            </label>
-            <label locale="fi_FI">
-              <name>Edition of</name>
-              <description></description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">255</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-          </settings>
-        </metadataElement>
-      </elements>
       <typeRestrictions>
         <restriction code="r1">
-          <table>ca_occurrences</table>
-          <type>publication</type>
+          <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">1</setting>
             <setting name="maxAttributesPerRow">1</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
+
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="alternate_pub_numbers" datatype="Container">
-      <labels>
-        <label locale="en_US">
-          <name>Alternate publication numbers</name>
-          <description>List alternate publication numbers (ISBN</description>
-        </label>
-        <label locale="fi_FI">
-          <name>Autres numéros de publication</name>
-          <description>Lister ici les autres numéros de publications (ISBN</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="doesNotTakeLocale">1</setting>
-      </settings>
-      <elements>
-        <metadataElement code="alternate_pub_number" datatype="Text">
-          <labels>
-            <label locale="en_US">
-              <name>Alternate publication numbers</name>
-              <description>List alternate publication numbers</description>
-            </label>
-            <label locale="fi_FI">
-              <name>Muut julkaisun tunnisteet</name>
-              <description>Listaa tähän muut julkaisun tunnisteet</description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">255</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-          </settings>
-        </metadataElement>
-        <metadataElement code="alternate_pub_number_type" datatype="List" list="alternate_pub_number_types">
-          <labels>
-            <label locale="en_US">
-              <name>Type</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Type</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">40</setting>
-          </settings>
-        </metadataElement>
-      </elements>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_occurrences</table>
-          <type>publication</type>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">100</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
+
+
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -2854,9 +2743,7 @@
                 <setting name="add_label" option="fi_FI">Lisää teosnimi</setting>
               </settings>
             </placement>
-            <placement code="idno">
-              <bundle>idno</bundle>
-            </placement>
+
 
 
             <placement code="nonpreferred_labels">
@@ -2868,24 +2755,43 @@
                 <setting name="add_label" option="fi_FI">Lisää muu teosnimi</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_description">
-              <bundle>ca_attribute_description</bundle>
-            </placement>
-            <placement code="ca_attribute_work_medium">
-              <bundle>ca_attribute_work_medium</bundle>
-            </placement>
 
 
-            <placement code="status">
-              <bundle>status</bundle>
-            </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-            </placement>
 
           </bundlePlacements>
         </screen>
-   
+
+         <screen idno="kuvailu" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Description</name>
+            </label>
+            <label locale="fi_FI">
+              <name>Kuvailu</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+
+            <placement code="ca_attribute_description">
+              <bundle>ca_attribute_description</bundle>
+            </placement>
+
+            <placement code="ca_list_items">
+              <bundle>ca_list_items</bundle>
+            </placement>
+
+            <placement code="ca_attribute_work_medium">
+              <bundle>ca_attribute_work_medium</bundle>
+            </placement>
+  
+              <placement code="ca_attribute_frame">
+              <bundle>ca_attribute_frame</bundle>
+            </placement>
+            
+			  </bundlePlacements>
+		</screen>  
+
+ 
          <screen idno="measuremnts" default="0">
           <labels>
             <label locale="en_US">
@@ -2903,34 +2809,7 @@
 			  </bundlePlacements>
 		</screen>  
 
-        
-        <screen idno="admin" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Administrative info</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Hallinnointi</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_attribute_historical_context">
-              <bundle>ca_attribute_historical_context</bundle>
-            </placement>
-            <placement code="ca_attribute_custodial_notes">
-              <bundle>ca_attribute_custodial_notes</bundle>
-            </placement>
 
-
-            <placement code="ca_object_lots">
-              <bundle>ca_object_lots</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Part of lot:</setting>
-                <setting name="label" option="fi_FI">kuuluu hankintaan</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
-        </screen>
         
         <screen idno="history" default="0">
         
@@ -2972,24 +2851,14 @@
 			<placement code="ca_attribute_condition">
               <bundle>ca_attribute_condition</bundle>
             </placement>  
+            <placement code="ca_attribute_custodial_notes">
+              <bundle>ca_attribute_custodial_notes</bundle>
+            </placement>
+
 			</bundlePlacements>
 		</screen>
         
-        <screen idno="media" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Media</name>
-            </label>
-            <label locale="fi_FI">
-              <name>tiedostot</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_object_representations">
-              <bundle>ca_object_representations</bundle>
-            </placement>
-          </bundlePlacements>
-        </screen>
+
         
         <screen idno="storage" default="0">
           <labels>
@@ -3016,22 +2885,7 @@
           </bundlePlacements>
         </screen>
         
-        
-        <screen idno="sets" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Sets</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Setit</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_sets">
-              <bundle>ca_sets</bundle>
-            </placement>
-          </bundlePlacements>
-        </screen>
+       
         
         
         <screen idno="relationships" default="0">
@@ -3066,22 +2920,63 @@
           </bundlePlacements>
         </screen>
         
-        <screen idno="keywords" default="0">
+
+        
+         <screen idno="media" default="0">
           <labels>
             <label locale="en_US">
-              <name>Keywords</name>
+              <name>Media</name>
             </label>
             <label locale="fi_FI">
-              <name>Avainsanat</name>
+              <name>tiedostot</name>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_list_items">
-              <bundle>ca_list_items</bundle>
+            <placement code="ca_object_representations">
+              <bundle>ca_object_representations</bundle>
             </placement>
-
           </bundlePlacements>
         </screen>
+ 
+        
+        <screen idno="admin" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Administrative info</name>
+            </label>
+            <label locale="fi_FI">
+              <name>Hallinnointi</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+			  
+			<placement code="idno">
+              <bundle>idno</bundle>
+            </placement>
+			  
+            <placement code="ca_attribute_historical_context">
+              <bundle>ca_attribute_historical_context</bundle>
+            </placement>
+
+
+            <placement code="ca_object_lots">
+              <bundle>ca_object_lots</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Part of lot:</setting>
+                <setting name="label" option="fi_FI">kuuluu hankintaan</setting>
+              </settings>
+            </placement>
+            
+
+            <placement code="status">
+              <bundle>status</bundle>
+            </placement>
+            <placement code="access">
+              <bundle>access</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+        
       </screens>
     </userInterface>
     <userInterface code="entities_ui" type="ca_entities">
@@ -3325,30 +3220,7 @@
             </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="keywords" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Keywords</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Avainsanat</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_list_items">
-              <bundle>ca_list_items</bundle>
-            </placement>
-            <placement code="ca_attribute_lcsh_terms">
-              <bundle>ca_attribute_lcsh_terms</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" option="fi_FI">ibrary of Congress Subject Headings</setting>
-                <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" option="fi_FI">Add new subject heading</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
-        </screen>
+
       </screens>
     </userInterface>
     <userInterface code="places_ui" type="ca_places">
@@ -3543,30 +3415,7 @@
             </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="keywords" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Keywords</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Avainsanat</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_list_items">
-              <bundle>ca_list_items</bundle>
-            </placement>
-            <placement code="ca_attribute_lcsh_terms">
-              <bundle>ca_attribute_lcsh_terms</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" locale="fi_FI">Library of Congress Subject Headings</setting>
-                <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" option="fi_FI">Lisää uusi</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
-        </screen>
+
         <screen idno="links" default="0">
           <labels>
             <label locale="en_US">
@@ -3925,45 +3774,7 @@
             </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="keywords" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Keywords</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Avainsanat</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_list_items">
-              <bundle>ca_list_items</bundle>
-            </placement>
-          </bundlePlacements>
-        </screen>
-        <screen idno="relationships" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Relationships</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Linkitykset</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_objects">
-              <bundle>ca_objects</bundle>
-            </placement>
-            <placement code="ca_entities">
-              <bundle>ca_entities</bundle>
-            </placement>
-            <placement code="ca_places">
-              <bundle>ca_places</bundle>
-            </placement>
-            <placement code="ca_occurrences">
-              <bundle>ca_occurrences</bundle>
-            </placement>
-          </bundlePlacements>
-        </screen>
+
         <screen idno="altnames" default="0">
           <labels>
             <label locale="en_US">

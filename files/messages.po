@@ -10934,7 +10934,7 @@ msgstr ""
 #: app/models/ca_search_forms.php:98 app/conf/browse.conf:144
 #: app/conf/browse.conf:347 app/conf/browse.conf:497 app/conf/browse.conf:594
 msgid "collections"
-msgstr ""
+msgstr "kokoelmat"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:64
 #: app/models/ca_bookmarks.php:71 app/models/ca_bundle_displays.php:91
