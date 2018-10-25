@@ -27,11 +27,11 @@ monthTable = {
 dayListDisplay = [sunnuntai, maanantai, tiistai, keskiviiko, torstai, perjantai, lauantai]
 
 rangePreConjunctions = [from, between]
-rangeConjunctions = [--]
+rangeConjunctions = [-]
 
 dateTimeConjunctions = [at,@]
 
-dateDelimiters = [/,-,.]
+dateDelimiters = [/,.]
 timeDelimiters = [:,.]
 
 timeAMMeridian = am
@@ -84,7 +84,7 @@ bornQualifier = [b., b, syntynyt, s.]
 centuryIndicator = [century, cent]
 
 # Text to indicate decade (as in "1920s")
-decadeIndicator = [-luku]
+decadeIndicator = [_luku]
 
 # list of numeric suffixes, starting with the one for zero
 # (eg. 0th, 1st, 2nd, 3rd would be a list like so: [th, st, nd, rd])
