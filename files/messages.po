@@ -658,7 +658,7 @@ msgstr ""
 #: app/models/ca_object_checkouts.php:403
 #: app/models/ca_object_checkouts.php:1422
 msgid "today"
-msgstr ""
+msgstr "tänään"
 
 #: app/controllers/library/DashboardController.php:81
 msgid " and %1 more"
@@ -1300,7 +1300,7 @@ msgstr "Muokattavana %1"
 
 #: app/helpers/displayHelpers.php:760 app/helpers/displayHelpers.php:1790
 msgid "Viewing %1"
-msgstr ""
+msgstr "Tarkastelet %1"
 
 #: app/helpers/displayHelpers.php:764 app/helpers/utilityHelpers.php:2567
 #: app/helpers/utilityHelpers.php:2588 app/lib/ca/BaseEditorController.php:244
@@ -1360,12 +1360,12 @@ msgstr ""
 #: app/helpers/displayHelpers.php:882 app/helpers/displayHelpers.php:1248
 #: app/helpers/displayHelpers.php:1251
 msgid "Lot contains %1 object"
-msgstr "Hankinta sisältää %1 kohdetta"
+msgstr "Hankinta sisältää %1 objektia"
 
 #: app/helpers/displayHelpers.php:882 app/helpers/displayHelpers.php:1248
 #: app/helpers/displayHelpers.php:1251
 msgid "Lot contains %1 objects"
-msgstr "Hankinta sisältää %1 kohdetta"
+msgstr "Hankinta sisältää %1 objektia"
 
 #: app/helpers/displayHelpers.php:898
 msgid "Creating new %1"
@@ -1441,7 +1441,7 @@ msgstr ""
 
 #: app/helpers/displayHelpers.php:1118 app/helpers/displayHelpers.php:1129
 msgid "%1 ago"
-msgstr ""
+msgstr "%1 sitten"
 
 #: app/helpers/displayHelpers.php:1121
 msgid "<strong>Created</strong><br/>%1 by %2"
@@ -1460,11 +1460,11 @@ msgstr ""
 #: app/widgets/trackProcessing/views/main_html.php:110
 #: app/widgets/trackProcessing/views/main_html.php:138
 msgid "Created on"
-msgstr ""
+msgstr "Luotu"
 
 #: app/helpers/displayHelpers.php:1124
 msgid "Created on %1"
-msgstr ""
+msgstr "Luotu %1"
 
 #: app/helpers/displayHelpers.php:1132
 msgid "<strong>Last changed</strong><br/>%1 by %2"
@@ -1540,7 +1540,7 @@ msgstr ""
 
 #: app/helpers/displayHelpers.php:1276 app/helpers/displayHelpers.php:1279
 msgid "Add new %1 to lot"
-msgstr ""
+msgstr "Lisää %1 hankintaan"
 
 #: app/helpers/displayHelpers.php:1302
 msgid "%1 related %2"
@@ -3348,7 +3348,7 @@ msgstr ""
 
 #: app/helpers/searchHelpers.php:1416
 msgid "display name"
-msgstr ""
+msgstr "raportin nimi"
 
 #: app/helpers/searchHelpers.php:1417
 msgid "surname, forename"
@@ -3530,35 +3530,35 @@ msgstr ""
 
 #: app/helpers/utilityHelpers.php:1043
 msgid "day"
-msgstr ""
+msgstr "päivä"
 
 #: app/helpers/utilityHelpers.php:1043
 msgid "days"
-msgstr ""
+msgstr "päivää"
 
 #: app/helpers/utilityHelpers.php:1044
 msgid "hour"
-msgstr ""
+msgstr "tunti"
 
 #: app/helpers/utilityHelpers.php:1044
 msgid "hours"
-msgstr ""
+msgstr "tuntia"
 
 #: app/helpers/utilityHelpers.php:1045
 msgid "minute"
-msgstr ""
+msgstr "minuutti"
 
 #: app/helpers/utilityHelpers.php:1045
 msgid "minutes"
-msgstr ""
+msgstr "minuuttia"
 
 #: app/helpers/utilityHelpers.php:1046
 msgid "second"
-msgstr ""
+msgstr "sekunti"
 
 #: app/helpers/utilityHelpers.php:1046
 msgid "seconds"
-msgstr ""
+msgstr "sekuntia"
 
 #: app/helpers/utilityHelpers.php:2705
 msgid "An error occurred while querying an external webservice"
@@ -3873,7 +3873,7 @@ msgstr ""
 #: app/lib/ca/Attributes/Values/UrlAttributeValue.php:141
 #: app/lib/ca/Attributes/Values/WeightAttributeValue.php:98
 msgid "Can be used in display"
-msgstr ""
+msgstr "Voidaan käyttää raportissa"
 
 #: app/lib/ca/Attributes/Values/CollectionsAttributeValue.php:90
 #: app/lib/ca/Attributes/Values/ContainerAttributeValue.php:75
@@ -3942,7 +3942,7 @@ msgstr ""
 #: app/models/ca_editor_ui_screens.php:572
 #: app/models/ca_editor_ui_screens.php:1667
 msgid "Display template"
-msgstr ""
+msgstr "Raportti"
 
 #: app/lib/ca/Attributes/Values/CollectionsAttributeValue.php:99
 #: app/lib/ca/Attributes/Values/ContainerAttributeValue.php:100
@@ -7338,7 +7338,7 @@ msgstr ""
 #: app/conf/user_pref_defs.conf:1071 app/conf/user_pref_defs.conf:1175
 #: app/conf/user_pref_defs.conf:1271
 msgid "Objects"
-msgstr "Kohteet"
+msgstr "Objektit"
 
 #: app/lib/ca/Search/QuickSearch.php:51 app/models/ca_set_items.php:66
 #: app/models/ca_sets.php:91 app/models/ca_user_sorts.php:60
@@ -7367,7 +7367,7 @@ msgstr "Hankinnat"
 #: app/conf/user_pref_defs.conf:913 app/conf/user_pref_defs.conf:1178
 #: app/conf/user_pref_defs.conf:1275
 msgid "Occurrences"
-msgstr "Tapahtumat"
+msgstr ""
 
 #: app/lib/ca/Search/QuickSearch.php:55 app/models/ca_set_items.php:71
 #: app/models/ca_sets.php:96 app/models/ca_storage_locations.php:401
@@ -7376,7 +7376,7 @@ msgstr "Tapahtumat"
 #: app/conf/user_pref_defs.conf:613 app/conf/user_pref_defs.conf:683
 #: app/conf/user_pref_defs.conf:741 app/conf/user_pref_defs.conf:857
 msgid "Storage locations"
-msgstr "Varastosijainnit"
+msgstr "Sijoituspaikat"
 
 #: app/lib/ca/Search/QuickSearch.php:56 app/models/ca_set_items.php:73
 #: app/models/ca_sets.php:98 app/models/ca_user_sorts.php:67
@@ -10943,7 +10943,7 @@ msgstr "kokoelmat"
 #: app/models/ca_search_forms.php:99 app/models/ca_storage_locations.php:45
 #: app/conf/browse.conf:192 app/conf/browse.conf:395
 msgid "storage locations"
-msgstr "varastosijainnit"
+msgstr "sijoituspaikat"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:65
 #: app/models/ca_bookmarks.php:72 app/models/ca_bundle_displays.php:92
@@ -12760,7 +12760,7 @@ msgstr ""
 
 #: app/models/ca_bundle_displays.php:51
 msgid "display list"
-msgstr ""
+msgstr "raporttilistaus"
 
 #: app/models/ca_bundle_displays.php:52
 msgid "display lists"
@@ -12784,7 +12784,7 @@ msgstr ""
 
 #: app/models/ca_bundle_displays.php:83
 msgid "Display type"
-msgstr "Näkymätyyppi"
+msgstr "Raporttityyppi"
 
 #: app/models/ca_bundle_displays.php:83
 msgid "Indicates type of item display is used for."
@@ -12900,7 +12900,7 @@ msgstr ""
 #: app/models/ca_bundle_displays.php:1269
 #: app/models/ca_bundle_displays.php:1414
 msgid "Display format"
-msgstr "Näkymäformaatti"
+msgstr "Raporttiformaatti"
 
 #: app/models/ca_bundle_displays.php:1063
 #: app/models/ca_bundle_displays.php:1193
@@ -13482,7 +13482,7 @@ msgstr ""
 #: app/models/ca_storage_locations.php:345 app/models/ca_tour_stops.php:334
 #: app/models/ca_user_representation_annotations.php:295
 msgid "Related entities"
-msgstr "Kohteeseen liittyvät toimijat"
+msgstr "Objektiin liittyvät toimijat"
 
 #: app/models/ca_collections.php:355 app/models/ca_entities.php:338
 #: app/models/ca_list_items.php:544 app/models/ca_loans.php:326
@@ -13493,7 +13493,7 @@ msgstr "Kohteeseen liittyvät toimijat"
 #: app/models/ca_storage_locations.php:331 app/models/ca_tour_stops.php:321
 #: app/models/ca_user_representation_annotations.php:282
 msgid "Related objects"
-msgstr "Tähän liittyvät kohteet"
+msgstr "Tähän liittyvät objektit"
 
 #: app/models/ca_collections.php:356 app/models/ca_collections.php:357
 #: app/models/ca_entities.php:339 app/models/ca_entities.php:340
@@ -13536,7 +13536,7 @@ msgstr ""
 #: app/models/ca_storage_locations.php:335 app/models/ca_tour_stops.php:325
 #: app/models/ca_user_representation_annotations.php:286
 msgid "Related entities list"
-msgstr "Kohteeseen liittyvät toimijat"
+msgstr "Objektiin liittyvät toimijat"
 
 #: app/models/ca_collections.php:360 app/models/ca_entities.php:343
 #: app/models/ca_list_items.php:549 app/models/ca_loans.php:331
@@ -13558,7 +13558,7 @@ msgstr ""
 #: app/models/ca_storage_locations.php:337 app/models/ca_tour_stops.php:327
 #: app/models/ca_user_representation_annotations.php:288
 msgid "Related occurrences list"
-msgstr ""
+msgstr "Tapahtumat"
 
 #: app/models/ca_collections.php:362 app/models/ca_entities.php:345
 #: app/models/ca_list_items.php:551 app/models/ca_loans.php:333
@@ -17062,7 +17062,7 @@ msgstr ""
 
 #: app/models/ca_editor_ui_screens.php:1564
 msgid "Show storage locations"
-msgstr "Näytä varastosijainnit"
+msgstr "Näytä sijoituspaikat"
 
 #: app/models/ca_editor_ui_screens.php:1565
 msgid "Show storage locations with selected relationship types."
@@ -19356,7 +19356,7 @@ msgstr "Hankinta"
 
 #: app/models/ca_objects.php:80
 msgid "Lot this object belongs to; is null if object is not part of a lot."
-msgstr "Hankinta johon tämä kohde kuuluu."
+msgstr "Hankinta johon tämä objekti kuuluu."
 
 #: app/models/ca_objects.php:97
 msgid ""
@@ -19377,7 +19377,7 @@ msgstr ""
 
 #: app/models/ca_objects.php:113
 msgid "Object identifier"
-msgstr "Kohteen tunniste"
+msgstr "Objektin tunniste"
 
 #: app/models/ca_objects.php:113
 msgid ""
@@ -23905,7 +23905,7 @@ msgstr ""
 #: app/widgets/recentlyCreated/recentlyCreatedWidget.php:265
 #: app/widgets/recordsByStatus/recordsByStatusWidget.php:246
 msgid "Display mode"
-msgstr "Näkymämoodi"
+msgstr "Raporttimoodi"
 
 #: app/widgets/clock/clockWidget.php:89
 msgid ""
@@ -24106,7 +24106,7 @@ msgstr ""
 
 #: app/widgets/message/messageWidget.php:37
 msgid "Message of the day"
-msgstr ""
+msgstr "Päivän epistola"
 
 #: app/widgets/message/messageWidget.php:38
 msgid "Display the message of the day."
@@ -24749,7 +24749,7 @@ msgstr ""
 
 #: app/widgets/savedSearches/views/main_html.php:43
 msgid "Object Searches"
-msgstr "Kohdehaut"
+msgstr "Objektihaut"
 
 #: app/widgets/savedSearches/views/main_html.php:48
 msgid "Entity Searches"
@@ -25903,7 +25903,7 @@ msgstr ""
 #: themes/default/views/manage/Results/ca_item_comments_no_results_html.php:33
 #: themes/default/views/manage/Results/ca_item_tags_no_results_html.php:33
 msgid "Your search found no %1"
-msgstr "Hakusi ei löytänyt kohdetta %1"
+msgstr "Hakusi ei löytänyt objektia %1"
 
 #: themes/default/views/administrate/setup/Results/no_results_html.php:33
 #: themes/default/views/find/Results/no_results_html.php:35
@@ -25999,7 +25999,7 @@ msgstr ""
 #: themes/default/views/administrate/setup/Search/search_controls_html.php:74
 #: themes/default/views/administrate/setup/Search/search_controls_html.php:91
 msgid "Add new list"
-msgstr ""
+msgstr "Lisää uusi lista"
 
 #: themes/default/views/administrate/setup/Search/search_controls_html.php:79
 #: themes/default/views/administrate/setup/Search/search_controls_html.php:97
@@ -27631,7 +27631,7 @@ msgstr "Poista sovellukset"
 
 #: themes/default/views/dashboard/dashboard_html.php:72
 msgid "Edit dashboard"
-msgstr "Muokkaa näkymää"
+msgstr "Muokkaa raporttia"
 
 #: themes/default/views/dashboard/dashboard_html.php:73
 msgid "Add widget"
@@ -27645,7 +27645,7 @@ msgid ""
 "CollectiveAccess logo above."
 msgstr ""
 "Tämä on CollectiveAccessin henkilökohtainen työpöytä. Voit valita mitä tällä "
-"sivulla näkyy klikkaamalla yläpuolelta löytyvää \"Muokkaa näkymää\" -"
+"sivulla näkyy klikkaamalla yläpuolelta löytyvää \"Muokkaa raporttia\" -"
 "linkkiä. Pääset tälle näytölle logoa klikkaamalla."
 
 #: themes/default/views/dashboard/dashboard_html.php:78
@@ -28633,7 +28633,7 @@ msgstr ""
 
 #: themes/default/views/manage/widget_bundle_display_info_html.php:31
 msgid "Your displays"
-msgstr "Omat näkymäsi"
+msgstr "Omat raporttisi"
 
 #: themes/default/views/manage/widget_bundle_display_info_html.php:34
 msgid "1 display is available"
@@ -28781,7 +28781,7 @@ msgstr ""
 
 #: themes/default/views/manage/widget_watched_items_info_html.php:33
 msgid "Your watched items"
-msgstr "Tarkkailemasi kohteet"
+msgstr "Tarkkailemasi objektit"
 
 #: themes/default/views/manage/widget_watched_items_info_html.php:44
 msgid "watchlist"
@@ -29391,7 +29391,7 @@ msgstr ""
 
 #: app/conf/navigation.conf:148
 msgid "Object"
-msgstr "Kohde"
+msgstr "Objekti"
 
 #: app/conf/navigation.conf:237 app/conf/navigation.conf:1335
 msgid "Representations"
@@ -29415,7 +29415,7 @@ msgstr "Kokoelma"
 
 #: app/conf/navigation.conf:672
 msgid "Storage location"
-msgstr "Varastosijainti"
+msgstr "Sijaituspaikka"
 
 #: app/conf/navigation.conf:682
 msgid "Storage location editor"
@@ -29492,7 +29492,7 @@ msgstr "Listat"
 
 #: app/conf/navigation.conf:3293
 msgid "Displays"
-msgstr "Näkymät"
+msgstr "Raportit"
 
 #: app/conf/navigation.conf:3319 app/conf/user_pref_defs.conf:112
 msgid "User profile"
@@ -29500,7 +29500,7 @@ msgstr "Käyttäjäprofiili"
 
 #: app/conf/navigation.conf:3329
 msgid "My watched items"
-msgstr "Tarkkailtavat kohteet"
+msgstr "Tarkkailtavat objektit"
 
 #: app/conf/navigation.conf:3349
 msgid "My project teams"
@@ -29508,11 +29508,11 @@ msgstr ""
 
 #: app/conf/navigation.conf:3356
 msgid "My displays"
-msgstr "Omat näkymät"
+msgstr "Omat raportit"
 
 #: app/conf/navigation.conf:3366
 msgid "Edit display"
-msgstr "Muokkaa näkymää"
+msgstr "Muokkaa raporttia"
 
 #: app/conf/navigation.conf:3398 app/conf/navigation.conf:3410
 msgid "My sets"
@@ -30137,7 +30137,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:263
 msgid "Delete object"
-msgstr "Poista kohde"
+msgstr "Poista objekti"
 
 #: app/conf/user_actions.conf:264
 msgid "Allow user to delete objects"
@@ -30145,7 +30145,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:267
 msgid "Search objects"
-msgstr "Etsi kohteita"
+msgstr "Etsi objekteja"
 
 #: app/conf/user_actions.conf:268
 msgid "Allow user to search objects"
@@ -30153,7 +30153,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:271
 msgid "Browse objects"
-msgstr "Selaa kohteita"
+msgstr "Selaa objekteja"
 
 #: app/conf/user_actions.conf:272
 msgid "Allow user to browse objects"
@@ -30944,7 +30944,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:719
 msgid "Delete storage locations"
-msgstr "Poista varastosijainti"
+msgstr "Poista sijaituspaikka"
 
 #: app/conf/user_actions.conf:720
 msgid "Allow user to delete storage locations"
@@ -30952,7 +30952,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:723
 msgid "Search storage locations"
-msgstr "Etsi varastosijainteja"
+msgstr "Etsi sijoituspaikkoja"
 
 #: app/conf/user_actions.conf:724
 msgid "Allow user to search storage locations"
@@ -30960,7 +30960,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:727
 msgid "Browse storage locations"
-msgstr "Selaa varastosijainteja"
+msgstr "Selaa sijaituspaikkoja"
 
 #: app/conf/user_actions.conf:728
 msgid "Allow user to browse storage locations"
@@ -31379,7 +31379,7 @@ msgstr ""
 
 #: app/conf/user_actions.conf:967
 msgid "Delete lists and list items"
-msgstr "Poista lista ja kohteet"
+msgstr "Poista lista ja listan jäsenet"
 
 #: app/conf/user_actions.conf:968
 msgid "Allow user to delete non-system lists"

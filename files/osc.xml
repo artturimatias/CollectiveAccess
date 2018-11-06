@@ -555,7 +555,7 @@
           <name>Storage location types</name>
         </label>
         <label locale="fi_FI">
-          <name>Varastosijaintityypit</name>
+          <name>Sijaintityypit</name>
         </label>
       </labels>
       <items>
@@ -1998,7 +1998,7 @@
               <name>Storage Location</name>
             </label>
             <label locale="fi_FI">
-              <name>Varastosijainti</name>
+              <name>Sijainti</name>
             </label>
           </labels>
           <settings/>
@@ -2009,7 +2009,7 @@
                   <name>Storage Location</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Varastosijainti</name>
+                  <name>Sijainti</name>
                 </label>
               </labels>
               <settings>

@@ -66,6 +66,7 @@ COPY files/global.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/browse.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/app.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/search.conf /$CA_PROVIDENCE_DIR/app/conf/
+COPY files/multipart_id_numbering.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/TileViewer.php /$CA_PROVIDENCE_DIR/app/lib/core/Media/MediaViewers/
 COPY files/menu_logo_osc.png /$CA_PROVIDENCE_DIR/themes/default/graphics/logos/menu_logo.png
 COPY files/setup.php /$CA_PROVIDENCE_DIR/setup.php
