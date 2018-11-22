@@ -14,13 +14,37 @@
           <name>Object types</name>
         </label>
         <label locale="fi_FI">
-          <name>Esinetyypit</name>
+          <name>Objektityypit</name>
         </label>
       </labels>
       <items>
+		<item idno="kappale" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>Object</name_singular>
+              <name_plural>Objects</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Kappale</name_singular>
+              <name_plural>Kappaleet</name_plural>
+            </label>
+          </labels>
+        </item>
+		<item idno="valokuva" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>Photo</name_singular>
+              <name_plural>Photo</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Valokuva</name_singular>
+              <name_plural>Valokuvat</name_plural>
+            </label>
+          </labels>
+        </item>
         <item idno="artwork" enabled="1" default="1">
           <labels>
-            <label locale="en_US" preferred="1">
+            <label locale="en_US" preferred="0">
               <name_singular>Work</name_singular>
               <name_plural>Works</name_plural>
             </label>
@@ -73,8 +97,8 @@
 				  <name_plural>Photography</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Valokuva</name_singular>
-				  <name_plural>Valokuvat</name_plural>
+				  <name_singular>Valokuvateos</name_singular>
+				  <name_plural>Valokuvateokset</name_plural>
 				</label>
 			  </labels>
 			</item>
@@ -211,7 +235,7 @@
           <name>Object access statuses</name>
         </label>
         <label locale="fi_FI">
-          <name>Kohteen pääsyoikeudet</name>
+          <name>Objektin pääsyoikeudet</name>
         </label>
 
       </labels>
@@ -502,8 +526,32 @@
               <name_plural>organizations</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>organisaatio</name_singular>
-              <name_plural>organisaatiot</name_plural>
+              <name_singular>organisaatio/ryhmä</name_singular>
+              <name_plural>organisaatiot/ryhmät</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="fictional_individual" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>fictional individual</name_singular>
+              <name_plural>fictional individuals</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>fiktiivinen henkilö</name_singular>
+              <name_plural>fiktiiviset henkilöt</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="animal" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>animal</name_singular>
+              <name_plural>animals</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>eläin/lemmikki</name_singular>
+              <name_plural>eläimet/lemmikit</name_plural>
             </label>
           </labels>
         </item>
@@ -1606,7 +1654,7 @@
         </label>
         <label locale="fi_FI">
           <name>Paikkatieto</name>
-          <description>Kohteen sijaintikoordinaatit</description>
+          <description>Objektin sijaintikoordinaatit</description>
         </label>
       </labels>
       <settings>
@@ -1750,7 +1798,7 @@
         </label>
         <label locale="fi_FI">
           <name>Mitat</name>
-          <description>Kohteen fyysiset mitat</description>
+          <description>Objektin fyysiset mitat</description>
         </label>
       </labels>
       <settings>
@@ -1781,7 +1829,7 @@
             </label>
             <label locale="fi_FI">
               <name>Korkeus</name>
-              <description>Kohteen korkeus esim. 10cm</description>
+              <description>Objektin korkeus esim. 10cm</description>
             </label>
           </labels>
           <settings>
@@ -1797,7 +1845,7 @@
             </label>
             <label locale="fi_FI">
               <name>Syvyys</name>
-              <description>Kohteen syvyys esim. 10cm</description>
+              <description>Objektin syvyys esim. 10cm</description>
             </label>
           </labels>
           <settings>
@@ -2756,6 +2804,11 @@
               </settings>
             </placement>
 
+			  
+			<placement code="idno">
+              <bundle>idno</bundle>
+            </placement>
+
             <placement code="ca_entities4">
               <bundle>ca_entities</bundle>
               <settings>
@@ -2984,10 +3037,6 @@
               <bundle>ca_attribute_notes</bundle>
             </placement>
 			  
-			<placement code="idno">
-              <bundle>idno</bundle>
-            </placement>
-			  
             <placement code="ca_attribute_historical_context">
               <bundle>ca_attribute_historical_context</bundle>
             </placement>
@@ -3133,7 +3182,7 @@
           <name>Occurrences editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Occurrences editor</name>
+          <name>Tapahtuma-editori</name>
         </label>
       </labels>
       <screens>
@@ -3546,7 +3595,7 @@
               <name>Objects</name>
             </label>
             <label locale="fi_FI">
-              <name>Kohteet</name>
+              <name>Objektit</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -4076,7 +4125,7 @@
             </label>
             <label locale="fi_FI">
               <typename>luotiin paikassa</typename>
-              <typename_reverse>on luomispaikka kohteelle</typename_reverse>
+              <typename_reverse>on luomispaikka objektille</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4090,7 +4139,7 @@
             </label>
             <label locale="fi_FI">
               <typename>sijaitsi paikassa</typename>
-              <typename_reverse>oli sijaintipaikka kohteelle</typename_reverse>
+              <typename_reverse>oli sijaintipaikka objektilla</typename_reverse>
             </label>
           </labels>
           <subTypeLeft>image</subTypeLeft>
@@ -4104,7 +4153,7 @@
             </label>
             <label locale="fi_FI">
               <typename>esittää</typename>
-              <typename_reverse>on esitetty kohteessa</typename_reverse>
+              <typename_reverse>on esitetty objektissa</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4118,7 +4167,7 @@
             </label>
             <label locale="fi_FI">
               <typename>kuvaile</typename>
-              <typename_reverse>on kuvailtu kohteessa</typename_reverse>
+              <typename_reverse>on kuvailtu objektissa</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4136,7 +4185,7 @@
             </label>
             <label locale="fi_FI">
               <typename>esittää</typename>
-              <typename_reverse>on esitetty kohteessa</typename_reverse>
+              <typename_reverse>on esitetty objektissa</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>

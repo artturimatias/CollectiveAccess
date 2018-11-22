@@ -7367,7 +7367,7 @@ msgstr "Hankinnat"
 #: app/conf/user_pref_defs.conf:913 app/conf/user_pref_defs.conf:1178
 #: app/conf/user_pref_defs.conf:1275
 msgid "Occurrences"
-msgstr ""
+msgstr "Tapahtumat"
 
 #: app/lib/ca/Search/QuickSearch.php:55 app/models/ca_set_items.php:71
 #: app/models/ca_sets.php:96 app/models/ca_storage_locations.php:401
@@ -10886,11 +10886,11 @@ msgstr ""
 #: app/models/ca_search_forms.php:93 app/conf/browse.conf:758
 #: app/conf/browse.conf:846 app/conf/browse.conf:959
 msgid "objects"
-msgstr ""
+msgstr "objektit"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:59
 msgid "lots"
-msgstr ""
+msgstr "hankinnat"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:60
 #: app/models/ca_bookmarks.php:67 app/models/ca_bundle_displays.php:87
@@ -10912,7 +10912,7 @@ msgstr "toimijat"
 #: app/conf/browse.conf:335 app/conf/browse.conf:485 app/conf/browse.conf:569
 #: app/conf/browse.conf:669
 msgid "places"
-msgstr ""
+msgstr "paikat"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:62
 #: app/models/ca_bookmarks.php:69 app/models/ca_bundle_displays.php:89
@@ -10924,7 +10924,7 @@ msgstr ""
 #: app/conf/browse.conf:368 app/conf/browse.conf:510 app/conf/browse.conf:582
 #: app/conf/browse.conf:682 app/conf/browse.conf:771
 msgid "occurrences"
-msgstr ""
+msgstr "tapahtumat"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:63
 #: app/models/ca_bookmarks.php:70 app/models/ca_bundle_displays.php:90
@@ -10952,7 +10952,7 @@ msgstr "sijoituspaikat"
 #: app/models/ca_metadata_type_restrictions.php:94
 #: app/models/ca_objects.php:176 app/models/ca_search_forms.php:100
 msgid "loans"
-msgstr ""
+msgstr "lainat"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:66
 #: app/models/ca_bookmarks.php:73 app/models/ca_bundle_displays.php:93
@@ -10965,7 +10965,7 @@ msgstr ""
 #: app/models/ca_movements.php:44 app/models/ca_objects.php:177
 #: app/models/ca_search_forms.php:101
 msgid "movements"
-msgstr ""
+msgstr "siirrot"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:67
 #: app/models/ca_bookmarks.php:78 app/models/ca_bundle_displays.php:99
@@ -10973,7 +10973,7 @@ msgstr ""
 #: app/models/ca_editor_uis.php:100 app/models/ca_list_items.php:46
 #: app/models/ca_metadata_type_restrictions.php:101
 msgid "list items"
-msgstr ""
+msgstr "listakohteet"
 
 #: app/lib/core/Plugins/InformationService/CollectiveAccess.php:70
 msgid "Item type"
