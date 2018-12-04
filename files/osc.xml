@@ -42,6 +42,56 @@
             </label>
           </labels>
         </item>
+		<item idno="kirja" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>Book</name_singular>
+              <name_plural>Books</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Kirja</name_singular>
+              <name_plural>Kirja</name_plural>
+            </label>
+          </labels>
+        </item>
+		<item idno="tallenne" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>Recording</name_singular>
+              <name_plural>Recordings</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Tallenne</name_singular>
+              <name_plural>Tallenne</name_plural>
+            </label>
+          </labels>
+        </item>
+		<item idno="lehtileike" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>Clipping</name_singular>
+              <name_plural>Clippings</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Lehtileike</name_singular>
+              <name_plural>Lehtileikkeet</name_plural>
+            </label>
+          </labels>
+        </item>
+		<item idno="dokumentti" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>Archive item</name_singular>
+              <name_plural>Archive items</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Arkistodokumentti</name_singular>
+              <name_plural>Arkistodokumentit</name_plural>
+            </label>
+          </labels>
+        </item>
+        
+        
         <item idno="artwork" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="0">
@@ -1150,64 +1200,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="lcsh_terms" datatype="LCSH">
-      <labels>
-        <label locale="en_US">
-          <name>Library of Congress Subject Headings</name>
-          <description>Library of Congress Subject headings describing this object. To add a new heading simply type the first few letters of the heading and choose the desired one from the displayed list of possible matches.</description>
-        </label>
-        <label locale="fi_FI">
-          <name>Library of Congress Subject Headings</name>
-          <description>Library of Congress Subject headings describing this object. To add a new heading simply type the first few letters of the heading and choose the desired one from the displayed list of possible matches.</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">60</setting>
-        <setting name="fieldHeight">1</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="ca_objects">
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">100</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction code="ca_entities">
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">100</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction code="ca_places">
-          <table>ca_places</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">100</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction code="ca_occurrences">
-          <table>ca_occurrences</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">100</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction code="ca_collections">
-          <table>ca_collections</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">100</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="external_link" datatype="Container">
       <labels>
         <label locale="en_US">
