@@ -30,3 +30,7 @@ start:
 	-e DB_PW=root \
 	-e DB_NAME=$(DB) \
 	artturimatias/collectiveaccess:$(VERSION)
+
+remove:
+	docker stop collectiveaccess
+	docker rm collectiveaccess

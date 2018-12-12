@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
-  <profileName>[JYU/OSC] Culture Historical University Museum</profileName>
-  <profileDescription>Culturla Historical Museum of Jyväskylä University profile</profileDescription>
+  <profileName>[JYU/OSC] Culture Historical Museum of Jyväskylä University</profileName>
+  <profileDescription>Culture Historical Museum of Jyväskylä University profile</profileDescription>
   <locales>
     <locale lang="fi" country="FI">Finnish</locale>
     <locale lang="en" country="US">English</locale>
@@ -29,6 +29,9 @@
               <name_plural>Kappaleet</name_plural>
             </label>
           </labels>
+          <settings>
+            <setting name="render_in_new_menu">0</setting>
+          </settings>
         </item>
 		<item idno="valokuva" enabled="1" default="0">
           <labels>
@@ -41,6 +44,9 @@
               <name_plural>Valokuvat</name_plural>
             </label>
           </labels>
+          <settings>
+            <setting name="render_in_new_menu">0</setting>
+          </settings>
         </item>
 		<item idno="kirja" enabled="1" default="0">
           <labels>
@@ -53,6 +59,9 @@
               <name_plural>Kirja</name_plural>
             </label>
           </labels>
+          <settings>
+            <setting name="render_in_new_menu">0</setting>
+          </settings>
         </item>
 		<item idno="tallenne" enabled="1" default="0">
           <labels>
@@ -65,6 +74,35 @@
               <name_plural>Tallenne</name_plural>
             </label>
           </labels>
+          <settings>
+            <setting name="render_in_new_menu">0</setting>
+          </settings>
+          <items>
+			<item idno="video" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="0">
+				  <name_singular>Video recording</name_singular>
+				  <name_plural>Video recordings</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Videotallenne</name_singular>
+				  <name_plural>Videotallenteet</name_plural>
+				</label>
+			  </labels>
+			</item> 
+			<item idno="audio" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="0">
+				  <name_singular>Sound recording</name_singular>
+				  <name_plural>Sound recordings</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Äänitallenne</name_singular>
+				  <name_plural>Äänitallenteet</name_plural>
+				</label>
+			  </labels>
+			</item>           
+          </items>
         </item>
 		<item idno="lehtileike" enabled="1" default="0">
           <labels>
@@ -77,6 +115,9 @@
               <name_plural>Lehtileikkeet</name_plural>
             </label>
           </labels>
+          <settings>
+            <setting name="render_in_new_menu">0</setting>
+          </settings>
         </item>
 		<item idno="dokumentti" enabled="1" default="0">
           <labels>
@@ -89,10 +130,13 @@
               <name_plural>Arkistodokumentit</name_plural>
             </label>
           </labels>
+          <settings>
+            <setting name="render_in_new_menu">0</setting>
+          </settings>
         </item>
         
         
-        <item idno="artwork" enabled="1" default="1">
+        <item idno="teos" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="0">
               <name_singular>Work</name_singular>
@@ -104,7 +148,7 @@
             </label>
           </labels>
           <items>
-			  <item idno="drawing" enabled="1" default="1">
+			  <item idno="piirustus" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Drawing</name_singular>
@@ -116,7 +160,7 @@
 				</label>
 			  </labels>
 			</item>
-			<item idno="film_media" enabled="1" default="1">
+			<item idno="film_media" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Film &amp; Media</name_singular>
@@ -128,7 +172,7 @@
 				</label>
 			  </labels>
 			</item>
-			<item idno="painting" enabled="1" default="1">
+			<item idno="maalaus" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Painting</name_singular>
@@ -140,7 +184,7 @@
 				</label>
 			  </labels>
 			</item>
-			<item idno="photography" enabled="1" default="1">
+			<item idno="valokuvateos" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Photography</name_singular>
@@ -153,7 +197,7 @@
 			  </labels>
 			</item>
 			
-			<item idno="print" enabled="1" default="1">
+			<item idno="grafiikka" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Print</name_singular>
@@ -165,7 +209,7 @@
 				</label>
 			  </labels>
 			</item>
-			<item idno="sculpture" enabled="1" default="1">
+			<item idno="veistos" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Sculpture</name_singular>
@@ -194,7 +238,7 @@
         </label>
       </labels>
       <items>
-        <item idno="art_collection" enabled="1" default="1">
+        <item idno="art_collection" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Art collection</name_singular>
@@ -205,20 +249,33 @@
               <name_plural>Taidekokoelmat</name_plural>
             </label>
           </labels>
-          </item>
+         </item>
 
         <item idno="item_collection" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Item collection</name_singular>
-              <name_plural>item collection</name_plural>
+              <name_plural>Item collections</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
               <name_singular>Esinekokoelma</name_singular>
               <name_plural>Esinekokoelmat</name_plural>
             </label>
           </labels>
-          </item>
+         </item>
+
+        <item idno="sub_collection" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Sub collection</name_singular>
+              <name_plural>Sub collection</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Alikokoelma</name_singular>
+              <name_plural>Alikokoelmat</name_plural>
+            </label>
+          </labels>
+         </item>
 
       </items>
     </list>
@@ -619,31 +676,61 @@
         </label>
       </labels>
       <items>
-        <item idno="exhibition" enabled="1" default="1">
+		  
+        <item idno="tapahtuma" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>exhibition</name_singular>
-              <name_plural>exhibitions</name_plural>
+              <name_singular>Event</name_singular>
+              <name_plural>Events</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>näyttely</name_singular>
-              <name_plural>näyttelyt</name_plural>
+              <name_singular>Tapahtuma</name_singular>
+              <name_plural>Tapahtumat</name_plural>
             </label>
           </labels>
-        </item>
+          <items>
+			<item idno="näyttely" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>exhibition</name_singular>
+				  <name_plural>exhibitions</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>näyttely</name_singular>
+				  <name_plural>näyttelyt</name_plural>
+				</label>
+			  </labels>
+			</item>
 
-        <item idno="conference" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>conference</name_singular>
-              <name_plural>conferences</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>Konferenssi</name_singular>
-              <name_plural>Konferenssi</name_plural>
-            </label>
-          </labels>
+			<item idno="konferenssi" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>conference</name_singular>
+				  <name_plural>conferences</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Konferenssi</name_singular>
+				  <name_plural>Konferenssi</name_plural>
+				</label>
+			  </labels>
+			</item>  
+
+			<item idno="haastattelu" enabled="1" default="1">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Interview</name_singular>
+				  <name_plural>Interview</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>Haastattelu</name_singular>
+				  <name_plural>Haastattelut</name_plural>
+				</label>
+			  </labels>
+			</item>      
+          </items>
         </item>
+		  
+
       </items>
     </list>
 
@@ -2779,9 +2866,9 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" option="fi_FI">Teosnimi</setting>
+                <setting name="label" option="fi_FI">Nimi</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" option="fi_FI">Lisää teosnimi</setting>
+                <setting name="add_label" option="fi_FI">Lisää nimi</setting>
               </settings>
             </placement>
 
@@ -2791,9 +2878,9 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" option="fi_FI">Muut teosnimet</setting>
+                <setting name="label" option="fi_FI">Muut nimet</setting>
                 <setting name="add_label" locale="en_US">Add alternate title</setting>
-                <setting name="add_label" option="fi_FI">Lisää muu teosnimi</setting>
+                <setting name="add_label" option="fi_FI">Lisää muu nimi</setting>
               </settings>
             </placement>
 
@@ -2970,7 +3057,7 @@
               <name>Relationships</name>
             </label>
             <label locale="fi_FI">
-              <name>Linkit</name>
+              <name>Linkitykset</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3193,7 +3280,7 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" option="fi_FI">Teosnimi</setting>
+                <setting name="label" option="fi_FI">Nimi</setting>
               </settings>
             </placement>
             <placement code="idno">
@@ -3212,7 +3299,7 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" option="fi_FI">Muut teosnimet</setting>
+                <setting name="label" option="fi_FI">Muut nimet</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_date">
@@ -3419,7 +3506,7 @@
           <name>Standard collection editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Standard collection editor</name>
+          <name>Kokoelmalomake</name>
         </label>
       </labels>
       <screens>
@@ -3437,11 +3524,22 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" option="fi_FI">Teosnimi</setting>
+                <setting name="label" option="fi_FI">Nimi</setting>
               </settings>
+            </placement>
+            <placement code="ca_attribute_description">
+              <bundle>ca_attribute_description</bundle>
             </placement>
             <placement code="idno">
               <bundle>idno</bundle>
+            </placement>
+
+            <placement code="nonpreferred_labels">
+              <bundle>nonpreferred_labels</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Alternate titles</setting>
+                <setting name="label" option="fi_FI">Muut nimet</setting>
+              </settings>
             </placement>
             <placement code="access">
               <bundle>access</bundle>
@@ -3449,19 +3547,7 @@
             <placement code="status">
               <bundle>status</bundle>
             </placement>
-            <placement code="nonpreferred_labels">
-              <bundle>nonpreferred_labels</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" option="fi_FI">Muut teosnimet</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_date">
-              <bundle>ca_attribute_date</bundle>
-            </placement>
-            <placement code="ca_attribute_description">
-              <bundle>ca_attribute_description</bundle>
-            </placement>
+            
           </bundlePlacements>
         </screen>
         <screen idno="relationships" default="0">
@@ -3515,7 +3601,7 @@
           <name>Standard object lot editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Standard object lot editor</name>
+          <name>Hankintalomake</name>
         </label>
       </labels>
       <screens>
@@ -3831,9 +3917,9 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" option="fi_FI">Teosnimi</setting>
+                <setting name="label" option="fi_FI">Nimi</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" option="fi_FI">Lisää teosnimi</setting>
+                <setting name="add_label" option="fi_FI">Lisää nimi</setting>
               </settings>
             </placement>
             <placement code="ca_representation_annotation_properties">
@@ -3865,9 +3951,9 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" option="fi_FI">Muut teosnimet</setting>
+                <setting name="label" option="fi_FI">Muut Nimet</setting>
                 <setting name="add_label" locale="en_US">Add alternate title</setting>
-                <setting name="add_label" option="fi_FI">Lisää muu teosnimi</setting>
+                <setting name="add_label" option="fi_FI">Lisää muu nimi</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -5053,4 +5139,11 @@
       </types>
     </relationshipTable>
   </relationshipTypes>
+      <logins>
+        <login user_name="administrator" email="dummy@dummy.com" password="jyu_osc" fname="CollectiveAccess"
+            lname="Administrator">
+            <role code="admin"/>
+            <group code="admin"/>
+        </login>
+    </logins>
 </profile>
