@@ -1693,7 +1693,7 @@ msgstr ""
 #: app/conf/annotation_types.conf:171 app/conf/browse.conf:97
 #: app/conf/browse.conf:156 app/conf/browse.conf:359
 msgid "Type"
-msgstr ""
+msgstr "Tyyppi"
 
 #: app/helpers/displayHelpers.php:1594 app/helpers/displayHelpers.php:1606
 msgid "Target format"
@@ -3340,7 +3340,7 @@ msgstr ""
 #: app/conf/browse.conf:867 app/conf/browse.conf:903 app/conf/browse.conf:928
 #: app/conf/browse.conf:975 app/conf/browse.conf:1009
 msgid "type"
-msgstr ""
+msgstr "tyyppi"
 
 #: app/helpers/searchHelpers.php:1400 app/helpers/searchHelpers.php:1408
 msgid "short description"
@@ -5992,7 +5992,7 @@ msgstr ""
 #: app/lib/ca/Browse/BrowseEngine.php:2357
 #: themes/default/views/administrate/setup/Search/ajax_refine_facet_html.php:140
 msgid "Type "
-msgstr ""
+msgstr "Tyyppi"
 
 #: app/lib/ca/BundlableLabelableBaseModelWithAttributes.php:170
 msgid "Type must be specified"
@@ -13290,7 +13290,7 @@ msgstr ""
 #: app/models/ca_collections.php:43 app/conf/browse.conf:143
 #: app/conf/browse.conf:346 app/conf/browse.conf:496 app/conf/browse.conf:593
 msgid "collection"
-msgstr ""
+msgstr "kokoelma"
 
 #: app/models/ca_collections.php:51
 msgid ""
@@ -26036,7 +26036,7 @@ msgstr ""
 #: themes/default/views/find/Search/search_controls_html.php:144
 #: themes/default/views/find/Search/search_controls_html.php:150
 msgid "Close hierarchy viewer"
-msgstr "Sulje puunäkymä"
+msgstr "Sulje selailu"
 
 #: themes/default/views/administrate/setup/Search/search_controls_html.php:184
 #: themes/default/views/administrate/setup/Search/search_controls_html.php:193
@@ -27584,7 +27584,7 @@ msgstr ""
 #: themes/default/views/bundles/hierarchy_location.php:408
 #: themes/default/views/bundles/hierarchy_navigation.php:153
 msgid "Close browser"
-msgstr ""
+msgstr "Sulje selaus"
 
 #: themes/default/views/bundles/hierarchy_location.php:517
 msgid "Will be moved under <em>%1</em> after next save."

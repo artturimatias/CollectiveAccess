@@ -18,15 +18,15 @@
         </label>
       </labels>
       <items>
-		<item idno="kappale" enabled="1" default="0">
+		<item idno="esine" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="0">
               <name_singular>Object</name_singular>
               <name_plural>Objects</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Kappale</name_singular>
-              <name_plural>Kappaleet</name_plural>
+              <name_singular>Esine</name_singular>
+              <name_plural>Esineet</name_plural>
             </label>
           </labels>
           <settings>
@@ -148,7 +148,7 @@
             </label>
           </labels>
           <items>
-			  <item idno="piirustus" enabled="1" default="0">
+			  <item idno="drawing" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Drawing</name_singular>
@@ -227,6 +227,16 @@
       </items>
     </list>
 
+    <list code="yleisnimet" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Object types</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Yleisnimet</name>
+        </label>
+      </labels>
+    </list>
 
     <list code="collection_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
@@ -264,15 +274,15 @@
           </labels>
          </item>
 
-        <item idno="sub_collection" enabled="1" default="0">
+        <item idno="diaario" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Sub collection</name_singular>
-              <name_plural>Sub collection</name_plural>
+              <name_singular>Diario</name_singular>
+              <name_plural>Diarios</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Alikokoelma</name_singular>
-              <name_plural>Alikokoelmat</name_plural>
+              <name_singular>Diaario</name_singular>
+              <name_plural>Diaariot</name_plural>
             </label>
           </labels>
          </item>
@@ -280,6 +290,84 @@
       </items>
     </list>
 
+
+    <list code="tunnnistetyyppi" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Identifier type</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Tunnisteen tyyppi</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="duo" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>DUO ID</name_singular>
+              <name_plural>DUO ID</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>DUO -tunniste</name_singular>
+              <name_plural>DUO -tunnisteet</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="isbn" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>ISBN</name_singular>
+              <name_plural>ISBN</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>ISBN</name_singular>
+              <name_plural>ISBN</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="wikidata" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Wikidata ID</name_singular>
+              <name_plural>Wikidata ID</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Wikidata ID</name_singular>
+              <name_plural>Wikidata ID</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="sarjanumero" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Serial number</name_singular>
+              <name_plural>Serial numbers</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Sarjanumero</name_singular>
+              <name_plural>Sarjanumerot</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="alkuperainen" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Original number</name_singular>
+              <name_plural>Original numbers</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Alkuperäinen numero</name_singular>
+              <name_plural>Alkuperäiset numerot</name_plural>
+            </label>
+          </labels>
+         </item>
+
+      </items>
+    </list>
 
     <list code="workflow_statuses" hierarchical="0" system="0" vocabulary="0">
       <labels>
@@ -1035,6 +1123,30 @@
           </labels>
         </item>
       </items>
+      </list>
+    <list code="muutunnustyyppi" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Muu tunnustyyppi</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Muu tunnustyyppi</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="duo" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>DUO-id</name_singular>
+              <name_plural>DUO-id</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>DUO-tunnus</name_singular>
+              <name_plural>DUO-tunnus</name_plural>
+            </label>
+          </labels>
+        </item>
+        </items>
     </list>
 
     <list code="object_media_license_types" hierarchical="0" system="0" vocabulary="0">
@@ -1063,6 +1175,32 @@
     </list>
   </lists>
   <elementSets>
+    <metadataElement code="yleisnimi" datatype="List" list="yleisnimet">
+      <labels>
+        <label locale="fi_FI">
+          <name>yleisnimi</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="requireValue">1</setting>
+        <setting name="nullOptionText">ei annettua yleisnimeä</setting>
+        <setting name="render">lookup</setting>
+        <setting name="canMakePDF">1</setting>
+        <setting name="canMakePDFForValue">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <includeSubtypes>1</includeSubtypes>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+	  
     <metadataElement code="description" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -2010,10 +2148,10 @@
     <metadataElement code="notes" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>Administrative notes</name>
+          <name>Notes</name>
         </label>
         <label locale="fi_FI">
-          <name>Hallinnointihuomioita</name>
+          <name>Lisätiedot</name>
         </label>
       </labels>
       <settings>
@@ -2032,6 +2170,92 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+ 
+    <metadataElement code="muu_tunniste" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>Muu tunnus</name>
+          <description>Objektin muu tunnus kirjataan täsmälleen siinä muodossa kuin se on kirjattu objektiin tai doku
+-
+menttiin, josta tieto otetaan. Muu tunnus voi olla esimerkiksi objektin edellinen numero (esimerkiksi 
+toisessa museossa annettu), vanha inventaarionumero, diariointinumero, lainanantajan tai omis
+-
+tajan sille antama numero, löytönumero, kaivauksissa annettu väliaikainen numero tai esimerkiksi 
+tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama numero)</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canBeUsedInSearchForm">0</setting>
+        <setting name="canBeUsedInDisplay">0</setting>
+      </settings>
+      <elements>
+        <metadataElement code="tunniste" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>Tunniste</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="lineBreakAfterNumberOfElements">0</setting>
+            <setting name="canBeUsedInSearchForm">0</setting>
+            <setting name="canBeUsedInDisplay">0</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="isDependentValue">0</setting>
+            <setting name="dependentValueTemplate"/>
+            <setting name="mustBeUnique">0</setting>
+            <setting name="referenceMediaIn"/>
+          </settings>
+        </metadataElement>
+        <metadataElement code="muu_tunnistetyyppi" datatype="List" list="tunnistetyyppi">
+          <labels>
+            <label locale="fi_FI">
+              <name>Tyyppi</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="nullOptionText">Not set</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">select</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <includeSubtypes>1</includeSubtypes>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+ 
+    
     <metadataElement code="edition_number" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -2724,31 +2948,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="lot_notes" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Notes</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Notes</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">3</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_object_lots</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="rights" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -2862,13 +3062,29 @@
             </label>
           </labels>
           <bundlePlacements>
+  
+            <placement code="ca_attribute_yleisnimi2" typeRestrictions="audio,dokumentti,kappale,kirja,lehtileike,tallenne,video,valokuva" includeSubtypes="1">
+              <bundle>ca_attribute_yleisnimi</bundle>
+              <settings>
+                <setting name="label" locale="en_US">generic name</setting>
+                <setting name="label" locale="fi_FI">objektin nimi</setting>
+                <setting name="description" locale="fi_FI">Objektin nimi ilmoitetaan yksittäisellä termillä. Termi voidaan valita ontologiasta tai asiasanastosta. 
+Objektin nimeksi kirjataan yleensä perusmuodossa oleva substantiivi. Välimerkkejä ja isoja kirjaimia 
+ei käytetä.</setting>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+            
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" option="fi_FI">Nimi</setting>
+                <setting name="label" option="fi_FI">Nimeke</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" option="fi_FI">Lisää nimi</setting>
+                <setting name="add_label" option="fi_FI">Lisää nimeke</setting>
               </settings>
             </placement>
 
@@ -2878,9 +3094,9 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" option="fi_FI">Muut nimet</setting>
+                <setting name="label" option="fi_FI">Muut nimekkeet</setting>
                 <setting name="add_label" locale="en_US">Add alternate title</setting>
-                <setting name="add_label" option="fi_FI">Lisää muu nimi</setting>
+                <setting name="add_label" option="fi_FI">Lisää muu nimeke</setting>
               </settings>
             </placement>
 
@@ -2889,36 +3105,8 @@
               <bundle>idno</bundle>
             </placement>
 
-            <placement code="ca_entities4">
-              <bundle>ca_entities</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">dont_force</setting>
-                <setting name="expand_collapse_no_value">dont_force</setting>
-                <setting name="restrict_to_relationship_types">artist</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">list</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow"/>
-                <setting name="maxRelationshipsPerRow"/>
-                <setting name="showCurrentOnly">0</setting>
-                <setting name="showCurrentUsingDate">effective_date</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="label" locale="fi_FI">Taiteilija</setting>
-                <setting name="add_label" locale="fi_FI">Lisää taiteilija</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_date">
-              <bundle>ca_attribute_date</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-              </settings>
+			<placement code="muu_tunniste">
+              <bundle>muu_tunniste</bundle>
             </placement>
 
           </bundlePlacements>
@@ -2938,20 +3126,8 @@
             <placement code="ca_attribute_description">
               <bundle>ca_attribute_description</bundle>
             </placement>
-
-            <placement code="ca_list_items">
-              <bundle>ca_list_items</bundle>
-            </placement>
-
-            <placement code="ca_attribute_work_medium">
-              <bundle>ca_attribute_work_medium</bundle>
-            </placement>
-  
-              <placement code="ca_attribute_frame">
-              <bundle>ca_attribute_frame</bundle>
-            </placement>
             
-			  </bundlePlacements>
+			</bundlePlacements>
 		</screen>  
 
  
@@ -3148,7 +3324,7 @@
           <name>Standard entity editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Standard entity editor</name>
+          <name>Toimijalomake</name>
         </label>
       </labels>
       <screens>
@@ -3262,7 +3438,7 @@
           <name>Occurrences editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Tapahtuma-editori</name>
+          <name>Tapahtumalomake</name>
         </label>
       </labels>
       <screens>
@@ -3279,22 +3455,16 @@
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
-                <setting name="label" locale="en_US">Title</setting>
+                <setting name="label" locale="en_US">Name</setting>
                 <setting name="label" option="fi_FI">Nimi</setting>
+                <setting name="add_label" locale="en_US">Add name</setting>
+                <setting name="add_label" option="fi_FI">Lisää nimi</setting>
               </settings>
             </placement>
             <placement code="idno">
               <bundle>idno</bundle>
             </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-            </placement>
-            <placement code="source_id">
-              <bundle>source_id</bundle>
-            </placement>
+
             <placement code="nonpreferred_labels">
               <bundle>nonpreferred_labels</bundle>
               <settings>
@@ -3308,27 +3478,7 @@
             <placement code="ca_attribute_description">
               <bundle>ca_attribute_description</bundle>
             </placement>
-            <placement code="ca_attribute_citation">
-              <bundle>ca_attribute_citation</bundle>
-            </placement>
-            <placement code="ca_attribute_publication_info">
-              <bundle>ca_attribute_publication_info</bundle>
-            </placement>
-            <placement code="ca_attribute_alternate_pub_numbers">
-              <bundle>ca_attribute_alternate_pub_numbers</bundle>
-            </placement>
-            <placement code="ca_attribute_rights">
-              <bundle>ca_attribute_rights</bundle>
-            </placement>
-            <placement code="ca_entities">
-              <bundle>ca_entities</bundle>
-            </placement>
-            <placement code="ca_occurrences">
-              <bundle>ca_occurrences</bundle>
-            </placement>
-            <placement code="ca_attribute_internal_notes">
-              <bundle>ca_attribute_internal_notes</bundle>
-            </placement>
+
             <placement code="ca_attribute_external_link">
               <bundle>ca_attribute_external_link</bundle>
               <settings>
@@ -3392,7 +3542,7 @@
           <name>Place editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Paikkaeditori</name>
+          <name>Paikkalomake</name>
         </label>
       </labels>
       <screens>
@@ -3523,8 +3673,10 @@
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
-                <setting name="label" locale="en_US">Title</setting>
+                <setting name="label" locale="en_US">Name</setting>
                 <setting name="label" option="fi_FI">Nimi</setting>
+                <setting name="add_label" locale="en_US">Add name</setting>
+                <setting name="add_label" option="fi_FI">Lisää nimi</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_description">
@@ -3547,7 +3699,6 @@
             <placement code="status">
               <bundle>status</bundle>
             </placement>
-            
           </bundlePlacements>
         </screen>
         <screen idno="relationships" default="0">
@@ -3648,8 +3799,8 @@
             <placement code="status">
               <bundle>status</bundle>
             </placement>
-            <placement code="ca_attribute_lot_notes">
-              <bundle>ca_attribute_lot_notes</bundle>
+            <placement code="ca_attribute_notes">
+              <bundle>ca_attribute_lisätiedot</bundle>
             </placement>
           </bundlePlacements>
         </screen>
@@ -3691,7 +3842,7 @@
           <name>Storage locations editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Storage locations editor</name>
+          <name>Sijaintilomake</name>
         </label>
       </labels>
       <screens>
@@ -3916,10 +4067,7 @@
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
-                <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" option="fi_FI">Nimi</setting>
-                <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" option="fi_FI">Lisää nimi</setting>
+               
               </settings>
             </placement>
             <placement code="ca_representation_annotation_properties">
@@ -3964,7 +4112,811 @@
   <relationshipTypes>
     <relationshipTable name="ca_objects_x_entities">
       <types>
-        <type code="artist" default="1">
+		  
+
+<type code="museonjohtaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>museonjohtaja</typename>
+              <typename_reverse>museonjohtaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="museomestari" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>museomestari</typename>
+              <typename_reverse>museomestari</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tiedotussihteeri" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tiedotussihteeri</typename>
+              <typename_reverse>tiedotussihteeri</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tutkijat" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tutkijat</typename>
+              <typename_reverse>tutkijat</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="jälleenmyyjä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>jälleenmyyjä</typename>
+              <typename_reverse>jälleenmyyjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="jy_liikuntasihteer" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>JY:n liikuntasihteer</typename>
+              <typename_reverse>JY:n liikuntasihteer</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="keksijä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>keksijä</typename>
+              <typename_reverse>keksijä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kaivertaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kaivertaja</typename>
+              <typename_reverse>kaivertaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="leikkaaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>leikkaaja</typename>
+              <typename_reverse>leikkaaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="porthanjuhlamestari" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>Porthan-juhlamestari</typename>
+              <typename_reverse>Porthan-juhlamestari</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="maahantuonti" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>maahantuonti</typename>
+              <typename_reverse>maahantuonti</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="Imprimatur" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>Imprimatur</typename>
+              <typename_reverse>Imprimatur</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="Vastaanottaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>Vastaanottaja</typename>
+              <typename_reverse>Vastaanottaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="haastateltava" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>haastateltava</typename>
+              <typename_reverse>haastateltava</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="aikakauslehti" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>aikakauslehti</typename>
+              <typename_reverse>aikakauslehti</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="dekaani" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>dekaani</typename>
+              <typename_reverse>dekaani</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="projektitoimittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>projektitoimittaja</typename>
+              <typename_reverse>projektitoimittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="informantti" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>informantti</typename>
+              <typename_reverse>informantti</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="projektipäällikkö" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>projektipäällikkö</typename>
+              <typename_reverse>projektipäällikkö</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="copyright" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>copyright</typename>
+              <typename_reverse>copyright</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="äänisuunnittelu" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>äänisuunnittelu</typename>
+              <typename_reverse>äänisuunnittelu</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="säestäjä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>säestäjä</typename>
+              <typename_reverse>säestäjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="räätäli" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>räätäli</typename>
+              <typename_reverse>räätäli</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kutsuja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kutsuja</typename>
+              <typename_reverse>kutsuja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="runoilija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>runoilija</typename>
+              <typename_reverse>runoilija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="johtaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>johtaja</typename>
+              <typename_reverse>johtaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="lukija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>lukija</typename>
+              <typename_reverse>lukija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tiedottaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tiedottaja</typename>
+              <typename_reverse>tiedottaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="vastaaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>vastaaja</typename>
+              <typename_reverse>vastaaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="antaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>antaja</typename>
+              <typename_reverse>antaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="todistaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>todistaja</typename>
+              <typename_reverse>todistaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kertoja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kertoja</typename>
+              <typename_reverse>kertoja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kuvaajat" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kuvaajat</typename>
+              <typename_reverse>kuvaajat</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="toimitussihteeri" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>toimitussihteeri</typename>
+              <typename_reverse>toimitussihteeri</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="laulaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>laulaja</typename>
+              <typename_reverse>laulaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="sihteeri" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>sihteeri</typename>
+              <typename_reverse>sihteeri</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="ohjaaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>ohjaaja</typename>
+              <typename_reverse>ohjaaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tekijät" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tekijät</typename>
+              <typename_reverse>tekijät</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="opettaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>opettaja</typename>
+              <typename_reverse>opettaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tilaaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tilaaja</typename>
+              <typename_reverse>tilaaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kääntäjä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kääntäjä</typename>
+              <typename_reverse>kääntäjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="käsikirjoittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>käsikirjoittaja</typename>
+              <typename_reverse>käsikirjoittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="ompelija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>ompelija</typename>
+              <typename_reverse>ompelija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kirjoittajat" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kirjoittajat</typename>
+              <typename_reverse>kirjoittajat</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="sovittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>sovittaja</typename>
+              <typename_reverse>sovittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kirjailija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kirjailija</typename>
+              <typename_reverse>kirjailija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="äänittäjä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>äänittäjä</typename>
+              <typename_reverse>äänittäjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="taittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>taittaja</typename>
+              <typename_reverse>taittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="nauhoittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>nauhoittaja</typename>
+              <typename_reverse>nauhoittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tarkastaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tarkastaja</typename>
+              <typename_reverse>tarkastaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="jakaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>jakaja</typename>
+              <typename_reverse>jakaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        <type code="painattaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>painattaja</typename>
+              <typename_reverse>painattaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="sanoittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>sanoittaja</typename>
+              <typename_reverse>sanoittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="työryhmä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>työryhmä</typename>
+              <typename_reverse>työryhmä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="valmistuttaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>valmistuttaja</typename>
+              <typename_reverse>valmistuttaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="opiskelija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>opiskelija</typename>
+              <typename_reverse>opiskelija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kirjapaino" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kirjapaino</typename>
+              <typename_reverse>kirjapaino</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tutkija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tutkija</typename>
+              <typename_reverse>tutkija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="päätoimittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>päätoimittaja</typename>
+              <typename_reverse>päätoimittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+      
+        <type code="säveltäjä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>säveltäjä</typename>
+              <typename_reverse>säveltäjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kuvittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kuvittaja</typename>
+              <typename_reverse>kuvittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="lähettäjä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>lähettäjä</typename>
+              <typename_reverse>lähettäjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="allekirjoittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>allekirjoittaja</typename>
+              <typename_reverse>allekirjoittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="suomentaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>suomentaja</typename>
+              <typename_reverse>suomentaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="toimittanut" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>toimittanut</typename>
+              <typename_reverse>toimittanut</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="luovuttaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>luovuttaja</typename>
+              <typename_reverse>luovuttaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="muu" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>muu</typename>
+              <typename_reverse>muu</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="tuottaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>tuottaja</typename>
+              <typename_reverse>tuottaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>             
+        <type code="laatija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>laatija</typename>
+              <typename_reverse>laatija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>       
+        <type code="painaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>painaja</typename>
+              <typename_reverse>painaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="piirtäjä" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>piirtäjä</typename>
+              <typename_reverse>piirtäjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="haastattelija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>haastattelija</typename>
+              <typename_reverse>haastattelija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="toimittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>toimittaja</typename>
+              <typename_reverse>toimittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="julkaisija" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>julkaisija</typename>
+              <typename_reverse>julkaisija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kustantaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kustantaja</typename>
+              <typename_reverse>kustantaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        
+        <type code="kirjoittaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kirjoittaja</typename>
+              <typename_reverse>kirjoittaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="kuvaaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>kuvaaja</typename>
+              <typename_reverse>kuvaaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="valmistaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>valmistaja</typename>
+              <typename_reverse>valmistaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="valokuvaaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>valokuvaaja</typename>
+              <typename_reverse>valokuvaaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>        
+        <type code="valokuvaaja" default="0">
+          <labels>
+            <label locale="fi_FI">
+              <typename>valokuvaaja</typename>
+              <typename_reverse>valokuvaaja</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type> 
+ 
+        <type code="taiteilija" default="1">
           <labels>
             <label locale="en_US">
               <typename>had as artist</typename>
@@ -3978,105 +4930,38 @@
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="curator" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as curator</typename>
-              <typename_reverse>was curator of</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour commissaire d\'exposition</typename>
-              <typename_reverse>était le commissaire d\'exposition de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="moderator" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as moderator</typename>
-              <typename_reverse>was moderator of</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour modérateur</typename>
-              <typename_reverse>était le modérateur de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="speaker" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as speaker</typename>
-              <typename_reverse>was speaker in</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour orateur</typename>
-              <typename_reverse>était l\'orateur de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="panelist" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as panelist</typename>
-              <typename_reverse>was panelist in</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour critique</typename>
-              <typename_reverse>était le critique de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="documentarian" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as documentarian</typename>
-              <typename_reverse>is documentarian of</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour documentaliste</typename>
-              <typename_reverse>était le documentaliste de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="architect" default="0">
+
+
+        <type code="arkkitehti" default="0">
           <labels>
             <label locale="en_US">
               <typename>had as architect</typename>
               <typename_reverse>was architect of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>a eu pour architecte</typename>
-              <typename_reverse>était l\'architecte de</typename_reverse>
+              <typename>arkkitehti</typename>
+              <typename_reverse>arkkitehti</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="designer" default="0">
+        
+        <type code="suunnittelija" default="0">
           <labels>
             <label locale="en_US">
               <typename>had as designer</typename>
               <typename_reverse>was designer of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>a eu pour designer</typename>
-              <typename_reverse>était le designer de</typename_reverse>
+              <typename>suunnittelija</typename>
+              <typename_reverse>suunnittelija</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="author" default="0">
+        <type code="tekijä" default="0">
           <labels>
             <label locale="en_US">
               <typename>has as author</typename>
@@ -4090,90 +4975,23 @@
           <subTypeLeft>interview</subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="performer" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as performer</typename>
-              <typename_reverse>was performer in</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour performer</typename>
-              <typename_reverse>était performer dans</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="staff_member" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as staff member</typename>
-              <typename_reverse>was staff member for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a comporté parmi l\'équipe</typename>
-              <typename_reverse>faisait partie de l\'équipe de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft>interview</subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="consultant" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as consultant</typename>
-              <typename_reverse>was consultant for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour consultant</typename>
-              <typename_reverse>était consultant pour</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="publisher" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as publisher</typename>
-              <typename_reverse>was publisher for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour éditeur</typename>
-              <typename_reverse>était l\'éditeur de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="sponsor" default="0">
+
+
+        <type code="rahoittaja" default="0">
           <labels>
             <label locale="en_US">
               <typename>had as sponsor</typename>
               <typename_reverse>was sponsor for</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>a eu pour sponsor</typename>
-              <typename_reverse>était le sponsor de</typename_reverse>
+              <typename>rahoittaja</typename>
+              <typename_reverse>rahoittaja</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="partner_museum" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as partner</typename>
-              <typename_reverse>was partner for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a eu pour partenaire</typename>
-              <typename_reverse>était le partenaire de</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
+
       </types>
     </relationshipTable>
     <relationshipTable name="ca_objects_x_collections">
@@ -4203,8 +5021,8 @@
               <typename_reverse>was creation location of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>luotiin paikassa</typename>
-              <typename_reverse>on luomispaikka objektille</typename_reverse>
+              <typename>luomispaikka</typename>
+              <typename_reverse>luomispaikka</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4217,8 +5035,8 @@
               <typename_reverse>was location of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>sijaitsi paikassa</typename>
-              <typename_reverse>oli sijaintipaikka objektilla</typename_reverse>
+              <typename>sijaintipaikka</typename>
+              <typename_reverse>sijaintipaikka</typename_reverse>
             </label>
           </labels>
           <subTypeLeft>image</subTypeLeft>
@@ -4291,8 +5109,8 @@
               <typename_reverse>is described by</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>décrit</typename>
-              <typename_reverse>est décrit dans</typename_reverse>
+              <typename>kuvaa</typename>
+              <typename_reverse>kuvaa</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4323,8 +5141,8 @@
               <typename_reverse>is similar to</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>est similaire à</typename>
-              <typename_reverse>est similaire à</typename_reverse>
+              <typename>samankaltainen</typename>
+              <typename_reverse>samankaltainen</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4337,8 +5155,8 @@
               <typename_reverse>is duplicate of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>est un doublon de</typename>
-              <typename_reverse>est un doublon de</typename_reverse>
+              <typename>duplikaatti</typename>
+              <typename_reverse>duplikaatti</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4422,15 +5240,15 @@
           <subTypeLeft>individual</subTypeLeft>
           <subTypeRight>individual</subTypeRight>
         </type>
-        <type code="spouse" default="1">
+        <type code="puoliso" default="1">
           <labels>
             <label locale="en_US">
               <typename>is spouse of</typename>
               <typename_reverse>is spouse of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>est l\'époux/l\'épouse de</typename>
-              <typename_reverse>est l\'époux/l\'épouse de</typename_reverse>
+              <typename>puoliso</typename>
+              <typename_reverse>puoliso</typename_reverse>
             </label>
           </labels>
           <subTypeLeft>individual</subTypeLeft>
@@ -4447,8 +5265,8 @@
               <typename_reverse>was birthplace of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>syntyi paikassa</typename>
-              <typename_reverse>oli syntymäpaikkana</typename_reverse>
+              <typename>syntymäpaikka</typename>
+              <typename_reverse>syntymäpaikka</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4461,8 +5279,8 @@
               <typename_reverse>was residence of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>a habité à</typename>
-              <typename_reverse>était le lieu de résidence de</typename_reverse>
+              <typename>asuinpaikka</typename>
+              <typename_reverse>asuinpaikka</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4475,8 +5293,8 @@
               <typename_reverse>was workplace of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>a travaillé à</typename>
-              <typename_reverse>était le lieu de travail de</typename_reverse>
+              <typename>työpaikka</typename>
+              <typename_reverse>työpaikka</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4489,32 +5307,19 @@
               <typename_reverse>was owned by</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>était le propriétaire de</typename>
-              <typename_reverse>appartenait à</typename_reverse>
+              <typename>omistaja</typename>
+              <typename_reverse>omistaja</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="built_by" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>built</typename>
-              <typename_reverse>was built by</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>a construit</typename>
-              <typename_reverse>a été construit par</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
+
       </types>
     </relationshipTable>
     <relationshipTable name="ca_entities_x_occurrences">
       <types>
-        <type code="artist" default="1">
+        <type code="taiteilija" default="0">
           <labels>
             <label locale="en_US">
               <typename>had as artist</typename>
@@ -4528,197 +5333,86 @@
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="curator" default="0">
+        <type code="haastattelija" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>was interviwer</typename>
+              <typename_reverse>has as interviewer</typename_reverse>
+            </label>
+            <label locale="fi_FI">
+              <typename>haastattelija</typename>
+              <typename_reverse>haastattelija</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>
+        <type code="haastateltu" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>was interviewed</typename>
+              <typename_reverse>has as interviewed</typename_reverse>
+            </label>
+            <label locale="fi_FI">
+              <typename>haastateltu</typename>
+              <typename_reverse>haastateltu</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>
+        <type code="järjestäjä" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>organizer</typename>
+              <typename_reverse>organizer</typename_reverse>
+            </label>
+            <label locale="fi_FI">
+              <typename>järjestäjä</typename>
+              <typename_reverse>järjestäjä</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>
+        <type code="kuraattori" default="0">
           <labels>
             <label locale="en_US">
               <typename>had as curator</typename>
               <typename_reverse>was curator of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>avait pour commissaire d\'exposition</typename>
-              <typename_reverse>était le commissaire d\'exposition de</typename_reverse>
+              <typename>kuraattori</typename>
+              <typename_reverse>kuraattori</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="moderator" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as moderator</typename>
-              <typename_reverse>was moderator of</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>had as moderator</typename>
-              <typename_reverse>was moderator of</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="panelist" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as panelist</typename>
-              <typename_reverse>was panelist in</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>had as panelist</typename>
-              <typename_reverse>was panelist in</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="speaker" default="0">
+
+        <type code="puhuja" default="0">
           <labels>
             <label locale="en_US">
               <typename>had as speaker</typename>
               <typename_reverse>was speaker in</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>had as speaker</typename>
-              <typename_reverse>was speaker in</typename_reverse>
+              <typename>puhuja</typename>
+              <typename_reverse>puhuja</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="documentarian" default="0">
+        <type code="panelisti" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as documentarian</typename>
-              <typename_reverse>is documentarian of</typename_reverse>
+              <typename>had as panelist</typename>
+              <typename_reverse>was panelist in</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>had as documentarian</typename>
-              <typename_reverse>is documentarian of</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="architect" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as architect</typename>
-              <typename_reverse>was architect of</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>arkkitehtinä on</typename>
-              <typename_reverse>on suunnitellut</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="designer" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as designer</typename>
-              <typename_reverse>was designer of</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>suunnitelijana on</typename>
-              <typename_reverse>suunnitellut</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="author" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>has as author</typename>
-              <typename_reverse>was author of</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>on tekijänä</typename>
-              <typename_reverse>on tehnyt</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft>interview</subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="performer" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as performer</typename>
-              <typename_reverse>was performer in</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>osallistui esiintyjä</typename>
-              <typename_reverse>esiintyi</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="staff_member" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as staff member</typename>
-              <typename_reverse>was staff member for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>osallistui jäsen</typename>
-              <typename_reverse>oli jäsen</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft>interview</subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="consultant" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as consultant</typename>
-              <typename_reverse>was consultant for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>had as consultant</typename>
-              <typename_reverse>was consultant for</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="publisher" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as publisher</typename>
-              <typename_reverse>was publisher for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>had as publisher</typename>
-              <typename_reverse>was publisher for</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="sponsor" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as sponsor</typename>
-              <typename_reverse>was sponsor for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>on sponsoroitu</typename>
-              <typename_reverse>sponsoroi</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="partner_museum" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>had as partner museum</typename>
-              <typename_reverse>was partner museum for</typename_reverse>
-            </label>
-            <label locale="fi_FI">
-              <typename>avait pour musée partenaire</typename>
-              <typename_reverse>était le musée partenaire de</typename_reverse>
+              <typename>panelisti</typename>
+              <typename_reverse>panelisti</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4735,7 +5429,7 @@
               <typename_reverse>is donor of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>lahjoitti</typename>
+              <typename>lahjoittaja</typename>
               <typename_reverse>on lahjoittaja</typename_reverse>
             </label>
           </labels>
@@ -4749,8 +5443,8 @@
               <typename_reverse>is provider of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>was provided by</typename>
-              <typename_reverse>is provider of</typename_reverse>
+              <typename>tarjoaja</typename>
+              <typename_reverse>tarjoaja</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4893,8 +5587,8 @@
               <typename_reverse>is subject of</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>has as subject</typename>
-              <typename_reverse>is subject of</typename_reverse>
+              <typename>asiasana</typename>
+              <typename_reverse>asiasana</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5015,8 +5709,8 @@
               <typename_reverse>illustrates</typename_reverse>
             </label>
             <label locale="fi_FI">
-              <typename>is illustrated by</typename>
-              <typename_reverse>illustrates</typename_reverse>
+              <typename>kuvitus</typename>
+              <typename_reverse>kuvitus</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5139,7 +5833,112 @@
       </types>
     </relationshipTable>
   </relationshipTypes>
-      <logins>
+  <displays>
+    <display code="toimijayhteenveto" type="ca_entities" system="1" typeRestrictions="animal,fictional_individual,individual,organization" includeSubtypes="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>toimijayhteenveto</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="show_empty_values"><![CDATA[0]]></setting>
+        <setting name="bottom_line"><![CDATA[]]></setting>
+        <setting name="show_only_in"><![CDATA[]]></setting>
+      </settings>
+      <userAccess>
+        <permission user="administrator" access="edit"/>
+      </userAccess>
+      <bundlePlacements>
+        <placement code="ca_entities_preferred_labels">
+          <bundle>ca_entities.preferred_labels</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">Nimi</setting>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="maximum_length"><![CDATA[100]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_entities_type_id">
+          <bundle>ca_entities.type_id</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">tyyppi</setting>
+            <setting name="maximum_length"><![CDATA[100]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_entities_biography">
+          <bundle>ca_entities.biography</bundle>
+        </placement>
+        <placement code="ca_objects">
+          <bundle>ca_objects</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">objektit</setting>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="sort"><![CDATA[]]></setting>
+            <setting name="show_hierarchy"><![CDATA[0]]></setting>
+            <setting name="remove_first_items"><![CDATA[0]]></setting>
+            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
+            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
+            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_occurrences">
+          <bundle>ca_occurrences</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">tapahtumat</setting>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="sort"><![CDATA[]]></setting>
+            <setting name="show_hierarchy"><![CDATA[0]]></setting>
+            <setting name="remove_first_items"><![CDATA[0]]></setting>
+            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
+            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
+            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_entities_internal_notes">
+          <bundle>ca_entities.internal_notes</bundle>
+        </placement>
+      </bundlePlacements>
+    </display>
+    <display code="researcher_display" type="ca_objects" system="1">
+      <labels>
+        <label locale="en_US">
+          <name>perusraportti</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="show_empty_values"><![CDATA[1]]></setting>
+        <setting name="bottom_line"><![CDATA[]]></setting>
+        <setting name="show_only_in"><![CDATA[]]></setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="ca_objects_idno">
+          <bundle>ca_objects.idno</bundle>
+        </placement>
+        <placement code="ca_objects_preferred_labels">
+          <bundle>ca_objects.preferred_labels</bundle>
+        </placement>
+        <placement code="ca_objects_description">
+          <bundle>ca_objects.description</bundle>
+        </placement>
+        <placement code="ca_objects_date">
+          <bundle>ca_objects.date</bundle>
+        </placement>
+        <placement code="ca_objects_type_id">
+          <bundle>ca_objects.type_id</bundle>
+        </placement>
+        <placement code="ca_entities">
+          <bundle>ca_entities</bundle>
+        </placement>
+      </bundlePlacements>
+    </display>
+  </displays>
+    <logins>
         <login user_name="administrator" email="dummy@dummy.com" password="jyu_osc" fname="CollectiveAccess"
             lname="Administrator">
             <role code="admin"/>
