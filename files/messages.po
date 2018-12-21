@@ -25559,7 +25559,7 @@ msgstr ""
 
 #: themes/default/views/administrate/access/role_edit_html.php:69
 msgid "Types"
-msgstr ""
+msgstr "Tyypit"
 
 #: themes/default/views/administrate/access/role_edit_html.php:74
 msgid "Sources"

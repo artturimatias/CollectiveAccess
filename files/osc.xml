@@ -291,7 +291,7 @@
     </list>
 
 
-    <list code="tunnnistetyyppi" hierarchical="0" system="1" vocabulary="0">
+    <list code="tunnistetyyppi" hierarchical="0" system="1" vocabulary="0">
       <labels>
         <label locale="en_US">
           <name>Identifier type</name>
@@ -1124,30 +1124,6 @@
         </item>
       </items>
       </list>
-    <list code="muutunnustyyppi" hierarchical="0" system="1" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Muu tunnustyyppi</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Muu tunnustyyppi</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="duo" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>DUO-id</name_singular>
-              <name_plural>DUO-id</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>DUO-tunnus</name_singular>
-              <name_plural>DUO-tunnus</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
-    </list>
 
     <list code="object_media_license_types" hierarchical="0" system="0" vocabulary="0">
       <labels>
