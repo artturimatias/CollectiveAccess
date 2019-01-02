@@ -25,8 +25,8 @@
               <name_plural>Objects</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Esine</name_singular>
-              <name_plural>Esineet</name_plural>
+              <name_singular>esine</name_singular>
+              <name_plural>esineet</name_plural>
             </label>
           </labels>
           <settings>
@@ -40,8 +40,8 @@
               <name_plural>Photo</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Valokuva</name_singular>
-              <name_plural>Valokuvat</name_plural>
+              <name_singular>valokuva</name_singular>
+              <name_plural>valokuvat</name_plural>
             </label>
           </labels>
           <settings>
@@ -55,8 +55,8 @@
               <name_plural>Books</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Kirja</name_singular>
-              <name_plural>Kirja</name_plural>
+              <name_singular>kirja</name_singular>
+              <name_plural>kirja</name_plural>
             </label>
           </labels>
           <settings>
@@ -70,8 +70,8 @@
               <name_plural>Recordings</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Tallenne</name_singular>
-              <name_plural>Tallenne</name_plural>
+              <name_singular>tallenne</name_singular>
+              <name_plural>tallenne</name_plural>
             </label>
           </labels>
           <settings>
@@ -97,8 +97,8 @@
 				  <name_plural>Sound recordings</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Äänitallenne</name_singular>
-				  <name_plural>Äänitallenteet</name_plural>
+				  <name_singular>äänitallenne</name_singular>
+				  <name_plural>äänitallenteet</name_plural>
 				</label>
 			  </labels>
 			</item>           
@@ -111,8 +111,8 @@
               <name_plural>Clippings</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Lehtileike</name_singular>
-              <name_plural>Lehtileikkeet</name_plural>
+              <name_singular>lehtileike</name_singular>
+              <name_plural>lehtileikkeet</name_plural>
             </label>
           </labels>
           <settings>
@@ -126,8 +126,8 @@
               <name_plural>Archive items</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Arkistodokumentti</name_singular>
-              <name_plural>Arkistodokumentit</name_plural>
+              <name_singular>arkistodokumentti</name_singular>
+              <name_plural>arkistodokumentit</name_plural>
             </label>
           </labels>
           <settings>
@@ -143,20 +143,20 @@
               <name_plural>Works</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Teos</name_singular>
-              <name_plural>Teokset</name_plural>
+              <name_singular>teos</name_singular>
+              <name_plural>teokset</name_plural>
             </label>
           </labels>
           <items>
-			  <item idno="drawing" enabled="1" default="0">
+			  <item idno="piirustus" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Drawing</name_singular>
 				  <name_plural>Drawings</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Piirustus</name_singular>
-				  <name_plural>Piirustukset</name_plural>
+				  <name_singular>piirustus</name_singular>
+				  <name_plural>piirustukset</name_plural>
 				</label>
 			  </labels>
 			</item>
@@ -167,8 +167,8 @@
 				  <name_plural>Film &amp; Media</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Video/audio</name_singular>
-				  <name_plural>Video/audio</name_plural>
+				  <name_singular>video/audio</name_singular>
+				  <name_plural>video/audio</name_plural>
 				</label>
 			  </labels>
 			</item>
@@ -179,8 +179,8 @@
 				  <name_plural>Paintings</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Maalaus</name_singular>
-				  <name_plural>Maalaukset</name_plural>
+				  <name_singular>maalaus</name_singular>
+				  <name_plural>maalaukset</name_plural>
 				</label>
 			  </labels>
 			</item>
@@ -191,8 +191,8 @@
 				  <name_plural>Photography</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Valokuvateos</name_singular>
-				  <name_plural>Valokuvateokset</name_plural>
+				  <name_singular>valokuvateos</name_singular>
+				  <name_plural>valokuvateokset</name_plural>
 				</label>
 			  </labels>
 			</item>
@@ -204,8 +204,8 @@
 				  <name_plural>Prints</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Grafiikka</name_singular>
-				  <name_plural>Grafiikat</name_plural>
+				  <name_singular>grafiikka</name_singular>
+				  <name_plural>grafiikat</name_plural>
 				</label>
 			  </labels>
 			</item>
@@ -216,8 +216,8 @@
 				  <name_plural>Sculptures</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Veistos</name_singular>
-				  <name_plural>Veistokset</name_plural>
+				  <name_singular>veistos</name_singular>
+				  <name_plural>veistokset</name_plural>
 				</label>
 			  </labels>
 			</item>        
@@ -248,28 +248,28 @@
         </label>
       </labels>
       <items>
-        <item idno="art_collection" enabled="1" default="0">
+        <item idno="taidekokoelma" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Art collection</name_singular>
               <name_plural>Art collections</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Taidekokoelma</name_singular>
-              <name_plural>Taidekokoelmat</name_plural>
+              <name_singular>taidekokoelma</name_singular>
+              <name_plural>taidekokoelmat</name_plural>
             </label>
           </labels>
          </item>
 
-        <item idno="item_collection" enabled="1" default="1">
+        <item idno="esinekokoelma" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Item collection</name_singular>
               <name_plural>Item collections</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Esinekokoelma</name_singular>
-              <name_plural>Esinekokoelmat</name_plural>
+              <name_singular>esinekokoelma</name_singular>
+              <name_plural>esinekokoelmat</name_plural>
             </label>
           </labels>
          </item>
@@ -281,11 +281,24 @@
               <name_plural>Diarios</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Diaario</name_singular>
-              <name_plural>Diaariot</name_plural>
+              <name_singular>diaario</name_singular>
+              <name_plural>diaariot</name_plural>
             </label>
           </labels>
          </item>
+        <item idno="nippu" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>bunch</name_singular>
+              <name_plural>bunches</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>nippu</name_singular>
+              <name_plural>niput</name_plural>
+            </label>
+          </labels>
+         </item>
+
 
       </items>
     </list>
@@ -508,8 +521,8 @@
               <name_plural>abstrac</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>abstract</name_singular>
-              <name_plural>abstract</name_plural>
+              <name_singular>abstrakti</name_singular>
+              <name_plural>abstraktit</name_plural>
             </label>
           </labels>
         </item>
@@ -523,7 +536,7 @@
           <name>Object status values</name>
         </label>
         <label locale="fi_FI">
-          <name>Statukset</name>
+          <name>Objektin statustyypit</name>
         </label>
       </labels>
       <items>
@@ -556,54 +569,7 @@
 
       </items>
     </list>
-    <list code="object_acq_types" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Object acquisition types</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Object acquisition types</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="gift" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>gift</name_singular>
-              <name_plural>gifts</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>lahja</name_singular>
-              <name_plural>lahjat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="bequest" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>bequest</name_singular>
-              <name_plural>bequests</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>perintö</name_singular>
-              <name_plural>perinnöt</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="purchase" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>purchase</name_singular>
-              <name_plural>purchases</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>osto</name_singular>
-              <name_plural>osto</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
 
     <list code="object_lot_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
@@ -615,7 +581,7 @@
         </label>
       </labels>
       <items>
-        <item idno="donation" enabled="1" default="0">
+        <item idno="lahjoitus" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>donation</name_singular>
@@ -627,19 +593,19 @@
             </label>
           </labels>
         </item>
-        <item idno="loan" enabled="1" default="1">
+        <item idno="deponointi" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Laina</name_singular>
-              <name_plural>Lainat</name_plural>
+              <name_singular>deponointi</name_singular>
+              <name_plural>deponoinnit</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="purchase" enabled="1" default="0">
+        <item idno="osto" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>purchase</name_singular>
@@ -651,15 +617,51 @@
             </label>
           </labels>
         </item>
-        <item idno="promise" enabled="1" default="0">
+        <item idno="kuvattu" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>promised gift</name_singular>
-              <name_plural>promised gifts</name_plural>
+              <name_singular>photographed/copied</name_singular>
+              <name_plural>photographed/copied</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>lahja</name_singular>
-              <name_plural>lahjat</name_plural>
+              <name_singular>kuvattu/kopioitu museon toimesta</name_singular>
+              <name_plural>kuvattu/kopioitu museon toimesta</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="nauhoitettu" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>recorded by the museum</name_singular>
+              <name_plural>recorded by the museum</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>nauhoitettu museon toimesta</name_singular>
+              <name_plural>nauhoitettu museon toimesta</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="museolöytö" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>museum finding</name_singular>
+              <name_plural>museum finding</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>museolöytö</name_singular>
+              <name_plural>museolöytö</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="muu" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>other</name_singular>
+              <name_plural>others</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>muu</name_singular>
+              <name_plural>muu</name_plural>
             </label>
           </labels>
         </item>
@@ -684,8 +686,8 @@
               <name_plural>Place Authority</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Place Authority</name_singular>
-              <name_plural>Place Authority</name_plural>
+              <name_singular>paikka</name_singular>
+              <name_plural>paikat</name_plural>
             </label>
           </labels>
         </item>
@@ -772,8 +774,8 @@
               <name_plural>Events</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Tapahtuma</name_singular>
-              <name_plural>Tapahtumat</name_plural>
+              <name_singular>tapahtuma</name_singular>
+              <name_plural>tapahtumat</name_plural>
             </label>
           </labels>
           <items>
@@ -797,8 +799,8 @@
 				  <name_plural>conferences</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Konferenssi</name_singular>
-				  <name_plural>Konferenssi</name_plural>
+				  <name_singular>konferenssi</name_singular>
+				  <name_plural>konferenssi</name_plural>
 				</label>
 			  </labels>
 			</item>  
@@ -810,8 +812,8 @@
 				  <name_plural>Interview</name_plural>
 				</label>
 				<label locale="fi_FI" preferred="1">
-				  <name_singular>Haastattelu</name_singular>
-				  <name_plural>Haastattelut</name_plural>
+				  <name_singular>haastattelu</name_singular>
+				  <name_plural>haastattelut</name_plural>
 				</label>
 			  </labels>
 			</item>      
@@ -923,8 +925,8 @@
               <name_plural>Overall dimensions</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Mitat</name_singular>
-              <name_plural>Mitat</name_plural>
+              <name_singular>mitat</name_singular>
+              <name_plural>mitat</name_plural>
             </label>
           </labels>
         </item>
@@ -935,8 +937,8 @@
               <name_plural>Shipping dimensions</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Logistiikkamitat</name_singular>
-              <name_plural>Logistiikkamitat</name_plural>
+              <name_singular>logistiikkamitat</name_singular>
+              <name_plural>logistiikkamitat</name_plural>
             </label>
           </labels>
         </item>
@@ -1123,7 +1125,7 @@
           </labels>
         </item>
       </items>
-      </list>
+    </list>
 
     <list code="object_media_license_types" hierarchical="0" system="0" vocabulary="0">
       <labels>
@@ -1163,6 +1165,7 @@
         <setting name="render">lookup</setting>
         <setting name="canMakePDF">1</setting>
         <setting name="canMakePDFForValue">1</setting>
+        <setting name="listWidth">350px</setting>
       </settings>
       <typeRestrictions>
         <restriction>
@@ -3014,7 +3017,27 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
 
-
+    <metadataElement code="naamakuva" datatype="Media">
+      <labels>
+        <label locale="fi_FI">
+          <name>naamakuva</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canMakePDF">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <type>individual</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
 
   </elementSets>
   <userInterfaces>
@@ -3024,7 +3047,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Standard object editor</name>
         </label>
         <label locale="fi_FI">
-          <name>Standard object editor</name>
+          <name>Objektilomake</name>
         </label>
       </labels>
       <screens>
@@ -3039,11 +3062,11 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           </labels>
           <bundlePlacements>
   
-            <placement code="ca_attribute_yleisnimi2" typeRestrictions="audio,dokumentti,kappale,kirja,lehtileike,tallenne,video,valokuva" includeSubtypes="1">
+            <placement code="ca_attribute_yleisnimi2" typeRestrictions="esine" includeSubtypes="1">
               <bundle>ca_attribute_yleisnimi</bundle>
               <settings>
                 <setting name="label" locale="en_US">generic name</setting>
-                <setting name="label" locale="fi_FI">objektin nimi</setting>
+                <setting name="label" locale="fi_FI">objektin yleisnimi</setting>
                 <setting name="description" locale="fi_FI">Objektin nimi ilmoitetaan yksittäisellä termillä. Termi voidaan valita ontologiasta tai asiasanastosta. 
 Objektin nimeksi kirjataan yleensä perusmuodossa oleva substantiivi. Välimerkkejä ja isoja kirjaimia 
 ei käytetä.</setting>
@@ -3081,7 +3104,7 @@ ei käytetä.</setting>
               <bundle>idno</bundle>
             </placement>
 
-			<placement code="muu_tunniste">
+	<placement code="muu_tunniste">
               <bundle>muu_tunniste</bundle>
             </placement>
 
@@ -3323,15 +3346,6 @@ ei käytetä.</setting>
                 <setting name="add_label" option="fi_FI">Lisää nimi</setting>
               </settings>
             </placement>
-            <placement code="idno">
-              <bundle>idno</bundle>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-            </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-            </placement>
             <placement code="nonpreferred_labels">
               <bundle>nonpreferred_labels</bundle>
               <settings>
@@ -3341,15 +3355,31 @@ ei käytetä.</setting>
                 <setting name="add_label" option="fi_FI">Lisää muu nimi</setting>
               </settings>
             </placement>
+            <placement code="idno">
+              <bundle>idno</bundle>
+            </placement>
             <placement code="ca_attribute_lifespan">
               <bundle>ca_attribute_lifespan</bundle>
-            </placement>
-            <placement code="ca_attribute_nationality">
-              <bundle>ca_attribute_nationality</bundle>
             </placement>
             <placement code="ca_attribute_biography">
               <bundle>ca_attribute_biography</bundle>
             </placement>
+            <placement code="ca_attribute_naamakuva5">
+              <bundle>ca_attribute_naamakuva</bundle>
+            </placement>
+
+            <placement code="ca_attribute_nationality">
+              <bundle>ca_attribute_nationality</bundle>
+            </placement>
+            <placement code="status">
+              <bundle>status</bundle>
+            </placement>
+            <placement code="access">
+              <bundle>access</bundle>
+            </placement>
+
+
+
             <placement code="ca_attribute_alumni_notes">
               <bundle>ca_attribute_alumni_notes</bundle>
             </placement>
@@ -3669,12 +3699,7 @@ ei käytetä.</setting>
                 <setting name="label" option="fi_FI">Muut nimet</setting>
               </settings>
             </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-            </placement>
+
           </bundlePlacements>
         </screen>
         <screen idno="relationships" default="0">
@@ -3751,12 +3776,8 @@ ei käytetä.</setting>
                 <setting name="add_label" option="fi_FI">Lisää nimi</setting>
               </settings>
             </placement>
-            <placement code="idno_stub">
-              <bundle>idno_stub</bundle>
-            </placement>
-            <placement code="lot_status_id">
-              <bundle>lot_status_id</bundle>
-            </placement>
+
+
             <placement code="nonpreferred_labels">
               <bundle>nonpreferred_labels</bundle>
               <settings>
@@ -3766,18 +3787,20 @@ ei käytetä.</setting>
                 <setting name="add_label" option="fi_FI">Lisää muu nimi</setting>
               </settings>
             </placement>
-            <placement code="extent">
-              <bundle>extent</bundle>
-            </placement>
-            <placement code="extent_units">
-              <bundle>extent_units</bundle>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-            </placement>
             <placement code="ca_attribute_notes">
               <bundle>ca_attribute_lisätiedot</bundle>
             </placement>
+            <placement code="idno_stub">
+              <bundle>idno_stub</bundle>
+            </placement>
+            <placement code="extent">
+              <bundle>extent</bundle>
+            </placement>
+
+            <placement code="status">
+              <bundle>status</bundle>
+            </placement>
+
           </bundlePlacements>
         </screen>
         <screen idno="entities" default="0">
@@ -4599,7 +4622,8 @@ ei käytetä.</setting>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
-        </type>        <type code="painattaja" default="0">
+        </type>       
+ 	<type code="painattaja" default="0">
           <labels>
             <label locale="fi_FI">
               <typename>painattaja</typename>
@@ -5818,27 +5842,24 @@ ei käytetä.</setting>
       </labels>
       <settings>
         <setting name="show_empty_values"><![CDATA[0]]></setting>
-        <setting name="bottom_line"><![CDATA[]]></setting>
-        <setting name="show_only_in"><![CDATA[]]></setting>
       </settings>
       <userAccess>
         <permission user="administrator" access="edit"/>
       </userAccess>
       <bundlePlacements>
+        <placement code="ca_entities_naamakuva">
+          <bundle>ca_entities.naamakuva</bundle>
+        </placement>
         <placement code="ca_entities_preferred_labels">
           <bundle>ca_entities.preferred_labels</bundle>
           <settings>
-            <setting name="label" locale="en_US"/>
             <setting name="label" locale="fi_FI">Nimi</setting>
-            <setting name="format"><![CDATA[]]></setting>
-            <setting name="delimiter"><![CDATA[]]></setting>
             <setting name="maximum_length"><![CDATA[100]]></setting>
           </settings>
         </placement>
         <placement code="ca_entities_type_id">
           <bundle>ca_entities.type_id</bundle>
           <settings>
-            <setting name="label" locale="en_US"/>
             <setting name="label" locale="fi_FI">tyyppi</setting>
             <setting name="maximum_length"><![CDATA[100]]></setting>
           </settings>
@@ -5846,14 +5867,20 @@ ei käytetä.</setting>
         <placement code="ca_entities_biography">
           <bundle>ca_entities.biography</bundle>
         </placement>
-        <placement code="ca_objects">
-          <bundle>ca_objects</bundle>
+        <placement code="ca_object_lots">
+          <bundle>ca_object_lots</bundle>
           <settings>
             <setting name="label" locale="en_US"/>
-            <setting name="label" locale="fi_FI">objektit</setting>
+            <setting name="label" locale="fi_FI">Hankinnat</setting>
             <setting name="format"><![CDATA[]]></setting>
             <setting name="delimiter"><![CDATA[]]></setting>
             <setting name="sort"><![CDATA[]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_objects">
+          <bundle>ca_objects</bundle>
+          <settings>
+            <setting name="label" locale="fi_FI">objektit</setting>
             <setting name="show_hierarchy"><![CDATA[0]]></setting>
             <setting name="remove_first_items"><![CDATA[0]]></setting>
             <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
@@ -5864,11 +5891,7 @@ ei käytetä.</setting>
         <placement code="ca_occurrences">
           <bundle>ca_occurrences</bundle>
           <settings>
-            <setting name="label" locale="en_US"/>
             <setting name="label" locale="fi_FI">tapahtumat</setting>
-            <setting name="format"><![CDATA[]]></setting>
-            <setting name="delimiter"><![CDATA[]]></setting>
-            <setting name="sort"><![CDATA[]]></setting>
             <setting name="show_hierarchy"><![CDATA[0]]></setting>
             <setting name="remove_first_items"><![CDATA[0]]></setting>
             <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
@@ -5881,6 +5904,57 @@ ei käytetä.</setting>
         </placement>
       </bundlePlacements>
     </display>
+    
+    <display code="hankintaraportti" type="ca_object_lots" system="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>hankintaraportti</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="show_empty_values"><![CDATA[1]]></setting>
+        <setting name="bottom_line"><![CDATA[]]></setting>
+        <setting name="show_only_in"><![CDATA[]]></setting>
+      </settings>
+      <userAccess>
+        <permission user="administrator" access="edit"/>
+      </userAccess>
+      <bundlePlacements>
+        <placement code="ca_object_lots_idno_stub">
+          <bundle>ca_object_lots.idno_stub</bundle>
+        </placement>
+        <placement code="ca_object_lots_preferred_labels">
+          <bundle>ca_object_lots.preferred_labels</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">Nimi</setting>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="maximum_length"><![CDATA[100]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_object_lots_description">
+          <bundle>ca_object_lots.description</bundle>
+        </placement>
+        <placement code="ca_entities">
+          <bundle>ca_entities</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">lahjoittaja</setting>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="restrict_to_relationship_types"><![CDATA[donor]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="sort"><![CDATA[]]></setting>
+            <setting name="show_hierarchy"><![CDATA[0]]></setting>
+            <setting name="remove_first_items"><![CDATA[0]]></setting>
+            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
+            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
+            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+          </settings>
+        </placement>
+      </bundlePlacements>
+    </display>
+    
     <display code="researcher_display" type="ca_objects" system="1">
       <labels>
         <label locale="en_US">
@@ -5888,7 +5962,7 @@ ei käytetä.</setting>
         </label>
       </labels>
       <settings>
-        <setting name="show_empty_values"><![CDATA[1]]></setting>
+        <setting name="show_empty_values"><![CDATA[0]]></setting>
         <setting name="bottom_line"><![CDATA[]]></setting>
         <setting name="show_only_in"><![CDATA[]]></setting>
       </settings>
@@ -5901,6 +5975,14 @@ ei käytetä.</setting>
         </placement>
         <placement code="ca_objects_description">
           <bundle>ca_objects.description</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI"/>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="maximum_length"><![CDATA[2048]]></setting>
+            <setting name="filter"><![CDATA[]]></setting>
+          </settings>
         </placement>
         <placement code="ca_objects_date">
           <bundle>ca_objects.date</bundle>
@@ -5910,6 +5992,44 @@ ei käytetä.</setting>
         </placement>
         <placement code="ca_entities">
           <bundle>ca_entities</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">henkilöt/organisaatiot</setting>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="sort"><![CDATA[]]></setting>
+            <setting name="show_hierarchy"><![CDATA[0]]></setting>
+            <setting name="remove_first_items"><![CDATA[0]]></setting>
+            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
+            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
+            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_collections">
+          <bundle>ca_collections</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">kuuluu kokoelmiin</setting>
+            <setting name="format"><![CDATA[]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="sort"><![CDATA[]]></setting>
+            <setting name="show_hierarchy"><![CDATA[0]]></setting>
+            <setting name="remove_first_items"><![CDATA[0]]></setting>
+            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
+            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
+            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_object_lots">
+          <bundle>ca_object_lots</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">hankintatiedot</setting>
+            <setting name="format"><![CDATA[hankinta: <l>^ca_object_lots.preferred_labels</l><br/>
+<unit relativeTo="ca_entities" restrictToRelationshipTypes="donor">lahjoittaja:<l> ^ca_entities.preferred_labels.displayname</l></unit>]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="sort"><![CDATA[]]></setting>
+          </settings>
         </placement>
       </bundlePlacements>
     </display>
