@@ -1355,7 +1355,10 @@ msgstr ""
 #: app/widgets/recordsByStatus/views/main_html.php:43
 #: themes/default/views/mediaViewers/MiradorManifest.php:42
 msgid "BLANK"
-msgstr ""
+msgstr "EI NIMEÄ"
+
+msgid "[BLANK]"
+msgstr "[EI NIMEÄ]"
 
 #: app/helpers/displayHelpers.php:882 app/helpers/displayHelpers.php:1248
 #: app/helpers/displayHelpers.php:1251
@@ -4470,7 +4473,7 @@ msgstr ""
 #: app/lib/ca/Attributes/Values/TimeCodeAttributeValue.php:191
 #: app/lib/core/BaseModel.php:5959
 msgid "%1 is invalid"
-msgstr ""
+msgstr "%1 on virheellinen"
 
 #: app/lib/ca/Attributes/Values/DateRangeAttributeValue.php:307
 msgid "%1 must be within %2"
@@ -5043,7 +5046,7 @@ msgstr ""
 
 #: app/lib/ca/Attributes/Values/ListAttributeValue.php:370
 msgid "Value for %1 [%2] cannot be blank"
-msgstr ""
+msgstr "%1 [%2] ei voi olla tyhjä"
 
 #: app/lib/ca/Attributes/Values/ListAttributeValue.php:373
 msgid "Value %3 for %1 [%2] is invalid"
@@ -5355,6 +5358,8 @@ msgid ""
 "as noted below.\n"
 "<ul>"
 msgstr ""
+"Tallennuksen tiedoissa on virhe.\n"
+"<ul>"
 
 #: app/lib/ca/BaseEditorController.php:480
 msgid "Cannot delete root of hierarchy"
@@ -6000,7 +6005,7 @@ msgstr ""
 
 #: app/lib/ca/BundlableLabelableBaseModelWithAttributes.php:173
 msgid "<em>%1</em> is invalid"
-msgstr ""
+msgstr "<em>%1</em> on virheellinen"
 
 #: app/lib/ca/BundlableLabelableBaseModelWithAttributes.php:175
 msgid "<em>%1</em> is not enabled"

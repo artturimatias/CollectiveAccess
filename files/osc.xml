@@ -199,7 +199,7 @@
 			
 			<item idno="grafiikka" enabled="1" default="0">
 			  <labels>
-				<label locale="en_US" preferred="1">
+				<label locale="en_US" preferred="0">
 				  <name_singular>Print</name_singular>
 				  <name_plural>Prints</name_plural>
 				</label>
@@ -211,7 +211,7 @@
 			</item>
 			<item idno="veistos" enabled="1" default="0">
 			  <labels>
-				<label locale="en_US" preferred="1">
+				<label locale="en_US" preferred="0">
 				  <name_singular>Sculpture</name_singular>
 				  <name_plural>Sculptures</name_plural>
 				</label>
@@ -220,7 +220,19 @@
 				  <name_plural>veistokset</name_plural>
 				</label>
 			  </labels>
-			</item>        
+			</item>    
+			<item idno="design" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="0">
+				  <name_singular>Design</name_singular>
+				  <name_plural>Designs</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>design</name_singular>
+				  <name_plural>design</name_plural>
+				</label>
+			  </labels>
+			</item>       
           </items>
         </item>
 
@@ -230,7 +242,7 @@
     <list code="yleisnimet" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
-          <name>Object types</name>
+          <name>Object names</name>
         </label>
         <label locale="fi_FI">
           <name>Yleisnimet</name>
@@ -1334,14 +1346,6 @@
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
-        <restriction code="r2">
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
         <restriction code="r3">
           <table>ca_occurrences</table>
           <settings>
@@ -1937,56 +1941,8 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="work_description" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Physical description</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Fyysinen kuvailu</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">5</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="work_medium" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Medium</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Media</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">2</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">2000</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
+
     <metadataElement code="work_dimensions" datatype="Container">
       <labels>
         <label locale="en_US">
@@ -2107,16 +2063,20 @@
           <name>Accession date</name>
         </label>
         <label locale="fi_FI">
-          <name>Kirjauspäivämäärä</name>
+          <name>Hankintapäivämäärä</name>
         </label>
       </labels>
       <settings>
         <setting name="fieldWidth">40</setting>
-        <setting name="fieldHeight">1</setting>
+        <setting name="useDatePicker">1</setting>
+        <setting name="datePickerDateFormat">dd/mm/yy</setting>
+        <setting name="mustNotBeBlank">1</setting>
+        <setting name="canMakePDF">1</setting>
+        <setting name="canMakePDFForValue">1</setting>
       </settings>
       <typeRestrictions>
         <restriction code="r1">
-          <table>ca_objects</table>
+          <table>ca_object_lots</table>
           <settings>
             <setting name="minAttributesPerRow">1</setting>
             <setting name="maxAttributesPerRow">1</setting>
@@ -2645,7 +2605,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Life dates</name>
         </label>
         <label locale="fi_FI">
-          <name>Dates</name>
+          <name>Elinaika</name>
         </label>
       </labels>
       <settings>
@@ -3039,6 +2999,43 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
 
+    <metadataElement code="haastattelija" datatype="Entities">
+      <labels>
+        <label locale="fi_FI">
+          <name>haastattelija</name>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_occurrences</table>
+          <type>haastattelu</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="haastateltu" datatype="Entities">
+      <labels>
+        <label locale="fi_FI">
+          <name>haastateltu</name>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_occurrences</table>
+          <type>haastattelu</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -3370,9 +3367,6 @@ ei käytetä.</setting>
 
             <placement code="ca_attribute_nationality">
               <bundle>ca_attribute_nationality</bundle>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
             </placement>
             <placement code="access">
               <bundle>access</bundle>
@@ -3747,6 +3741,7 @@ ei käytetä.</setting>
         </screen>
       </screens>
     </userInterface>
+
     <userInterface code="object_lots_ui" type="ca_object_lots">
       <labels>
         <label locale="en_US">
@@ -3770,51 +3765,76 @@ ei käytetä.</setting>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
-                <setting name="label" locale="en_US">Name</setting>
-                <setting name="label" option="fi_FI">Nimi</setting>
-                <setting name="add_label" locale="en_US">Add name</setting>
-                <setting name="add_label" option="fi_FI">Lisää nimi</setting>
+                <setting name="label" locale="fi_FI">Nimi</setting>
+                <setting name="add_label" locale="fi_FI">Lisää nimi</setting>
+                <setting name="width">650px</setting>
+                <setting name="height">1em</setting>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="usewysiwygeditor"/>
               </settings>
             </placement>
-
-
-            <placement code="nonpreferred_labels">
-              <bundle>nonpreferred_labels</bundle>
+            <placement code="ca_entities2">
+              <bundle>ca_entities</bundle>
               <settings>
-                <setting name="label" locale="en_US">Alternate names</setting>
-                <setting name="label" option="fi_FI">Muut nimet</setting>
-                <setting name="add_label" locale="en_US">Add alternate name</setting>
-                <setting name="add_label" option="fi_FI">Lisää muu nimi</setting>
+                <setting name="label" locale="fi_FI">Lahjoittaja tai myyjä</setting>
+                <setting name="add_label" locale="fi_FI">Lisää useampia</setting>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">list</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow"/>
+                <setting name="maxRelationshipsPerRow"/>
+                <setting name="showCurrentOnly">0</setting>
+                <setting name="showCurrentUsingDate">effective_date</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="disableSorts">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_notes">
-              <bundle>ca_attribute_lisätiedot</bundle>
+            <placement code="ca_attribute_description2">
+              <bundle>ca_attribute_description</bundle>
+            </placement>
+            <placement code="ca_attribute_accession_date3">
+              <bundle>ca_attribute_accession_date</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">collapse</setting>
+                <setting name="expand_collapse_no_value">expand</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+            <placement code="status">
+              <bundle>status</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">collapse</setting>
+                <setting name="expand_collapse_no_value">collapse</setting>
+              </settings>
             </placement>
             <placement code="idno_stub">
               <bundle>idno_stub</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">collapse</setting>
+                <setting name="expand_collapse_no_value">collapse</setting>
+                <setting name="usewysiwygeditor"/>
+              </settings>
             </placement>
-            <placement code="extent">
-              <bundle>extent</bundle>
-            </placement>
-
-            <placement code="status">
-              <bundle>status</bundle>
-            </placement>
-
           </bundlePlacements>
         </screen>
-        <screen idno="entities" default="0">
+        <screen idno="screen_18_3" default="0" color="000000">
           <labels>
-            <label locale="en_US">
-              <name>Entities</name>
-            </label>
             <label locale="fi_FI">
-              <name>Entiteetit</name>
+              <name>Tiedostot</name>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_entities">
-              <bundle>ca_entities</bundle>
+            <placement code="ca_object_representations1">
+              <bundle>ca_object_representations</bundle>
             </placement>
           </bundlePlacements>
         </screen>
@@ -3830,11 +3850,27 @@ ei käytetä.</setting>
           <bundlePlacements>
             <placement code="ca_objects">
               <bundle>ca_objects</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow"/>
+                <setting name="maxRelationshipsPerRow"/>
+                <setting name="showCurrentOnly">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="prepopulateQuickaddFields">0</setting>
+                <setting name="disableSorts">0</setting>
+              </settings>
             </placement>
           </bundlePlacements>
         </screen>
       </screens>
     </userInterface>
+
     <userInterface code="storage_locations_ui" type="ca_storage_locations">
       <labels>
         <label locale="en_US">
@@ -4107,6 +4143,47 @@ ei käytetä.</setting>
         </screen>
       </screens>
     </userInterface>
+    
+    <userInterface code="haastattelulomake" type="ca_occurrences" typeRestrictions="haastattelu" includeSubtypes="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Haastattelulomake</name>
+        </label>
+      </labels>
+      <userAccess>
+        <permission user="administrator" access="edit"/>
+      </userAccess>
+      <screens>
+        <screen idno="screen_24_0" default="0" color="000000">
+          <labels>
+            <label locale="fi_FI">
+              <name>perustiedot</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="preferred_labels1">
+              <bundle>preferred_labels</bundle>
+            </placement>
+            <placement code="ca_attribute_date2">
+              <bundle>ca_attribute_date</bundle>
+            </placement>
+            <placement code="ca_attribute_haastattelija2">
+              <bundle>ca_attribute_haastattelija</bundle>
+            </placement>
+            <placement code="ca_attribute_haastateltu4">
+              <bundle>ca_attribute_haastateltu</bundle>
+            </placement>
+            <placement code="ca_attribute_description5">
+              <bundle>ca_attribute_description</bundle>
+            </placement>
+            <placement code="ca_objects6">
+              <bundle>ca_objects</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+      </screens>
+    </userInterface>
+    
   </userInterfaces>
   <relationshipTypes>
     <relationshipTable name="ca_objects_x_entities">
@@ -5361,7 +5438,7 @@ ei käytetä.</setting>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="järjestäjä" default="0">
+        <type code="jarjestaja" default="0">
           <labels>
             <label locale="en_US">
               <typename>organizer</typename>
@@ -5904,7 +5981,52 @@ ei käytetä.</setting>
         </placement>
       </bundlePlacements>
     </display>
-    
+
+   <display code="haastatteluraportti" type="ca_occurrences" system="1" typeRestrictions="haastattelu" includeSubtypes="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>haastatteluraportti</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="show_empty_values"><![CDATA[0]]></setting>
+        <setting name="bottom_line"><![CDATA[]]></setting>
+        <setting name="show_only_in"><![CDATA[]]></setting>
+      </settings>
+      <userAccess>
+        <permission user="administrator" access="edit"/>
+      </userAccess>
+      <bundlePlacements>
+        <placement code="ca_occurrences_preferred_labels">
+          <bundle>ca_occurrences.preferred_labels</bundle>
+        </placement>
+        <placement code="ca_occurrences_haastateltu">
+          <bundle>ca_occurrences.haastateltu</bundle>
+        </placement>
+        <placement code="ca_occurrences_haastattelija">
+          <bundle>ca_occurrences.haastattelija</bundle>
+        </placement>
+        <placement code="ca_occurrences_description">
+          <bundle>ca_occurrences.description</bundle>
+        </placement>
+        <placement code="ca_entities">
+          <bundle>ca_entities</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">Henkilöt</setting>
+            <setting name="format"><![CDATA[<l>^ca_entities.preferred_labels.displayname</l> (^relationship_typename)]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="sort"><![CDATA[]]></setting>
+            <setting name="show_hierarchy"><![CDATA[0]]></setting>
+            <setting name="remove_first_items"><![CDATA[0]]></setting>
+            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
+            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
+            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+          </settings>
+        </placement>
+      </bundlePlacements>
+    </display>
+ 
     <display code="hankintaraportti" type="ca_object_lots" system="1">
       <labels>
         <label locale="fi_FI">
@@ -5955,10 +6077,10 @@ ei käytetä.</setting>
       </bundlePlacements>
     </display>
     
-    <display code="researcher_display" type="ca_objects" system="1">
+    <display code="esineraportti" type="ca_objects" system="1">
       <labels>
         <label locale="en_US">
-          <name>perusraportti</name>
+          <name>esineraportti</name>
         </label>
       </labels>
       <settings>
@@ -5969,6 +6091,9 @@ ei käytetä.</setting>
       <bundlePlacements>
         <placement code="ca_objects_idno">
           <bundle>ca_objects.idno</bundle>
+        </placement>
+        <placement code="ca_objects_yleisnimi">
+          <bundle>ca_objects.yleisnimi</bundle>
         </placement>
         <placement code="ca_objects_preferred_labels">
           <bundle>ca_objects.preferred_labels</bundle>
