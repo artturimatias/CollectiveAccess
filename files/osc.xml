@@ -2999,43 +2999,6 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="haastattelija" datatype="Entities">
-      <labels>
-        <label locale="fi_FI">
-          <name>haastattelija</name>
-        </label>
-      </labels>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_occurrences</table>
-          <type>haastattelu</type>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">0</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="haastateltu" datatype="Entities">
-      <labels>
-        <label locale="fi_FI">
-          <name>haastateltu</name>
-        </label>
-      </labels>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_occurrences</table>
-          <type>haastattelu</type>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">0</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -3101,7 +3064,7 @@ ei käytetä.</setting>
               <bundle>idno</bundle>
             </placement>
 
-	<placement code="muu_tunniste">
+			<placement code="muu_tunniste">
               <bundle>muu_tunniste</bundle>
             </placement>
 
@@ -3114,7 +3077,7 @@ ei käytetä.</setting>
               <name>Description</name>
             </label>
             <label locale="fi_FI">
-              <name>Kuvailu</name>
+              <name>Kuvailu ja mitat</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3122,26 +3085,10 @@ ei käytetä.</setting>
             <placement code="ca_attribute_description">
               <bundle>ca_attribute_description</bundle>
             </placement>
-            
-			</bundlePlacements>
-		</screen>  
-
- 
-         <screen idno="measuremnts" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Measurements</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Mitat</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-			     
-              <placement code="ca_attribute_work_dimensions">
+            <placement code="ca_attribute_work_dimensions">
               <bundle>ca_attribute_work_dimensions</bundle>
-            </placement> 
-			  </bundlePlacements>
+            </placement>             
+			</bundlePlacements>
 		</screen>  
 
 
@@ -4163,21 +4110,42 @@ ei käytetä.</setting>
           <bundlePlacements>
             <placement code="preferred_labels1">
               <bundle>preferred_labels</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="usewysiwygeditor"/>
+              </settings>
+            </placement>
+            <placement code="ca_entities7">
+              <bundle>ca_entities</bundle>
+              <settings>
+                <setting name="restrict_to_relationship_types">haastateltu</setting>
+                <setting name="list_format">list</setting>
+                <setting name="label" locale="fi_FI">Haastateltu</setting>
+              </settings>
+            </placement>
+            <placement code="ca_entities3">
+              <bundle>ca_entities</bundle>
+              <settings>
+                <setting name="restrict_to_relationship_types">haastattelija</setting>
+                <setting name="list_format">list</setting>
+                <setting name="label" locale="fi_FI">Haastattelija</setting>
+              </settings>
             </placement>
             <placement code="ca_attribute_date2">
               <bundle>ca_attribute_date</bundle>
-            </placement>
-            <placement code="ca_attribute_haastattelija2">
-              <bundle>ca_attribute_haastattelija</bundle>
-            </placement>
-            <placement code="ca_attribute_haastateltu4">
-              <bundle>ca_attribute_haastateltu</bundle>
+
             </placement>
             <placement code="ca_attribute_description5">
               <bundle>ca_attribute_description</bundle>
             </placement>
             <placement code="ca_objects6">
               <bundle>ca_objects</bundle>
+              <settings>
+                <setting name="list_format">list</setting>
+                <setting name="label" locale="fi_FI">Sisältyy objektiin</setting>
+              </settings>
             </placement>
           </bundlePlacements>
         </screen>
@@ -4190,7 +4158,7 @@ ei käytetä.</setting>
       <types>
 		  
 
-<type code="museonjohtaja" default="0">
+       <type code="museonjohtaja" default="0">
           <labels>
             <label locale="fi_FI">
               <typename>museonjohtaja</typename>
@@ -5911,7 +5879,7 @@ ei käytetä.</setting>
     </relationshipTable>
   </relationshipTypes>
   <displays>
-    <display code="toimijayhteenveto" type="ca_entities" system="1" typeRestrictions="animal,fictional_individual,individual,organization" includeSubtypes="0">
+     <display code="toimijayhteenveto" type="ca_entities" system="1" typeRestrictions="animal,fictional_individual,individual,organization" includeSubtypes="0">
       <labels>
         <label locale="fi_FI">
           <name>toimijayhteenveto</name>
@@ -5947,34 +5915,33 @@ ei käytetä.</setting>
         <placement code="ca_object_lots">
           <bundle>ca_object_lots</bundle>
           <settings>
-            <setting name="label" locale="en_US"/>
-            <setting name="label" locale="fi_FI">Hankinnat</setting>
-            <setting name="format"><![CDATA[]]></setting>
-            <setting name="delimiter"><![CDATA[]]></setting>
-            <setting name="sort"><![CDATA[]]></setting>
+            <setting name="label" locale="fi_FI">Lahjoitukset</setting>
+            <setting name="restrict_to_relationship_types"><![CDATA[donor]]></setting>
+            <setting name="restrict_to_relationship_types"><![CDATA[provider]]></setting>
           </settings>
         </placement>
         <placement code="ca_objects">
           <bundle>ca_objects</bundle>
           <settings>
-            <setting name="label" locale="fi_FI">objektit</setting>
-            <setting name="show_hierarchy"><![CDATA[0]]></setting>
-            <setting name="remove_first_items"><![CDATA[0]]></setting>
-            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
-            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
-            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+            <setting name="label" locale="fi_FI">lahjoitukset</setting>
+            <setting name="restrict_to_relationship_types"><![CDATA[informantti]]></setting>
+            <setting name="restrict_to_relationship_types"><![CDATA[luovuttaja]]></setting>
+
           </settings>
         </placement>
         <placement code="ca_occurrences">
           <bundle>ca_occurrences</bundle>
           <settings>
-            <setting name="label" locale="fi_FI">tapahtumat</setting>
-            <setting name="show_hierarchy"><![CDATA[0]]></setting>
-            <setting name="remove_first_items"><![CDATA[0]]></setting>
-            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
-            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
-            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+            <setting name="label" locale="fi_FI">haastattelut</setting>
+
+            <setting name="format"><![CDATA[<l>^ca_occurrences.preferred_labels</l> (^ca_occurrences.date)]]></setting>
+            <setting name="restrict_to_relationship_types"><![CDATA[haastateltu]]></setting>
+            <setting name="restrict_to_types"><![CDATA[haastattelu]]></setting>
+
           </settings>
+        </placement>
+        <placement code="ca_entities_internal_notes">
+          <bundle>ca_entities.internal_notes</bundle>
         </placement>
         <placement code="ca_entities_internal_notes">
           <bundle>ca_entities.internal_notes</bundle>
@@ -5982,7 +5949,7 @@ ei käytetä.</setting>
       </bundlePlacements>
     </display>
 
-   <display code="haastatteluraportti" type="ca_occurrences" system="1" typeRestrictions="haastattelu" includeSubtypes="0">
+     <display code="haastatteluraportti" type="ca_occurrences" system="1" typeRestrictions="haastattelu" includeSubtypes="0">
       <labels>
         <label locale="fi_FI">
           <name>haastatteluraportti</name>
@@ -5990,8 +5957,6 @@ ei käytetä.</setting>
       </labels>
       <settings>
         <setting name="show_empty_values"><![CDATA[0]]></setting>
-        <setting name="bottom_line"><![CDATA[]]></setting>
-        <setting name="show_only_in"><![CDATA[]]></setting>
       </settings>
       <userAccess>
         <permission user="administrator" access="edit"/>
@@ -5999,12 +5964,11 @@ ei käytetä.</setting>
       <bundlePlacements>
         <placement code="ca_occurrences_preferred_labels">
           <bundle>ca_occurrences.preferred_labels</bundle>
-        </placement>
-        <placement code="ca_occurrences_haastateltu">
-          <bundle>ca_occurrences.haastateltu</bundle>
-        </placement>
-        <placement code="ca_occurrences_haastattelija">
-          <bundle>ca_occurrences.haastattelija</bundle>
+          <settings>
+
+            <setting name="label" locale="fi_FI">Nimi</setting>
+
+          </settings>
         </placement>
         <placement code="ca_occurrences_description">
           <bundle>ca_occurrences.description</bundle>
@@ -6012,16 +5976,26 @@ ei käytetä.</setting>
         <placement code="ca_entities">
           <bundle>ca_entities</bundle>
           <settings>
-            <setting name="label" locale="en_US"/>
-            <setting name="label" locale="fi_FI">Henkilöt</setting>
-            <setting name="format"><![CDATA[<l>^ca_entities.preferred_labels.displayname</l> (^relationship_typename)]]></setting>
-            <setting name="delimiter"><![CDATA[]]></setting>
-            <setting name="sort"><![CDATA[]]></setting>
-            <setting name="show_hierarchy"><![CDATA[0]]></setting>
-            <setting name="remove_first_items"><![CDATA[0]]></setting>
-            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
-            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
-            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
+
+            <setting name="label" locale="fi_FI">Haastateltu</setting>
+
+            <setting name="restrict_to_relationship_types"><![CDATA[haastateltu]]></setting>
+
+          </settings>
+        </placement>
+        <placement code="ca_entities">
+          <bundle>ca_entities</bundle>
+          <settings>
+
+            <setting name="label" locale="fi_FI">Haastattelija</setting>
+            <setting name="restrict_to_relationship_types"><![CDATA[haastattelija]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_objects">
+          <bundle>ca_objects</bundle>
+          <settings>
+            <setting name="label" locale="fi_FI">sisältyy objektiin</setting>
+            <setting name="format"><![CDATA[<l>^ca_objects.preferred_labels</l> (^ca_objects.type_id) ^ca_objects.idno]]></setting>
           </settings>
         </placement>
       </bundlePlacements>

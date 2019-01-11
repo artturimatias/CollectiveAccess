@@ -4310,7 +4310,7 @@ msgstr ""
 #: app/lib/ca/Attributes/Values/NumericAttributeValue.php:223
 #: app/lib/ca/Attributes/Values/TimeCodeAttributeValue.php:198
 msgid "%1 must not be empty"
-msgstr ""
+msgstr "%/ ei voi olla tyhjä"
 
 #: app/lib/ca/Attributes/Values/CurrencyAttributeValue.php:235
 #: app/lib/core/Plugins/CurrencyConversion/EuroBank.php:76
@@ -12536,7 +12536,7 @@ msgstr ""
 #: app/models/ca_object_lots.php:45 app/models/ca_objects.php:178
 #: app/models/ca_search_forms.php:94
 msgid "object lots"
-msgstr ""
+msgstr "Hankinnat"
 
 #: app/models/ca_bookmarks.php:74 app/models/ca_bundle_displays.php:94
 #: app/models/ca_data_exporters.php:89 app/models/ca_data_importers.php:92
