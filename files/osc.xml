@@ -399,9 +399,6 @@
         <label locale="en_US">
           <name>Object workflow statuses</name>
         </label>
-        <label locale="en_CA">
-          <name>Object workflow statuses</name>
-        </label>
 
       </labels>
       <items>
@@ -582,6 +579,42 @@
       </items>
     </list>
 
+
+  <list code="object_lot_statuses" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Object lot statuses</name>
+        </label>
+
+      </labels>
+      <items>
+        <item idno="saapunut" enabled="1" default="1">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>saapunut</name_singular>
+              <name_plural>saapuneet</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="kasittelyssa" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>käsittelyssä</name_singular>
+              <name_plural>käsittelyssä</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="hyvaksytty" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>hyväksytty</name_singular>
+              <name_plural>hyväksytyt</name_plural>
+            </label>
+          </labels>
+        </item>
+
+      </items>
+    </list>
 
     <list code="object_lot_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
@@ -1163,6 +1196,15 @@
         </item>
       </items>
     </list>
+
+    <list code="lehtinimekkeet" hierarchical="0" system="1" vocabulary="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>lehtinimekkeet</name>
+        </label>
+      </labels>
+    </list>
+    
   </lists>
   <elementSets>
     <metadataElement code="yleisnimi" datatype="List" list="yleisnimet">
@@ -2183,7 +2225,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </elements>
       <typeRestrictions>
         <restriction>
-          <table>ca_entities</table>
+          <table>ca_objects</table>
           <includeSubtypes>1</includeSubtypes>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
@@ -2990,6 +3032,66 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         <restriction>
           <table>ca_entities</table>
           <type>individual</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="lehtinimeke" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>Lehtinimeke</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="doesNotTakeLocale">1</setting>
+        <setting name="canMakePDF">1</setting>
+        <setting name="canMakePDFForValue">1</setting>
+      </settings>
+      <elements>
+        <metadataElement code="lehti" datatype="List" list="lehtinimekkeet">
+          <labels>
+            <label locale="fi_FI">
+              <name>lehti</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="nullOptionText">Ei valittu</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">select</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="lehtinumero" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>lehden numero</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="fieldWidth">10</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>lehtileike</type>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -6083,6 +6185,18 @@ ei käytetä.</setting>
             <setting name="filter"><![CDATA[]]></setting>
           </settings>
         </placement>
+        <placement code="ca_objects_lehtinimeke">
+          <bundle>ca_objects.lehtinimeke</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">leike lehdestä</setting>
+            <setting name="format"><![CDATA[^ca_objects.lehtinimeke.lehti (^ca_objects.lehtinimeke.lehtinumero)]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="maximum_length"><![CDATA[2048]]></setting>
+            <setting name="filter"><![CDATA[]]></setting>
+            <setting name="bottom_line"><![CDATA[]]></setting>
+          </settings>
+        </placement>
         <placement code="ca_objects_date">
           <bundle>ca_objects.date</bundle>
         </placement>
@@ -6133,6 +6247,265 @@ ei käytetä.</setting>
       </bundlePlacements>
     </display>
   </displays>
+  
+<searchForms>
+    <searchForm code="ca_objects_adv_search" type="ca_objects" system="1">
+      <labels>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Perushaku</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="fulltext_obj">
+          <bundle>_fulltext</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI"/>
+            <setting name="width">400px</setting>
+          </settings>
+        </placement>
+        <placement code="p1">
+          <bundle>ca_object_labels.name</bundle>
+          <settings>
+            <setting name="label" locale="en_US">Title</setting>
+          </settings>
+        </placement>
+        <placement code="p2">
+          <bundle>ca_objects.idno</bundle>
+        </placement>
+        <placement code="p3">
+          <bundle>ca_objects.type_id</bundle>
+        </placement>
+        <placement code="p4">
+          <bundle>ca_entity_labels.displayname</bundle>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+    
+    <searchForm code="ca_entities_adv_search" type="ca_entities" system="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>Perushaku</name>
+        </label>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="p7">
+          <bundle>ca_entity_labels.forename</bundle>
+        </placement>
+        <placement code="p8">
+          <bundle>ca_entity_labels.middlename</bundle>
+        </placement>
+        <placement code="p9">
+          <bundle>ca_entity_labels.surname</bundle>
+        </placement>
+        <placement code="p10">
+          <bundle>ca_entities.idno</bundle>
+        </placement>
+        <placement code="p11">
+          <bundle>ca_entities.type_id</bundle>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+    
+    <searchForm code="ca_places_adv_search" type="ca_places" system="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>Perushaku</name>
+        </label>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="p14">
+          <bundle>ca_place_labels.name</bundle>
+        </placement>
+        <placement code="p15">
+          <bundle>ca_places.idno</bundle>
+        </placement>
+        <placement code="p16">
+          <bundle>ca_places.type_id</bundle>
+        </placement>
+
+      </bundlePlacements>
+    </searchForm>
+    
+    <searchForm code="ca_occurrences_adv_search" type="ca_occurrences" system="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>Perushaku</name>
+        </label>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="fulltext_occur">
+          <bundle>_fulltext</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI"/>
+            <setting name="width">400px</setting>
+          </settings>
+        </placement>
+        <placement code="p19">
+          <bundle>ca_occurrence_labels.name</bundle>
+          <settings>
+            <setting name="label" locale="en_US">Title</setting>
+          </settings>
+        </placement>
+        <placement code="p20">
+          <bundle>ca_occurrences.idno</bundle>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+    
+    <searchForm code="ca_collections_adv_search" type="ca_collections" system="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>Perushaku</name>
+        </label>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="p23">
+          <bundle>ca_collection_labels.name</bundle>
+        </placement>
+        <placement code="p24">
+          <bundle>ca_collections.idno</bundle>
+        </placement>
+        <placement code="p25">
+          <bundle>ca_collections.type_id</bundle>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+    
+    <searchForm code="ca_storage_locations_adv_search" type="ca_storage_locations" system="1">
+      <labels>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+        <label locale="en_CA">
+          <name>Extended search</name>
+        </label>
+        <label locale="sv_SE">
+          <name>Utökad sökning</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="p28">
+          <bundle>ca_storage_location_labels.name</bundle>
+        </placement>
+        <placement code="p29">
+          <bundle>ca_storage_locations.type_id</bundle>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+    
+    <searchForm code="ca_loans_adv_search" type="ca_loans" system="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>Perushaku</name>
+        </label>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="p30">
+          <bundle>ca_loan_labels.name</bundle>
+        </placement>
+        <placement code="p31">
+          <bundle>ca_loans.type_id</bundle>
+        </placement>
+        <placement code="p32">
+          <bundle>ca_loans.idno</bundle>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+    
+    <searchForm code="ca_object_lots_adv_search" type="ca_object_lots" system="1">
+      <labels>
+        <label locale="fi_FI">
+          <name>Perushaku</name>
+        </label>
+        <label locale="en_US">
+          <name>Extended search</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">3</setting>
+      </settings>
+      <bundlePlacements>
+        <placement code="fulltext_lots">
+          <bundle>_fulltext</bundle>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+
+    <searchForm code="lehtileikehaku" type="ca_objects" system="1" typeRestrictions="lehtileike" includeSubtypes="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Lehtileikehaku</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="form_width">1</setting>
+      </settings>
+      <userAccess>
+        <permission user="administrator" access="edit"/>
+      </userAccess>
+      <bundlePlacements>
+        <placement code="p26_lehti">
+          <bundle>ca_objects.lehtinimeke</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI"/>
+            <setting name="width">400px</setting>
+          </settings>
+        </placement>
+        <placement code="fulltext_lehti">
+          <bundle>_fulltext</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI"/>
+            <setting name="width">400px</setting>
+          </settings>
+        </placement>
+      </bundlePlacements>
+    </searchForm>
+
+  </searchForms>
+  
     <logins>
         <login user_name="administrator" email="dummy@dummy.com" password="jyu_osc" fname="CollectiveAccess"
             lname="Administrator">

@@ -4310,7 +4310,7 @@ msgstr ""
 #: app/lib/ca/Attributes/Values/NumericAttributeValue.php:223
 #: app/lib/ca/Attributes/Values/TimeCodeAttributeValue.php:198
 msgid "%1 must not be empty"
-msgstr "%/ ei voi olla tyhjä"
+msgstr "%1 ei voi olla tyhjä"
 
 #: app/lib/ca/Attributes/Values/CurrencyAttributeValue.php:235
 #: app/lib/core/Plugins/CurrencyConversion/EuroBank.php:76
@@ -4477,7 +4477,7 @@ msgstr "%1 on virheellinen"
 
 #: app/lib/ca/Attributes/Values/DateRangeAttributeValue.php:307
 msgid "%1 must be within %2"
-msgstr ""
+msgstr "%1 [%2] ei voi olla tyhjä"
 
 #: app/lib/ca/Attributes/Values/EntitiesAttributeValue.php:50
 msgid "Check this option if you want to require that an entity be selected."
@@ -28057,7 +28057,7 @@ msgstr "Lomake"
 #: themes/default/views/find/Search/search_advanced_controls_html.php:67
 #: themes/default/views/find/Search/search_advanced_controls_html.php:73
 msgid "Show search form"
-msgstr ""
+msgstr "Näytä hakulomake"
 
 #: themes/default/views/find/Search/search_advanced_form_html.php:84
 msgid "Save search as"
