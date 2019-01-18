@@ -239,13 +239,21 @@
       </items>
     </list>
 
-    <list code="yleisnimet" hierarchical="0" system="0" vocabulary="0">
+    <list code="yleisnimet" hierarchical="0" system="1" vocabulary="0">
       <labels>
         <label locale="en_US">
           <name>Object names</name>
         </label>
         <label locale="fi_FI">
           <name>Yleisnimet</name>
+        </label>
+      </labels>
+    </list>
+
+    <list code="ammatit" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Ammatit</name>
         </label>
       </labels>
     </list>
