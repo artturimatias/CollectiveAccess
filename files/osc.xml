@@ -845,7 +845,7 @@
 			  </labels>
 			</item>
 
-			<item idno="konferenssi" enabled="1" default="1">
+			<item idno="konferenssi" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>conference</name_singular>
@@ -858,7 +858,7 @@
 			  </labels>
 			</item>  
 
-			<item idno="haastattelu" enabled="1" default="1">
+			<item idno="haastattelu" enabled="1" default="0">
 			  <labels>
 				<label locale="en_US" preferred="1">
 				  <name_singular>Interview</name_singular>
@@ -869,7 +869,47 @@
 				  <name_plural>haastattelut</name_plural>
 				</label>
 			  </labels>
-			</item>      
+			</item>  
+			
+			<item idno="luento_esitelma" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Lecture or presentation</name_singular>
+				  <name_plural>Lectures and presentations</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>luento tai esitys</name_singular>
+				  <name_plural>luennot tai esitykset</name_plural>
+				</label>
+			  </labels>
+			</item> 
+
+			<item idno="keskustelu" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Discussion</name_singular>
+				  <name_plural>Discussion</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>keskustelu</name_singular>
+				  <name_plural>keskustelut</name_plural>
+				</label>
+			  </labels>
+			</item>   
+
+			<item idno="muistelu" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Recollection</name_singular>
+				  <name_plural>Recollections</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>muistelu</name_singular>
+				  <name_plural>muistelu</name_plural>
+				</label>
+			  </labels>
+			</item>  
+     
           </items>
         </item>
 		  
@@ -1241,7 +1281,31 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-	  
+
+   <metadataElement code="ammatti" datatype="List" list="ammatit">
+      <labels>
+        <label locale="fi_FI">
+          <name>ammatti</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="nullOptionText">ei arvoa</setting>
+        <setting name="render">select</setting>
+        <setting name="canMakePDFForValue">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <type>individual</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+ 
     <metadataElement code="description" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -3154,6 +3218,8 @@ ei käytetä.</setting>
                 <setting name="label" option="fi_FI">Nimeke</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
                 <setting name="add_label" option="fi_FI">Lisää nimeke</setting>
+                <setting name="width">650px</setting>
+                <setting name="height">20px</setting>
               </settings>
             </placement>
 
@@ -3166,6 +3232,7 @@ ei käytetä.</setting>
                 <setting name="label" option="fi_FI">Muut nimekkeet</setting>
                 <setting name="add_label" locale="en_US">Add alternate title</setting>
                 <setting name="add_label" option="fi_FI">Lisää muu nimeke</setting>
+                <setting name="width">650px</setting>
               </settings>
             </placement>
 
@@ -3414,6 +3481,9 @@ ei käytetä.</setting>
             </placement>
             <placement code="ca_attribute_lifespan">
               <bundle>ca_attribute_lifespan</bundle>
+            </placement>
+            <placement code="ca_attribute_ammatti5">
+              <bundle>ca_attribute_ammatti</bundle>
             </placement>
             <placement code="ca_attribute_biography">
               <bundle>ca_attribute_biography</bundle>
@@ -6292,6 +6362,9 @@ ei käytetä.</setting>
         </placement>
         <placement code="p4">
           <bundle>ca_entity_labels.displayname</bundle>
+          <settings>
+            <setting name="label" locale="fi_FI">Objektiin liittyvä toimija</setting>
+          </settings>
         </placement>
       </bundlePlacements>
     </searchForm>
