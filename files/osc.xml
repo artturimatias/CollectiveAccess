@@ -2154,7 +2154,7 @@
           <name>Object date</name>
         </label>
         <label locale="fi_FI">
-          <name>Kohdepäivämäärä?</name>
+          <name>Päivämäärä</name>
         </label>
       </labels>
       <settings>
@@ -2663,31 +2663,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="nationality" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Nationality</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Kansallisuus</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">1</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">255</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="biography" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -2713,25 +2689,61 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="lifespan" datatype="DateRange">
+    <metadataElement code="elinaika" datatype="Container">
       <labels>
-        <label locale="en_US">
-          <name>Life dates</name>
-        </label>
         <label locale="fi_FI">
-          <name>Elinaika</name>
+          <name>elinaika</name>
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">40</setting>
-        <setting name="fieldHeight">1</setting>
+        <setting name="doesNotTakeLocale">1</setting>
+        <setting name="canBeUsedInSearchForm">1</setting>
+        <setting name="canBeUsedInDisplay">1</setting>
       </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_entities</table>
+      <elements>
+        <metadataElement code="birthdate" datatype="DateRange">
+          <labels>
+            <label locale="fi_FI">
+              <name>syntynyt</name>
+            </label>
+          </labels>
           <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="isLifespan">1</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">1</setting>
+            <setting name="canMakePDFForValue">1</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="deathdate" datatype="DateRange">
+          <labels>
+            <label locale="fi_FI">
+              <name>kuollut</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="isLifespan">1</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">1</setting>
+            <setting name="canMakePDFForValue">1</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <includeSubtypes>1</includeSubtypes>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
           </settings>
         </restriction>
       </typeRestrictions>
@@ -2742,7 +2754,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Address</name>
         </label>
         <label locale="fi_FI">
-          <name>Adresse</name>
+          <name>Osoite</name>
         </label>
       </labels>
       <settings/>
@@ -2761,10 +2773,10 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
             <metadataElement code="address1" datatype="Text">
               <labels>
                 <label locale="en_US">
-                  <name>Address line 1</name>
+                  <name>Address</name>
                 </label>
                 <label locale="fi_FI">
-                  <name>Osoite rivi 1</name>
+                  <name>Osoite</name>
                 </label>
               </labels>
               <settings>
@@ -2776,35 +2788,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
             </metadataElement>
           </elements>
         </metadataElement>
-        <metadataElement code="line2" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>Address line 2</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Osoite rivi 2</name>
-            </label>
-          </labels>
-          <settings/>
-          <elements>
-            <metadataElement code="address2" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>Address line 2</name>
-                </label>
-                <label locale="fi_FI">
-                  <name>Osoite rivi 2</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">1</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">255</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
+
         <metadataElement code="line3" datatype="Container">
           <labels>
             <label locale="en_US">
@@ -2832,22 +2816,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
                 <setting name="maxChars">255</setting>
               </settings>
             </metadataElement>
-            <metadataElement code="stateprovince" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>State/province</name>
-                </label>
-                <label locale="fi_FI">
-                  <name>State/province</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">15</setting>
-                <setting name="fieldHeight">1</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">255</setting>
-              </settings>
-            </metadataElement>
+
             <metadataElement code="postalcode" datatype="Text">
               <labels>
                 <label locale="en_US">
@@ -2864,22 +2833,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
                 <setting name="maxChars">255</setting>
               </settings>
             </metadataElement>
-            <metadataElement code="country" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>Country</name>
-                </label>
-                <label locale="fi_FI">
-                  <name>Maa</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">15</setting>
-                <setting name="fieldHeight">1</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">255</setting>
-              </settings>
-            </metadataElement>
+
           </elements>
         </metadataElement>
         <metadataElement code="line4" datatype="Container">
@@ -2933,6 +2887,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </label>
       </labels>
       <settings>
+		<setting name="doesNotTakeLocale">1</setting>
         <setting name="fieldWidth">90</setting>
         <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
@@ -2959,6 +2914,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </label>
       </labels>
       <settings>
+		<setting name="doesNotTakeLocale">1</setting>
         <setting name="fieldWidth">90</setting>
         <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
@@ -2985,6 +2941,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </label>
       </labels>
       <settings>
+		<setting name="doesNotTakeLocale">1</setting>
         <setting name="fieldWidth">90</setting>
         <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
@@ -3103,7 +3060,6 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       <typeRestrictions>
         <restriction>
           <table>ca_entities</table>
-          <type>individual</type>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -3479,8 +3435,8 @@ ei käytetä.</setting>
             <placement code="idno">
               <bundle>idno</bundle>
             </placement>
-            <placement code="ca_attribute_lifespan">
-              <bundle>ca_attribute_lifespan</bundle>
+            <placement code="ca_attribute_elinaika">
+              <bundle>ca_attribute_elinaika</bundle>
             </placement>
             <placement code="ca_attribute_ammatti5">
               <bundle>ca_attribute_ammatti</bundle>
@@ -3492,18 +3448,7 @@ ei käytetä.</setting>
               <bundle>ca_attribute_naamakuva</bundle>
             </placement>
 
-            <placement code="ca_attribute_nationality">
-              <bundle>ca_attribute_nationality</bundle>
-            </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-            </placement>
 
-
-
-            <placement code="ca_attribute_alumni_notes">
-              <bundle>ca_attribute_alumni_notes</bundle>
-            </placement>
           </bundlePlacements>
         </screen>
         <screen idno="contact" default="0">
@@ -6089,6 +6034,30 @@ ei käytetä.</setting>
             <setting name="maximum_length"><![CDATA[100]]></setting>
           </settings>
         </placement>
+        <placement code="ca_entities_elinaika">
+          <bundle>ca_entities.elinaika</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">syntynyt</setting>
+            <setting name="format"><![CDATA[^ca_entities.elinaika.birthdate]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="maximum_length"><![CDATA[2048]]></setting>
+            <setting name="filter"><![CDATA[]]></setting>
+            <setting name="bottom_line"><![CDATA[]]></setting>
+          </settings>
+        </placement>
+        <placement code="ca_entities_elinaika_d">
+          <bundle>ca_entities.elinaika</bundle>
+          <settings>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fi_FI">kuollut</setting>
+            <setting name="format"><![CDATA[^ca_entities.elinaika.deathdate]]></setting>
+            <setting name="delimiter"><![CDATA[]]></setting>
+            <setting name="maximum_length"><![CDATA[2048]]></setting>
+            <setting name="filter"><![CDATA[]]></setting>
+            <setting name="bottom_line"><![CDATA[]]></setting>
+          </settings>
+        </placement>
         <placement code="ca_entities_biography">
           <bundle>ca_entities.biography</bundle>
         </placement>
@@ -6123,9 +6092,7 @@ ei käytetä.</setting>
         <placement code="ca_entities_internal_notes">
           <bundle>ca_entities.internal_notes</bundle>
         </placement>
-        <placement code="ca_entities_internal_notes">
-          <bundle>ca_entities.internal_notes</bundle>
-        </placement>
+
       </bundlePlacements>
     </display>
 
