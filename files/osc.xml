@@ -239,7 +239,7 @@
       </items>
     </list>
 
-    <list code="yleisnimet" hierarchical="0" system="1" vocabulary="0">
+    <list code="yleisnimet" hierarchical="0" system="1" vocabulary="1">
       <labels>
         <label locale="en_US">
           <name>Object names</name>
@@ -254,6 +254,34 @@
       <labels>
         <label locale="fi_FI">
           <name>Ammatit</name>
+        </label>
+      </labels>
+    </list>
+
+    <list code="paikat" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Paikat</name>
+        </label>
+      </labels>
+    </list>
+
+    <list code="hakusanat" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Hakusanat</name>
+        </label>
+      </labels>
+    </list>
+
+
+    <list code="yleisnimet" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Object names</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Yleisnimet</name>
         </label>
       </labels>
     </list>
@@ -2733,6 +2761,31 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
             <setting name="canBeUsedInDisplay">1</setting>
             <setting name="canMakePDF">1</setting>
             <setting name="canMakePDFForValue">1</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="syntymapaikka" datatype="List" list="paikat">
+          <labels>
+            <label locale="fi_FI">
+              <name>syntymäpaikka</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="nullOptionText">ei arvoa</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">select</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">1</setting>
+            <setting name="canMakePDFForValue">1</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
           </settings>
         </metadataElement>
       </elements>
