@@ -33,6 +33,21 @@
             <setting name="render_in_new_menu">0</setting>
           </settings>
         </item>
+		<item idno="laatikko" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="0">
+              <name_singular>Box</name_singular>
+              <name_plural>Boxes</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>laatikko</name_singular>
+              <name_plural>laatikot</name_plural>
+            </label>
+          </labels>
+          <settings>
+            <setting name="render_in_new_menu">0</setting>
+          </settings>
+        </item>
 		<item idno="valokuva" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="0">
@@ -274,17 +289,6 @@
       </labels>
     </list>
 
-
-    <list code="yleisnimet" hierarchical="0" system="1" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Object names</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Yleisnimet</name>
-        </label>
-      </labels>
-    </list>
 
     <list code="collection_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
