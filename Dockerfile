@@ -8,7 +8,7 @@ ENV APACHE_RUN_DIR      /var/run/apache2
 ENV APACHE_LOCK_DIR     /var/lock/apache2
 ENV APACHE_LOG_DIR      /var/log/apache2
 
-ENV CA_PROVIDENCE_VERSION=1.7.6
+ENV CA_PROVIDENCE_VERSION=1.7.8
 ENV CA_PROVIDENCE_DIR=/var/www/providence
 ENV CA_PAWTUCKET_VERSION=1.7
 ENV CA_PAWTUCKET_DIR=/var/www
@@ -53,14 +53,14 @@ RUN rm -rf /var/www/html
 run mkdir /$CA_PROVIDENCE_DIR/media/collectiveaccess
 run mkdir /$CA_PROVIDENCE_DIR/app/locale/fi_FI
 RUN ln -s /$CA_PROVIDENCE_DIR/media /$CA_PAWTUCKET_DIR/media
-RUN chown -R www-data:www-data /var/www
+
 #COPY php.ini /etc/php/7.0/cli/php.ini
 
 COPY files/php.ini /etc/php/7.0/apache2/php.ini
 COPY files/messages.po /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
 COPY files/messages.mo /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
 COPY files/base.css /$CA_PROVIDENCE_DIR/themes/default/css/
-COPY files/fi_FI.lang /$CA_PROVIDENCE_DIR/app/lib/core/Parsers/TimeExpressionParser/
+COPY files/fi_FI.lang /$CA_PROVIDENCE_DIR/app/lib/Parsers/TimeExpressionParser/
 COPY files/osc.xml /$CA_PROVIDENCE_DIR/install/profiles/xml/
 COPY files/global.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/browse.conf /$CA_PROVIDENCE_DIR/app/conf/
@@ -71,6 +71,7 @@ COPY files/TileViewer.php /$CA_PROVIDENCE_DIR/app/lib/core/Media/MediaViewers/
 COPY files/menu_logo_osc.png /$CA_PROVIDENCE_DIR/themes/default/graphics/logos/menu_logo.png
 COPY files/setup.php /$CA_PROVIDENCE_DIR/setup.php
 COPY files/entrypoint.sh /entrypoint.sh
+RUN chown -R www-data:www-data /var/www
 
 RUN chmod 777 /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
