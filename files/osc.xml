@@ -937,11 +937,36 @@
 				</label>
 				<label locale="fi_FI" preferred="1">
 				  <name_singular>muistelu</name_singular>
-				  <name_plural>muistelu</name_plural>
+				  <name_plural>muistelut</name_plural>
 				</label>
 			  </labels>
 			</item>  
-     
+
+			<item idno="konservointi" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Convervation</name_singular>
+				  <name_plural>Convervations</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>konservointi</name_singular>
+				  <name_plural>konservoinnit</name_plural>
+				</label>
+			  </labels>
+			</item>  
+
+			<item idno="tyomaadokumentointi" enabled="1" default="0">
+			  <labels>
+				<label locale="en_US" preferred="1">
+				  <name_singular>Work documentation</name_singular>
+				  <name_plural>Work documentation</name_plural>
+				</label>
+				<label locale="fi_FI" preferred="1">
+				  <name_singular>työmaadokumentointi</name_singular>
+				  <name_plural>työmaadokumentoinnit</name_plural>
+				</label>
+			  </labels>
+			</item>       
           </items>
         </item>
 		  
@@ -1479,6 +1504,7 @@
           <settings>
             <setting name="fieldWidth">40</setting>
             <setting name="fieldHeight">1</setting>
+            <setting name="useDatePicker">1</setting>
           </settings>
         </metadataElement>
 
@@ -2192,6 +2218,7 @@
       <settings>
         <setting name="fieldWidth">40</setting>
         <setting name="fieldHeight">1</setting>
+        <setting name="useDatePicker">1</setting>
       </settings>
       <typeRestrictions>
         <restriction code="r1">

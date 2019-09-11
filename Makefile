@@ -3,7 +3,7 @@ IMAGES := $(shell docker images -f "dangling=true" -q)
 CONTAINERS := $(shell docker ps -a -q -f status=exited)
 VOLUME := collectiveaccess-data
 DB := c_access
-VERSION := 1.7.6
+VERSION := 1.7.8
 
 clean:
 	docker rm -f $(CONTAINERS)
