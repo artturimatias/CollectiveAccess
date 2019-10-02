@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 ENV APACHE_RUN_USER     www-data
 ENV APACHE_RUN_GROUP    www-data
@@ -13,31 +13,34 @@ ENV CA_PROVIDENCE_DIR=/var/www/providence
 ENV CA_PAWTUCKET_VERSION=1.7
 ENV CA_PAWTUCKET_DIR=/var/www
 
+ENV TZ=Europe/Berlin\
+ DEBIAN_FRONTEND=noninteractive
+ 
 RUN apt-get update && apt-get install -y apache2 \
 					php7.0 \
-					libapache2-mod-php7.0 \
+					libapache2-mod-php \
 					curl \
 					php-mysql \
 					mysql-client \
 					curl \
-					php7.0-curl \
-					php7.0-xml \
+					php-curl \
+					php-xml \
 					zip \
 					wget \
 					ffmpeg \
 					ghostscript \
 					imagemagick \
-					php7.0-gd \
+					php-gd \
 					libreoffice \
-					php7.0-zip \
+					php-zip \
 					vim
 
 #GMAGICK
-RUN apt-get install -y php-pear php7.0-dev graphicsmagick libgraphicsmagick1-dev \
-	&& pecl install gmagick-2.0.4RC1
+RUN apt-get install -y php-pear php-dev graphicsmagick libgraphicsmagick1-dev php-gmagick
+# && pecl install gmagick-2.0.4RC1
 
 # better PDF (wkhtmltopdf)
-RUN wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.xenial_amd64.deb && apt install -y ./wkhtmltox_0.12.5-1.xenial_amd64.deb 
+RUN wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb && apt install -y ./wkhtmltox_0.12.5-1.bionic_amd64.deb 
 
 
 RUN curl -SsL https://github.com/collectiveaccess/providence/archive/$CA_PROVIDENCE_VERSION.tar.gz | tar -C /var/www/ -xzf -
