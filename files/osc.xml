@@ -7,7 +7,44 @@
     <locale lang="en" country="US">English</locale>
   </locales>
   <lists>
-    
+
+    <list code="mittayksikot" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>mittayksiköt</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="3" enabled="1" default="0" value="mm" rank="198" type="concept">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>millimetriä</name_singular>
+              <name_plural>millimetriä</name_plural>
+              <description/>
+            </label>
+          </labels>
+        </item>
+        <item idno="4" enabled="1" default="0" value="cm" rank="199" type="concept">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>senttimetriä</name_singular>
+              <name_plural>senttimetriä</name_plural>
+              <description/>
+            </label>
+          </labels>
+        </item>
+        <item idno="5" enabled="1" default="0" value="m" rank="200" type="concept">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>metriä</name_singular>
+              <name_plural>metriä</name_plural>
+              <description/>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+
     <list code="object_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -253,6 +290,17 @@
 
       </items>
     </list>
+
+
+    <list code="materiaalinimet" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Materiaalinimet</name>
+        </label>
+      </labels>
+    </list>
+
+
 
     <list code="yleisnimet" hierarchical="0" system="1" vocabulary="1">
       <labels>
@@ -1058,42 +1106,7 @@
         </item>
       </items>
     </list>
-    <list code="dimension_types" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Dimension types</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Mittatyypit</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="overall_dimensions" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Overall dimensions</name_singular>
-              <name_plural>Overall dimensions</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>mitat</name_singular>
-              <name_plural>mitat</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="shipping_dimensions" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Shipping dimensions</name_singular>
-              <name_plural>Shipping dimensions</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>logistiikkamitat</name_singular>
-              <name_plural>logistiikkamitat</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
 
     <list code="currency" hierarchical="0" system="0" vocabulary="0">
       <labels>
@@ -1228,54 +1241,6 @@
         </item>
       </items>
     </list>
-    <list code="address_type" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Address type</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Osoitetyyppi</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="home" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>home</name_singular>
-              <name_plural>home</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>koti</name_singular>
-              <name_plural>koti</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="work" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>work</name_singular>
-              <name_plural>work</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>työ</name_singular>
-              <name_plural>työ</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="other" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>other</name_singular>
-              <name_plural>other</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>muu</name_singular>
-              <name_plural>muu</name_plural>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
 
     <list code="object_media_license_types" hierarchical="0" system="0" vocabulary="0">
       <labels>
@@ -1312,6 +1277,87 @@
     
   </lists>
   <elementSets>
+	  
+    <metadataElement code="materiaalit" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>Materiaalit</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="doesNotTakeLocale">1</setting>
+        <setting name="canBeUsedInDisplay">0</setting>
+        <setting name="canMakePDF">1</setting>
+      </settings>
+      <elements>
+        <metadataElement code="materiaalilisatiedot" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>Materiaalin lisätiedot</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">1</setting>
+            <setting name="canMakePDFForValue">1</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="materiaalinimet" datatype="List" list="materiaalinimet">
+          <labels>
+            <label locale="fi_FI">
+              <name>Materiaalit</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="lineBreakAfterNumberOfElements">0</setting>
+            <setting name="canBeUsedInSearchForm">0</setting>
+            <setting name="canBeUsedInDisplay">0</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="implicitNullOption">0</setting>
+            <setting name="nullOptionText">Not set</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">select</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="restrictToTypes">2</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>esine</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>	  
+
     <metadataElement code="yleisnimi" datatype="List" list="yleisnimet">
       <labels>
         <label locale="fi_FI">
@@ -2134,11 +2180,11 @@
           <labels>
             <label locale="en_US">
               <name>Width</name>
-              <description>Width of object; enter in your preferred units (eg. 10cm</description>
+              <description>Width of object; enter in your preferred units</description>
             </label>
             <label locale="fi_FI">
-              <name>Leveys</name>
-              <description>Leveys esim. 10cm</description>
+              <name>Leveys/halkaisija</name>
+              <description>Leveys tai halkaisija</description>
             </label>
           </labels>
           <settings>
@@ -2150,7 +2196,7 @@
           <labels>
             <label locale="en_US">
               <name>Height</name>
-              <description>Height of object; enter in your preferred units (eg. 10cm</description>
+              <description>Height of object; enter in your preferred units</description>
             </label>
             <label locale="fi_FI">
               <name>Korkeus</name>
@@ -2166,11 +2212,11 @@
           <labels>
             <label locale="en_US">
               <name>Depth</name>
-              <description>Depth of object; enter in your preferred units (eg. 10cm</description>
+              <description>Depth of object; enter in your preferred units</description>
             </label>
             <label locale="fi_FI">
-              <name>Syvyys</name>
-              <description>Objektin syvyys esim. 10cm</description>
+              <name>Pituus/syvyys</name>
+              <description>Objektin pituus tai syvyys</description>
             </label>
           </labels>
           <settings>
@@ -2178,22 +2224,33 @@
             <setting name="fieldHeight">1</setting>
           </settings>
         </metadataElement>
-        <metadataElement code="dimensions_type" datatype="List" list="dimension_types">
+        
+        <metadataElement code="mittayksikko" datatype="List" list="mittayksikot">
           <labels>
-            <label locale="en_US">
-              <name>Type</name>
-              <description>The type of measurement this is.</description>
-            </label>
             <label locale="fi_FI">
-              <name>Type</name>
-              <description>Mittojen tyyppi</description>
+              <name>yksikkö</name>
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">1</setting>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="implicitNullOption">0</setting>
+            <setting name="nullOptionText">Not set</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">select</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">1</setting>
+            <setting name="canMakePDFForValue">1</setting>
+            <setting name="restrictToTypes">2</setting>
           </settings>
         </metadataElement>
+        
       </elements>
       <typeRestrictions>
         <restriction code="ca_objects1">
@@ -2723,13 +2780,13 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="biography" datatype="Text">
+    <metadataElement code="info" datatype="Text">
       <labels>
         <label locale="en_US">
           <name>Biography</name>
         </label>
         <label locale="fi_FI">
-          <name>Biografia</name>
+          <name>Lisätiedot</name>
         </label>
       </labels>
       <settings>
@@ -2801,14 +2858,14 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
             </label>
           </labels>
           <settings>
-            <setting name="listWidth">40</setting>
-            <setting name="listHeight">200px</setting>
+            <setting name="listWidth">30</setting>
+         
             <setting name="doesNotTakeLocale">1</setting>
             <setting name="requireValue">0</setting>
             <setting name="nullOptionText">ei arvoa</setting>
             <setting name="useDefaultWhenNull">0</setting>
             <setting name="canBeUsedInSort">1</setting>
-            <setting name="render">select</setting>
+            <setting name="render">lookup</setting>
             <setting name="auto_shrink">0</setting>
             <setting name="maxColumns">3</setting>
             <setting name="canBeUsedInSearchForm">1</setting>
@@ -2826,7 +2883,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <includeSubtypes>1</includeSubtypes>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
             <setting name="minimumAttributeBundlesToDisplay">0</setting>
           </settings>
         </restriction>
@@ -2920,35 +2977,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
 
           </elements>
         </metadataElement>
-        <metadataElement code="line4" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>Address type</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Osoitetyyppi</name>
-            </label>
-          </labels>
-          <settings/>
-          <elements>
-            <metadataElement code="address4" datatype="List" list="address_type">
-              <labels>
-                <label locale="en_US">
-                  <name>Address type</name>
-                </label>
-                <label locale="fi_FI">
-                  <name>Osoitetyyppi</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">1</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">255</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
+
       </elements>
       <typeRestrictions>
         <restriction code="r1">
@@ -3135,7 +3164,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
     <metadataElement code="naamakuva" datatype="Media">
       <labels>
         <label locale="fi_FI">
-          <name>naamakuva</name>
+          <name>tunnistekuva</name>
         </label>
       </labels>
       <settings>
@@ -3240,7 +3269,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
               <bundle>ca_attribute_yleisnimi</bundle>
               <settings>
                 <setting name="label" locale="en_US">generic name</setting>
-                <setting name="label" locale="fi_FI">objektin yleisnimi</setting>
+                <setting name="label" locale="fi_FI">Yleisnimi</setting>
                 <setting name="description" locale="fi_FI">Objektin nimi ilmoitetaan yksittäisellä termillä. Termi voidaan valita ontologiasta tai asiasanastosta. 
 Objektin nimeksi kirjataan yleensä perusmuodossa oleva substantiivi. Välimerkkejä ja isoja kirjaimia 
 ei käytetä.</setting>
@@ -3255,9 +3284,9 @@ ei käytetä.</setting>
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" option="fi_FI">Nimeke</setting>
+                <setting name="label" option="fi_FI">Erikoisnimi</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" option="fi_FI">Lisää nimeke</setting>
+                <setting name="add_label" option="fi_FI">Lisää toinen erikoisnimi</setting>
                 <setting name="width">650px</setting>
                 <setting name="height">20px</setting>
               </settings>
@@ -3269,9 +3298,9 @@ ei käytetä.</setting>
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" option="fi_FI">Muut nimekkeet</setting>
+                <setting name="label" option="fi_FI">Muut erikoisnimet</setting>
                 <setting name="add_label" locale="en_US">Add alternate title</setting>
-                <setting name="add_label" option="fi_FI">Lisää muu nimeke</setting>
+                <setting name="add_label" option="fi_FI">Lisää muu erikoisnimi</setting>
                 <setting name="width">650px</setting>
               </settings>
             </placement>
@@ -3304,7 +3333,15 @@ ei käytetä.</setting>
             </placement>
             <placement code="ca_attribute_work_dimensions">
               <bundle>ca_attribute_work_dimensions</bundle>
-            </placement>             
+            </placement>   
+           <placement code="ca_attribute_materiaalit" typeRestrictions="esine">
+              <bundle>ca_attribute_materiaalit</bundle>
+              <settings>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>          
 			</bundlePlacements>
 		</screen>  
 
@@ -6143,7 +6180,7 @@ ei käytetä.</setting>
           </settings>
         </placement>
         <placement code="ca_entities_biography">
-          <bundle>ca_entities.biography</bundle>
+          <bundle>ca_entities.info</bundle>
         </placement>
         <placement code="ca_object_lots">
           <bundle>ca_object_lots</bundle>
