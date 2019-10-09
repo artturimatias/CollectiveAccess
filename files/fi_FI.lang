@@ -75,9 +75,9 @@ tomorrowDate = [huomenna]
 undatedDate = [tuntematon, unknown]
 
 presentDate = [present, ?, ??, ???, ????]
-beforeQualifier = [before, ennen]
+beforeQualifier = [ennen]
 diedQualifier = [d., d, kuollut, k.]
-afterQualifier = [after, later than]
+afterQualifier = [myohemmin kuin]
 bornQualifier = [b., b, syntynyt, s.]
 
 # Text to indicate century (as in "20th century")

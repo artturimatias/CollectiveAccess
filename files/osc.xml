@@ -540,7 +540,7 @@
           <name>Object access statuses</name>
         </label>
         <label locale="fi_FI">
-          <name>Objektin pääsyoikeudet</name>
+          <name>objektin pääsyoikeudet</name>
         </label>
 
       </labels>
@@ -1151,7 +1151,7 @@
           <name>Condition values</name>
         </label>
         <label locale="fi_FI">
-          <name>Kuntoluokitus</name>
+          <name>kuntoluokitus</name>
         </label>
       </labels>
       <items>
@@ -1281,7 +1281,7 @@
     <metadataElement code="materiaalit" datatype="Container">
       <labels>
         <label locale="fi_FI">
-          <name>Materiaalit</name>
+          <name>materiaalit</name>
         </label>
       </labels>
       <settings>
@@ -1293,7 +1293,7 @@
         <metadataElement code="materiaalilisatiedot" datatype="Text">
           <labels>
             <label locale="fi_FI">
-              <name>Materiaalin lisätiedot</name>
+              <name>materiaalin lisätiedot</name>
             </label>
           </labels>
           <settings>
@@ -1416,7 +1416,7 @@
           <description>Narrative description. This is the primary text used to document the item.</description>
         </label>
         <label locale="fi_FI">
-          <name>Kuvailu</name>
+          <name>kuvailu</name>
           <description>Kuvailuteksti.</description>
         </label>
       </labels>
@@ -1529,7 +1529,7 @@
           <description>A point or period of time associated with an event in the lifecycle of the resource.</description>
         </label>
         <label locale="fi_FI">
-          <name>Päivämäärät</name>
+          <name>päivämäärät</name>
           <description>A point or period of time associated with an event in the lifecycle of the resource.</description>
         </label>
       </labels>
@@ -1589,7 +1589,7 @@
           <description>Short descriptive caption for item.</description>
         </label>
         <label locale="fi_FI">
-          <name>Kuvateksti</name>
+          <name>kuvateksti</name>
           <description>Lyhyt kuvateksti.</description>
         </label>
       </labels>
@@ -1747,7 +1747,7 @@
           <description>Notes regarding item or event</description>
         </label>
         <label locale="fi_FI">
-          <name>Sisäiset huomiot</name>
+          <name>sisäiset huomiot</name>
           <description>Huomioita sisäiseen käyttöön</description>
         </label>
       </labels>
@@ -2072,7 +2072,7 @@
           <description>Coordinates documenting the location of the item</description>
         </label>
         <label locale="fi_FI">
-          <name>Paikkatieto</name>
+          <name>paikkatieto</name>
           <description>Objektin sijaintikoordinaatit</description>
         </label>
       </labels>
@@ -2141,7 +2141,7 @@
           <name>Condition</name>
         </label>
         <label locale="fi_FI">
-          <name>Kuntoluokitus</name>
+          <name>kuntoluokitus</name>
         </label>
       </labels>
       <settings>
@@ -2168,7 +2168,7 @@
           <description>Physical dimensions of object</description>
         </label>
         <label locale="fi_FI">
-          <name>Mitat</name>
+          <name>mitat</name>
           <description>Objektin fyysiset mitat</description>
         </label>
       </labels>
@@ -2269,7 +2269,7 @@
           <name>Object date</name>
         </label>
         <label locale="fi_FI">
-          <name>Päivämäärä</name>
+          <name>päivämäärä</name>
         </label>
       </labels>
       <settings>
@@ -2293,7 +2293,7 @@
           <name>Accession date</name>
         </label>
         <label locale="fi_FI">
-          <name>Hankintapäivämäärä</name>
+          <name>hankintapäivämäärä</name>
         </label>
       </labels>
       <settings>
@@ -2320,7 +2320,7 @@
           <name>Notes</name>
         </label>
         <label locale="fi_FI">
-          <name>Lisätiedot</name>
+          <name>lisätiedot</name>
         </label>
       </labels>
       <settings>
@@ -2343,7 +2343,7 @@
     <metadataElement code="muu_tunniste" datatype="Container">
       <labels>
         <label locale="fi_FI">
-          <name>Muu tunnus</name>
+          <name>muu tunnus</name>
           <description>Objektin muu tunnus kirjataan täsmälleen siinä muodossa kuin se on kirjattu objektiin tai doku
 -
 menttiin, josta tieto otetaan. Muu tunnus voi olla esimerkiksi objektin edellinen numero (esimerkiksi 
@@ -2425,38 +2425,13 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
     </metadataElement>
  
     
-    <metadataElement code="edition_number" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Edition number</name>
-        </label>
-        <label locale="fi_FI">
-          <name>Sarjanumero</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">20</setting>
-        <setting name="fieldHeight">1</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">255</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
     <metadataElement code="inscription" datatype="Text">
       <labels>
         <label locale="en_US">
           <name>Inscription</name>
         </label>
         <label locale="fi_FI">
-          <name>Merkinnät</name>
+          <name>merkinnät</name>
         </label>
       </labels>
       <settings>
@@ -2481,7 +2456,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Provenance</name>
         </label>
         <label locale="fi_FI">
-          <name>Historia</name>
+          <name>historia</name>
         </label>
       </labels>
       <settings>
@@ -2653,7 +2628,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Condition notes</name>
         </label>
         <label locale="fi_FI">
-          <name>Huomioita kunnosta</name>
+          <name>huomioita kunnosta</name>
         </label>
       </labels>
       <settings>
@@ -2678,7 +2653,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Media license</name>
         </label>
         <label locale="fi_FI">
-          <name>Lisenssi</name>
+          <name>lisenssi</name>
         </label>
       </labels>
       <settings>
@@ -2704,7 +2679,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Color type</name>
         </label>
         <label locale="fi_FI">
-          <name>Värityyppi</name>
+          <name>värityyppi</name>
         </label>
       </labels>
       <settings>
@@ -2738,7 +2713,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Runtime</name>
         </label>
         <label locale="fi_FI">
-          <name>Kesto</name>
+          <name>kesto</name>
         </label>
       </labels>
       <settings>
@@ -2763,7 +2738,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Media rights</name>
         </label>
         <label locale="fi_FI">
-          <name>Oikeudet</name>
+          <name>oikeudet</name>
         </label>
       </labels>
       <settings>
@@ -2895,7 +2870,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Address</name>
         </label>
         <label locale="fi_FI">
-          <name>Osoite</name>
+          <name>osoite</name>
         </label>
       </labels>
       <settings/>
@@ -2996,7 +2971,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Telephone</name>
         </label>
         <label locale="fi_FI">
-          <name>Puhelinnumero</name>
+          <name>puhelinnumero</name>
         </label>
       </labels>
       <settings>
@@ -3050,7 +3025,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <name>Email address</name>
         </label>
         <label locale="fi_FI">
-          <name>Sähköposti</name>
+          <name>sähköposti</name>
         </label>
       </labels>
       <settings>
@@ -3108,7 +3083,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <description>Add citation information related to the publication</description>
         </label>
         <label locale="fi_FI">
-          <name>Lähdeviite</name>
+          <name>lähdeviite</name>
           <description>Lähdeviitetieto</description>
         </label>
       </labels>
@@ -3138,7 +3113,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
           <description>Type of frame</description>
         </label>
         <label locale="fi_FI">
-          <name>Kehys</name>
+          <name>kehys</name>
           <description>Kehyksen tiedot</description>
         </label>
       </labels>
@@ -3185,7 +3160,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
     <metadataElement code="lehtinimeke" datatype="Container">
       <labels>
         <label locale="fi_FI">
-          <name>Lehtinimeke</name>
+          <name>lehtinimeke</name>
         </label>
       </labels>
       <settings>
@@ -3233,6 +3208,29 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         <restriction>
           <table>ca_objects</table>
           <type>lehtileike</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+   <metadataElement code="opiskeluaika" datatype="DateRange">
+      <labels>
+        <label locale="fi_FI">
+          <name>opiskeluaika</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canMakePDF">1</setting>
+        <setting name="canMakePDFForValue">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <type>individual</type>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -3323,7 +3321,7 @@ ei käytetä.</setting>
               <name>Description</name>
             </label>
             <label locale="fi_FI">
-              <name>Kuvailu ja mitat</name>
+              <name>kuvailu ja mitat</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3558,6 +3556,9 @@ ei käytetä.</setting>
             </placement>
             <placement code="ca_attribute_elinaika">
               <bundle>ca_attribute_elinaika</bundle>
+            </placement>
+            <placement code="ca_attribute_opiskeluaika5">
+              <bundle>ca_attribute_opiskeluaika</bundle>
             </placement>
             <placement code="ca_attribute_ammatti5">
               <bundle>ca_attribute_ammatti</bundle>
@@ -3923,7 +3924,7 @@ ei käytetä.</setting>
               <name>Links</name>
             </label>
             <label locale="fi_FI">
-              <name>Verkkolinkit</name>
+              <name>verkkolinkit</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -6178,6 +6179,9 @@ ei käytetä.</setting>
             <setting name="filter"><![CDATA[]]></setting>
             <setting name="bottom_line"><![CDATA[]]></setting>
           </settings>
+        </placement>
+        <placement code="ca_entities_opiskeluaika">
+          <bundle>ca_entities.opiskeluaika</bundle>
         </placement>
         <placement code="ca_entities_biography">
           <bundle>ca_entities.info</bundle>
