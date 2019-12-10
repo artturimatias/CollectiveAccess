@@ -2,6 +2,7 @@
 IMAGES := $(shell docker images -f "dangling=true" -q)
 CONTAINERS := $(shell docker ps -a -q -f status=exited)
 VOLUME := collectiveaccess-data
+NETWORK := oscari-net
 DB := c_access
 VERSION := 1.7.8
 
@@ -9,11 +10,15 @@ clean:
 	docker rm -f $(CONTAINERS)
 	docker rmi -f $(IMAGES)
 
+create_network:
+	docker network create $(NETWORK)
+
 create_volume:
 	docker volume create $(VOLUME)
 
 create_db:
 	docker run --name mariadb \
+	--network $(NETWORK)
 	-v mariadb_ca:/var/lib/mysql \
  	-e MYSQL_ROOT_PASSWORD=root \
 	 -d mariadb:10.3.7
@@ -23,9 +28,9 @@ build:
 	
 start:
 	docker run -d --name collectiveaccess \
-	--link mariadb:mysql \
 	-p 80:80 \
 	-v $(VOLUME):/var/www/providence/media \
+	--network $(NETWORK) \
 	-e DB_USER=root \
 	-e DB_PW=root \
 	-e DB_NAME=$(DB) \

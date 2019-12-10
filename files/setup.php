@@ -29,7 +29,7 @@
 # __CA_DB_HOST__ = Database server host name (often 'localhost')
 #
 if (!defined("__CA_DB_HOST__")) {
-	define("__CA_DB_HOST__", '172.17.0.2');
+	define("__CA_DB_HOST__", 'localhost');
 }
 
 # __CA_DB_USER__ = Database login user name
