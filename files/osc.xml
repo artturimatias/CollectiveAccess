@@ -8,43 +8,6 @@
   </locales>
   <lists>
 
-    <list code="mittayksikot" hierarchical="0" system="0" vocabulary="0">
-      <labels>
-        <label locale="fi_FI">
-          <name>mittayksiköt</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="3" enabled="1" default="0" value="mm" rank="198" type="concept">
-          <labels>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>millimetriä</name_singular>
-              <name_plural>millimetriä</name_plural>
-              <description/>
-            </label>
-          </labels>
-        </item>
-        <item idno="4" enabled="1" default="0" value="cm" rank="199" type="concept">
-          <labels>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>senttimetriä</name_singular>
-              <name_plural>senttimetriä</name_plural>
-              <description/>
-            </label>
-          </labels>
-        </item>
-        <item idno="5" enabled="1" default="0" value="m" rank="200" type="concept">
-          <labels>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>metriä</name_singular>
-              <name_plural>metriä</name_plural>
-              <description/>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
-
     <list code="object_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -187,106 +150,6 @@
           </settings>
         </item>
         
-        
-        <item idno="teos" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="0">
-              <name_singular>Work</name_singular>
-              <name_plural>Works</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>teos</name_singular>
-              <name_plural>teokset</name_plural>
-            </label>
-          </labels>
-          <items>
-			  <item idno="piirustus" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="1">
-				  <name_singular>Drawing</name_singular>
-				  <name_plural>Drawings</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>piirustus</name_singular>
-				  <name_plural>piirustukset</name_plural>
-				</label>
-			  </labels>
-			</item>
-			<item idno="film_media" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="1">
-				  <name_singular>Film &amp; Media</name_singular>
-				  <name_plural>Film &amp; Media</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>video/audio</name_singular>
-				  <name_plural>video/audio</name_plural>
-				</label>
-			  </labels>
-			</item>
-			<item idno="maalaus" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="1">
-				  <name_singular>Painting</name_singular>
-				  <name_plural>Paintings</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>maalaus</name_singular>
-				  <name_plural>maalaukset</name_plural>
-				</label>
-			  </labels>
-			</item>
-			<item idno="valokuvateos" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="1">
-				  <name_singular>Photography</name_singular>
-				  <name_plural>Photography</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>valokuvateos</name_singular>
-				  <name_plural>valokuvateokset</name_plural>
-				</label>
-			  </labels>
-			</item>
-			
-			<item idno="grafiikka" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="0">
-				  <name_singular>Print</name_singular>
-				  <name_plural>Prints</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>grafiikka</name_singular>
-				  <name_plural>grafiikat</name_plural>
-				</label>
-			  </labels>
-			</item>
-			<item idno="veistos" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="0">
-				  <name_singular>Sculpture</name_singular>
-				  <name_plural>Sculptures</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>veistos</name_singular>
-				  <name_plural>veistokset</name_plural>
-				</label>
-			  </labels>
-			</item>    
-			<item idno="design" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="0">
-				  <name_singular>Design</name_singular>
-				  <name_plural>Designs</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>design</name_singular>
-				  <name_plural>design</name_plural>
-				</label>
-			  </labels>
-			</item>       
-          </items>
-        </item>
 
       </items>
     </list>
@@ -328,6 +191,72 @@
         </label>
       </labels>
     </list>
+
+    <list code="hankintatavat" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Hankintatavat</name>
+        </label>
+      </labels>
+      <items>
+
+        <item idno="lahjoitus" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>lahjoitus</name_singular>
+              <name_plural>lahjoitus</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="kuvattu_museo" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>kuvattu/kopioitu museon toimesta</name_singular>
+              <name_plural>osto</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="museoloyto" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>museolöytö</name_singular>
+              <name_plural>museolöytö</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="osto" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>osto</name_singular>
+              <name_plural>osto</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="deponointi" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>deponointi</name_singular>
+              <name_plural>deponointi</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        <item idno="muu" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>muu</name_singular>
+              <name_plural>muu</name_plural>
+            </label>
+          </labels>
+         </item>
+
+        </items>
+    </list>
+
 
     <list code="hakusanat" hierarchical="0" system="1" vocabulary="0">
       <labels>
@@ -1032,83 +961,36 @@
         </label>
       </labels>
       <items>
-        <item idno="campus" enabled="1" default="1">
+        <item idno="sailytystila" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>campuses</name_singular>
-              <name_plural>campuses</name_plural>
+              <name_singular>storage space</name_singular>
+              <name_plural>storage spaces</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>kampus</name_singular>
-              <name_plural>kampus</name_plural>
+              <name_singular>säilytystila</name_singular>
+              <name_plural>säilytystilat</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="building" enabled="1" default="0">
+        <item idno="sijoituspaikka" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>building</name_singular>
-              <name_plural>buildings</name_plural>
+              <name_singular>storage location</name_singular>
+              <name_plural>storage locations</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>rakennus</name_singular>
-              <name_plural>rakennukset</name_plural>
+              <name_singular>sijoituspaikka</name_singular>
+              <name_plural>sijoituspaikat</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="floor" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>floor</name_singular>
-              <name_plural>floors</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>kerros</name_singular>
-              <name_plural>kerros</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="room" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>room</name_singular>
-              <name_plural>rooms</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>huone</name_singular>
-              <name_plural>huone</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="cabinet" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>cabinet</name_singular>
-              <name_plural>cabinets</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>kaappi</name_singular>
-              <name_plural>kaappi</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="drawer" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>drawer</name_singular>
-              <name_plural>drawer</name_plural>
-            </label>
-            <label locale="fi_FI" preferred="1">
-              <name_singular>laatikosto</name_singular>
-              <name_plural>laatikosto</name_plural>
-            </label>
-          </labels>
-        </item>
+
       </items>
     </list>
 
 
-    <list code="currency" hierarchical="0" system="0" vocabulary="0">
+    <list code="valuutta" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
           <name>Currency</name>
@@ -1145,7 +1027,7 @@
       </items>
     </list>
 
-    <list code="conditions" hierarchical="0" system="0" vocabulary="0">
+    <list code="kuntoluokitus" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
           <name>Condition values</name>
@@ -1155,7 +1037,19 @@
         </label>
       </labels>
       <items>
-        <item idno="good" enabled="1" default="0">
+        <item idno="erinomainen" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>excellent</name_singular>
+              <name_plural>excellent</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>erinomainen</name_singular>
+              <name_plural>erinomainen</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="hyva" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>good</name_singular>
@@ -1167,7 +1061,7 @@
             </label>
           </labels>
         </item>
-        <item idno="fair" enabled="1" default="0">
+        <item idno="kohtalainen" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>fair</name_singular>
@@ -1179,7 +1073,7 @@
             </label>
           </labels>
         </item>
-        <item idno="poor" enabled="1" default="0">
+        <item idno="huono" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>poor</name_singular>
@@ -1193,7 +1087,58 @@
         </item>
       </items>
     </list>
-    <list code="color_type" hierarchical="0" system="0" vocabulary="0">
+    
+    <list code="varit" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Colors</name>
+        </label>
+        <label locale="fi_FI">
+          <name>Värit</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="musta" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>black</name_singular>
+              <name_plural>black</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>musta</name_singular>
+              <name_plural>mustat</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="punainen" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>red</name_singular>
+              <name_plural>red</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>punainen</name_singular>
+              <name_plural>punainen</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="sininen" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>blue</name_singular>
+              <name_plural>blue</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>sininen</name_singular>
+              <name_plural>sininen</name_plural>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+    
+    
+    <list code="varityyppi" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
           <name>Color type</name>
@@ -1252,15 +1197,39 @@
         </label>
       </labels>
       <items>
-        <item idno="gvsu" enabled="1" default="1">
+        <item idno="ei_lisenssia" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Physical rights are retained by (your institution name here). Copyright is retained in accordance with U.S. Copyright laws.</name_singular>
-              <name_plural>Physical rights are retained by (your institution name here). Copyright is retained in accordance with U.S. Copyright laws.</name_plural>
+              <name_singular>No licence</name_singular>
+              <name_plural>No licence</name_plural>
             </label>
             <label locale="fi_FI" preferred="1">
-              <name_singular>Tekijät</name_singular>
-              <name_plural>Tekijät</name_plural>
+              <name_singular>ei lisenssiä</name_singular>
+              <name_plural>ei lisenssiä</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="cc_by_4" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>CC-BY 4.0</name_singular>
+              <name_plural>CC-BY 4.0</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>CC-BY 4.0</name_singular>
+              <name_plural>CC-BY 4.0</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="pd_fin50" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>PD-Finland50 (public domain)</name_singular>
+              <name_plural>PD-Finland50 (public domain)</name_plural>
+            </label>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>tekijänoikeudet rauenneet (PD-Finland50 )</name_singular>
+              <name_plural>tekijänoikeudet rauenneet (PD-Finland50 )</name_plural>
             </label>
           </labels>
         </item>
@@ -1935,6 +1904,7 @@
       <settings>
         <setting name="canBeUsedInSearchForm">0</setting>
         <setting name="canBeUsedInDisplay">0</setting>
+        <setting name="doesNotTakeLocale">1</setting>
       </settings>
 
       <elements>
@@ -1960,10 +1930,10 @@
             <setting name="displayDelimiter">; </setting>
           </settings>
         </metadataElement>
-        <metadataElement code="hankintasumma" datatype="List" list="currency">
+        <metadataElement code="valuutta" datatype="List" list="valuutta">
           <labels>
             <label locale="fi_FI">
-              <name>hankintasumma</name>
+              <name>valuutta</name>
             </label>
           </labels>
           <settings>
@@ -2135,7 +2105,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="condition" datatype="List" list="conditions">
+    <metadataElement code="condition" datatype="List" list="kuntoluokitus">
       <labels>
         <label locale="en_US">
           <name>Condition</name>
@@ -2147,6 +2117,9 @@
       <settings>
         <setting name="fieldWidth">40</setting>
         <setting name="doesNotTakeLocale">1</setting>
+        <setting name="description" >Tieto ilmaistaan yksittäisellä termillä. Välimerkkejä ja isoja kirjaimia ei käytetä. Valitse termi alla
+olevasta listasta. Objektin vakavin tunnistettu yksittäinen vaurio määrää objektin yleistä kuntoa
+kuvaavan termin. Kirjataan objektille yhdellä kertaa vain yksi kuntoluokka. </setting>
       </settings>
       <typeRestrictions>
         <restriction code="r1">
@@ -2224,32 +2197,36 @@
             <setting name="fieldHeight">1</setting>
           </settings>
         </metadataElement>
-        
-        <metadataElement code="mittayksikko" datatype="List" list="mittayksikot">
+
+        <metadataElement code="mittaselitys" datatype="Text">
           <labels>
             <label locale="fi_FI">
-              <name>yksikkö</name>
+              <name>mittaselitys</name>
             </label>
           </labels>
           <settings>
-            <setting name="listWidth">40</setting>
-            <setting name="listHeight">200px</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="implicitNullOption">0</setting>
-            <setting name="nullOptionText">Not set</setting>
-            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
             <setting name="canBeUsedInSort">1</setting>
-            <setting name="render">select</setting>
-            <setting name="auto_shrink">0</setting>
-            <setting name="maxColumns">3</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
             <setting name="canBeUsedInSearchForm">1</setting>
             <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">1</setting>
-            <setting name="canMakePDFForValue">1</setting>
-            <setting name="restrictToTypes">2</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
           </settings>
         </metadataElement>
+
         
       </elements>
       <typeRestrictions>
@@ -2350,12 +2327,14 @@ menttiin, josta tieto otetaan. Muu tunnus voi olla esimerkiksi objektin edelline
 toisessa museossa annettu), vanha inventaarionumero, diariointinumero, lainanantajan tai omis
 -
 tajan sille antama numero, löytönumero, kaivauksissa annettu väliaikainen numero tai esimerkiksi 
-tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama numero)</description>
+tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama numero). Objektille voidaan kirjata niin monta objektin muuta
+tunnusta kuin on tarpeen.</description>
         </label>
       </labels>
       <settings>
         <setting name="canBeUsedInSearchForm">0</setting>
         <setting name="canBeUsedInDisplay">0</setting>
+        <setting name="doesNotTakeLocale">1</setting>
       </settings>
       <elements>
         <metadataElement code="tunniste" datatype="Text">
@@ -2424,8 +2403,91 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
  
+ 
+    <metadataElement code="varitieto" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>muu tunnus</name>
+          <description>Objektin väri ilmoitetaan yksittäisellä termillä. Välimerkkejä ja isoja kirjaimia käytetään vain, jos ne kuuluvat värin oikeaan kirjoitusasuun. Valitse termi ylläpidetystä termilistasta. Kirjataan värit, jotka ovat tärkeitä objektin tunnistamisen tai löytämisen kannalta. Jos objekti koostuu monesta väristä,
+kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canBeUsedInSearchForm">0</setting>
+        <setting name="canBeUsedInDisplay">0</setting>
+        <setting name="doesNotTakeLocale">1</setting>
+      </settings>
+      <elements>
+
+        
+        <metadataElement code="varit" datatype="List" list="varit">
+          <labels>
+            <label locale="fi_FI">
+              <name>Värit</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="nullOptionText">Not set</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">select</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+          </settings>
+        </metadataElement>
+        
+        <metadataElement code="varilisatieto" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>värin lisätieto</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="lineBreakAfterNumberOfElements">0</setting>
+            <setting name="canBeUsedInSearchForm">0</setting>
+            <setting name="canBeUsedInDisplay">0</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="isDependentValue">0</setting>
+            <setting name="dependentValueTemplate"/>
+            <setting name="mustBeUnique">0</setting>
+            <setting name="referenceMediaIn"/>
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <includeSubtypes>1</includeSubtypes>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
     
-    <metadataElement code="inscription" datatype="Text">
+    <metadataElement code="merkinnat" datatype="Text">
       <labels>
         <label locale="en_US">
           <name>Inscription</name>
@@ -2450,31 +2512,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="provenance" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Provenance</name>
-        </label>
-        <label locale="fi_FI">
-          <name>historia</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">4</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="past_storage_locations" datatype="Container">
       <labels>
         <label locale="en_US">
@@ -2647,7 +2685,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="media_license" datatype="Text">
+    <metadataElement code="media_rights" datatype="Text">
       <labels>
         <label locale="en_US">
           <name>Media license</name>
@@ -2673,7 +2711,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="colorType" datatype="List" list="color_type">
+    <metadataElement code="colorType" datatype="List" list="varityyppi">
       <labels>
         <label locale="en_US">
           <name>Color type</name>
@@ -2732,13 +2770,13 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="media_rights" datatype="List" list="object_media_license_types">
+    <metadataElement code="media_licence" datatype="List" list="object_media_license_types">
       <labels>
         <label locale="en_US">
           <name>Media rights</name>
         </label>
         <label locale="fi_FI">
-          <name>oikeudet</name>
+          <name>Lisenssi</name>
         </label>
       </labels>
       <settings>
@@ -3136,7 +3174,7 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="naamakuva" datatype="Media">
+    <metadataElement code="tunnistekuva" datatype="Media">
       <labels>
         <label locale="fi_FI">
           <name>tunnistekuva</name>
@@ -3240,6 +3278,105 @@ tekijän antama numero (arkkitehdin rakennukselle tai piirustukselle antama nume
       </typeRestrictions>
     </metadataElement>
 
+    <metadataElement code="kaytto" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>Käyttö</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canBeUsedInSearchForm">0</setting>
+        <setting name="canBeUsedInDisplay">0</setting>
+        <setting name="doesNotTakeLocale">1</setting>
+      </settings>
+      <elements>
+        <metadataElement code="kayttajat" datatype="Entities">
+          <labels>
+            <label locale="fi_FI">
+              <name>Käyttäjä</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="requireValue">1</setting>
+            <setting name="fieldWidth">60</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="restrictToTypes">91</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="kayttoaika" datatype="DateRange">
+          <labels>
+            <label locale="fi_FI">
+              <name>Käyttöaika</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="dateRangeBoundaries"/>
+            <setting name="fieldWidth"/>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="useDatePicker">0</setting>
+            <setting name="datePickerDateFormat">yy-mm-dd</setting>
+            <setting name="mustNotBeBlank">0</setting>
+            <setting name="isLifespan">0</setting>
+            <setting name="default_text"/>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">,</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="kayton_lisatieto" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>Käytön lisätieto</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">30</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>esine</type>
+          <includeSubtypes>1</includeSubtypes>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -3312,6 +3449,37 @@ ei käytetä.</setting>
               <bundle>muu_tunniste</bundle>
             </placement>
 
+            <placement code="ca_entities_author">
+              <bundle>ca_entities</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="restrict_to_relationship_types">tekijät</setting>
+                <setting name="restrict_to_relationship_types">kirjoittaja</setting>
+                <setting name="restrict_to_relationship_types">kuvaaja</setting>
+                <setting name="restrict_to_relationship_types">valmistaja</setting>
+                <setting name="restrict_to_relationship_types">valokuvaaja</setting>
+                <setting name="restrict_to_relationship_types">taiteilija</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="documentation_url">http://koe.fi</setting>
+                <setting name="minRelationshipsPerRow"/>
+                <setting name="maxRelationshipsPerRow"/>
+                <setting name="showCurrentOnly">0</setting>
+                <setting name="showCurrentUsingDate">effective_date</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="label" locale="en_US">tekijä</setting>
+                <setting name="label" locale="fi_FI">tekijät</setting>
+                <setting name="add_label" locale="en_US">lisää uusi tekijä</setting>
+                <setting name="add_label" locale="fi_FI">lisää uusi tekijä</setting>
+                <setting name="description" locale="en_US">Tässä voit lisätä uuden tekijän</setting>
+              </settings>
+            </placement>
+
           </bundlePlacements>
         </screen>
 
@@ -3321,13 +3489,19 @@ ei käytetä.</setting>
               <name>Description</name>
             </label>
             <label locale="fi_FI">
-              <name>kuvailu ja mitat</name>
+              <name>Kuvailu ja mitat</name>
             </label>
           </labels>
           <bundlePlacements>
 
             <placement code="ca_attribute_description">
               <bundle>ca_attribute_description</bundle>
+              <settings>
+				<setting name="description" locale="fi_FI">Sanallinen, yleisluontoinen kuvaus objektista tai objektissa kuvaillusta asiasta. Sisällön kuvaus
+kirjoitetaan myös av-aineiston tai visuaalisen teoksen sisällöstä.
+				</setting>              
+              </settings>
+
             </placement>
             <placement code="ca_attribute_work_dimensions">
               <bundle>ca_attribute_work_dimensions</bundle>
@@ -3339,7 +3513,17 @@ ei käytetä.</setting>
                 <setting name="expand_collapse_no_value">dont_force</setting>
                 <setting name="sortDirection">ASC</setting>
               </settings>
-            </placement>          
+            </placement> 
+            <placement code="ca_attribute_merkinnat">
+              <bundle>ca_attribute_merkinnat</bundle>
+              <settings>
+				<setting name="description" locale="fi_FI">Merkintä kirjataan täsmälleen samalla tavalla, kuin se on merkitty objektiin. Oikeinkirjoitusta, välimerkkejä tai isoja kirjaimia ei korjata tai muuteta. Jos merkintä ulottuu useammalle riville, merkitään rivinvaihto käyttämällä merkintätapaa: välilyönti/välilyönti (SPACE/SPACE). Jos merkintä tai
+osa siitä on lukukelvoton, laitetaan se hakasulkeisiin. Kirjataan yksi merkintä jokaisesta objektissa
+olevasta merkinnästä.
+				</setting>              
+              </settings>
+
+            </placement>         
 			</bundlePlacements>
 		</screen>  
 
@@ -3352,15 +3536,11 @@ ei käytetä.</setting>
               <name>History</name>
             </label>
             <label locale="fi_FI">
-              <name>historia</name>
+              <name>Historia</name>
             </label>
           </labels>
           <bundlePlacements>
  
- 
-             <placement code="ca_attribute_history">
-              <bundle>ca_attribute_provenance</bundle>
-            </placement>
             <placement code="ca_attribute_accession_date">
               <bundle>ca_attribute_accession_date</bundle>
             </placement>
@@ -3400,7 +3580,7 @@ ei käytetä.</setting>
               <name>Storage</name>
             </label>
             <label locale="fi_FI">
-              <name>sijainti</name>
+              <name>Sijainti</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3408,9 +3588,9 @@ ei käytetä.</setting>
               <bundle>ca_storage_locations</bundle>
               <settings>
                 <setting name="label" locale="en_US">Current storage location</setting>
-                <setting name="label" option="fi_FI">Emplacement courant</setting>
+                <setting name="label" option="fi_FI">Sijainti</setting>
                 <setting name="add_label" locale="en_US">Add storage location</setting>
-                <setting name="add_label" option="fi_FI">Ajouter un emplacement</setting>
+                <setting name="add_label" option="fi_FI">Lisää sijainti</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_past_storage_locations">
@@ -3462,7 +3642,7 @@ ei käytetä.</setting>
               <name>Media</name>
             </label>
             <label locale="fi_FI">
-              <name>tiedostot</name>
+              <name>Tiedostot</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3492,14 +3672,6 @@ ei käytetä.</setting>
               <bundle>ca_attribute_historical_context</bundle>
             </placement>
 
-
-            <placement code="ca_object_lots">
-              <bundle>ca_object_lots</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Part of lot:</setting>
-                <setting name="label" option="fi_FI">kuuluu hankintaan</setting>
-              </settings>
-            </placement>
             
 
             <placement code="status">
@@ -3566,14 +3738,14 @@ ei käytetä.</setting>
             <placement code="ca_attribute_biography">
               <bundle>ca_attribute_biography</bundle>
             </placement>
-            <placement code="ca_attribute_naamakuva5">
-              <bundle>ca_attribute_naamakuva</bundle>
+            <placement code="ca_attribute_tunnistekuva5">
+              <bundle>ca_attribute_tunnnistekuva</bundle>
             </placement>
 
 
           </bundlePlacements>
         </screen>
-        <screen idno="contact" default="0">
+        <screen idno="yhteystiedot" default="0">
           <labels>
             <label locale="en_US">
               <name>Contact info</name>
@@ -6139,8 +6311,8 @@ ei käytetä.</setting>
         <permission user="administrator" access="edit"/>
       </userAccess>
       <bundlePlacements>
-        <placement code="ca_entities_naamakuva">
-          <bundle>ca_entities.naamakuva</bundle>
+        <placement code="ca_entities_tunnistekuva">
+          <bundle>ca_entities.tunnistekuva</bundle>
         </placement>
         <placement code="ca_entities_preferred_labels">
           <bundle>ca_entities.preferred_labels</bundle>
