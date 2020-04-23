@@ -19,9 +19,9 @@ sweep() {
 cd $CA_PROVIDENCE_DIR
 ca='pro'
 sweep $ca
-cd $CA_PAWTUCKET_DIR
-ca='paw'
-sweep $ca
+#cd $CA_PAWTUCKET_DIR
+#ca='paw'
+#sweep $ca
 
 rm -f /var/run/apache2/apache2.pid
 

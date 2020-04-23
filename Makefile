@@ -4,7 +4,7 @@ CONTAINERS := $(shell docker ps -a -q -f status=exited)
 VOLUME := collectiveaccess-data
 NETWORK := oscari-net
 DB := c_access
-VERSION := 1.7.8
+VERSION := latest
 
 clean:
 	docker rm -f $(CONTAINERS)
@@ -36,6 +36,22 @@ start:
 	-e DB_NAME=$(DB) \
 	artturimatias/collectiveaccess:$(VERSION)
 
+	
+start_debug:
+	docker run -it --name collectiveaccess \
+	-p 80:80 \
+	-v $(VOLUME):/var/www/providence/media \
+	--network $(NETWORK) \
+	-e DB_USER=root \
+	-e DB_PW=root \
+	-e DB_NAME=$(DB) \
+	artturimatias/collectiveaccess:$(VERSION)
+
+
+
 remove:
 	docker stop collectiveaccess
 	docker rm collectiveaccess
+
+bash:
+	docker exec -it collectiveaccess bash
