@@ -11,7 +11,7 @@ cd $CA_PROVIDENCE_DIR/media/collectiveaccess && mkdir -p tilepics
 
 sweep() {
 	local ca="$ca"
-	sed -i "s@define(\"__CA_DB_HOST__\", 'localhost');@define(\"__CA_DB_HOST__\", \'mariadb\');@g" setup.php
+	sed -i "s@define(\"__CA_DB_HOST__\", 'localhost');@define(\"__CA_DB_HOST__\", \'$DB_HOST\');@g" setup.php
 	sed -i "s@define(\"__CA_DB_USER__\", 'my_database_user');@define(\"__CA_DB_USER__\", \'$DB_USER\');@g" setup.php
 	sed -i "s@define(\"__CA_DB_PASSWORD__\", 'my_database_password');@define(\"__CA_DB_PASSWORD__\", \'$DB_PW\');@g" setup.php
 	sed -i "s@define(\"__CA_DB_DATABASE__\", 'name_of_my_database');@define(\"__CA_DB_DATABASE__\", \'$DB_NAME\');@g" setup.php
