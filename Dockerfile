@@ -31,7 +31,6 @@ RUN apt-get update && apt-get install -y apache2 \
 					libreoffice \
 					php-zip \
 					vim \
-					
 					php-mbstring \
 					git
 
@@ -45,26 +44,17 @@ RUN wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.bionic
 ENV CA_PROVIDENCE_VERSION=1.7.8
 ENV CA_PROVIDENCE_DIR=/var/www/providence
 
-#ENV CA_PAWTUCKET_VERSION=1.7
-#ENV CA_PAWTUCKET_DIR=/var/www
-
 RUN curl -SsL https://github.com/collectiveaccess/providence/archive/$CA_PROVIDENCE_VERSION.tar.gz | tar -C /var/www/ -xzf -
 RUN mv /var/www/providence-$CA_PROVIDENCE_VERSION /var/www/providence
 RUN cd $CA_PROVIDENCE_DIR && cp setup.php-dist setup.php
-
-#RUN curl -SsL https://github.com/collectiveaccess/pawtucket2/archive/$CA_PAWTUCKET_VERSION.tar.gz | tar -C /var/www/ -xzf -
-#RUN mv $CA_PAWTUCKET_DIR/pawtucket2-$CA_PAWTUCKET_VERSION/* /var/www
-#RUN cd $CA_PAWTUCKET_DIR && cp setup.php-dist setup.php
 
 RUN sed -i "s@DocumentRoot \/var\/www\/html@DocumentRoot \/var\/www@g" /etc/apache2/sites-available/000-default.conf
 RUN rm -rf /var/www/html
 run mkdir /$CA_PROVIDENCE_DIR/media/collectiveaccess
 run mkdir /$CA_PROVIDENCE_DIR/app/locale/fi_FI
-#RUN ln -s /$CA_PROVIDENCE_DIR/media /$CA_PAWTUCKET_DIR/media
 
-#COPY php.ini /etc/php/7.0/cli/php.ini
 
-COPY files/php.ini /etc/php/7.0/apache2/php.ini
+COPY files/php.ini /etc/php/7.2/apache2/php.ini
 COPY files/messages.po /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
 COPY files/messages.mo /$CA_PROVIDENCE_DIR/app/locale/fi_FI/
 COPY files/base.css /$CA_PROVIDENCE_DIR/themes/default/css/

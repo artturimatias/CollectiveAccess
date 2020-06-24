@@ -35,19 +35,19 @@ if (!defined("__CA_DB_HOST__")) {
 # __CA_DB_USER__ = Database login user name
 #
 if (!defined("__CA_DB_USER__")) {
-	define("__CA_DB_USER__", 'root');
+	define("__CA_DB_USER__", 'db_user');
 }
 
 # __CA_DB_PASSWORD__ = Database login password
 #
 if (!defined("__CA_DB_PASSWORD__")) {
-	define("__CA_DB_PASSWORD__", 'root');
+	define("__CA_DB_PASSWORD__", 'db_password');
 }
 
 # __CA_DB_DATABASE__ = The name of your CollectiveAccess database
 #
 if (!defined("__CA_DB_DATABASE__")) {
-	define("__CA_DB_DATABASE__", 'c_access');
+	define("__CA_DB_DATABASE__", 'db_name');
 }
 
 # __CA_APP_DISPLAY_NAME__ = the name of your system, for display purposes
