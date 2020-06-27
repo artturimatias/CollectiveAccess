@@ -2182,6 +2182,32 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+    <metadataElement code="hankinta_luetteloija" datatype="Text">
+      <labels>
+        <label locale="fi_FI">
+          <name>luetteloijan nimi</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_object_lots</table>
+          <includeSubtypes>1</includeSubtypes>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+
+      </typeRestrictions>
+    </metadataElement>
+
     
     <metadataElement code="koristelu" datatype="Text">
       <labels>
@@ -2264,7 +2290,7 @@
     <metadataElement code="date" datatype="Container">
       <labels>
         <label locale="en_US">
-          <name>Dates</name>
+          <name>Date</name>
           <description>A point or period of time associated with an event in the lifecycle of the resource.</description>
         </label>
         <label locale="fi_FI">
@@ -2902,29 +2928,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="work_date" datatype="DateRange">
-      <labels>
-        <label locale="en_US">
-          <name>Object date</name>
-        </label>
-        <label locale="fi_FI">
-          <name>päivämäärä</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">40</setting>
-        <setting name="useDatePicker">1</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">10</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="accession_date" datatype="DateRange">
       <labels>
         <label locale="en_US">
@@ -2968,6 +2972,13 @@
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_object_lots</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">1</setting>
@@ -3932,7 +3943,7 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
           <table>ca_object_lots</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
             <setting name="minimumAttributeBundlesToDisplay">0</setting>
           </settings>
         </restriction>
@@ -3958,6 +3969,86 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+    <metadataElement code="kirjaustiedot" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>kirjaustiedot</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canBeUsedInSearchForm">0</setting>
+        <setting name="canBeUsedInDisplay">0</setting>
+      </settings>
+      <elements>
+        <metadataElement code="kirjattu_date" datatype="DateRange">
+          <labels>
+            <label locale="fi_FI">
+              <name>kirjauspäivämäärä</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="dateRangeBoundaries"/>
+            <setting name="fieldWidth"/>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="useDatePicker">0</setting>
+            <setting name="datePickerDateFormat">dd/mm/yy</setting>
+            <setting name="mustNotBeBlank">0</setting>
+            <setting name="isLifespan">0</setting>
+            <setting name="default_text"/>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">,</setting>
+          </settings>
+        </metadataElement>
+
+        <metadataElement code="kirjaushuomio" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>kirjauksen lisätiedot</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_object_lots</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
   </elementSets>
 
  
@@ -7093,37 +7184,6 @@ olevasta merkinnästä.
                 <setting name="sortDirection">ASC</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_description2">
-              <bundle>ca_attribute_description</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">dont_force</setting>
-                <setting name="expand_collapse_no_value">dont_force</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="label" locale="en_US">lisätiedot</setting>
-                <setting name="label" locale="fi_FI">lisätiedot</setting>
-                <setting name="description" locale="fi_FI">Huom! sisällön kuvailuun on erillinen kenttä.</setting>
-              </settings>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">collapse</setting>
-                <setting name="expand_collapse_no_value">collapse</setting>
-                <setting name="label" locale="en_US">hankinnan tila</setting>
-                <setting name="label" locale="fi_FI">hankinna tila</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
-        </screen>
-        <screen idno="screen_20_2" default="0" color="000000">
-          <labels>
-            <label locale="fi_FI">
-              <name>Sisältö</name>
-            </label>
-          </labels>
-          <bundlePlacements>
             <placement code="ca_attribute_lot_content1">
               <bundle>ca_attribute_lot_content</bundle>
               <settings>
@@ -7134,29 +7194,42 @@ olevasta merkinnästä.
                 <setting name="sortDirection">ASC</setting>
               </settings>
             </placement>
-            <placement code="ca_collections3">
-              <bundle>ca_collections</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">dont_force</setting>
-                <setting name="expand_collapse_no_value">dont_force</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow"/>
-                <setting name="maxRelationshipsPerRow"/>
-                <setting name="showCurrentOnly">0</setting>
-                <setting name="showCurrentUsingDate">effective_date</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="label" locale="en_US">kokoelma</setting>
-                <setting name="label" locale="fi_FI">kokoelma</setting>
-                <setting name="description" locale="fi_FI">Missä kokoelmassa objektit ovat?</setting>
-              </settings>
-            </placement>
           </bundlePlacements>
         </screen>
+        <screen idno="screen_20_2" default="0" color="000000">
+          <labels>
+            <label locale="fi_FI">
+              <name>lisätiedot</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+
+            <placement code="ca_attribute_lot_notes">
+              <bundle>ca_attribute_notes</bundle>
+              <settings>
+				<setting name="label" locale="fi_FI">hankinnan lisätiedot</setting>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+
+           <placement code="ca_attribute_kirjaustiedot2">
+              <bundle>ca_attribute_kirjaustiedot</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+
+		  </bundlePlacements>
+        </screen>
+        
         <screen idno="screen_18_3" default="0" color="000000">
           <labels>
             <label locale="fi_FI">
