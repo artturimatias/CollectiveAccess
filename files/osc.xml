@@ -149,7 +149,45 @@
       </labels>
     </list>
 
+    <list code="negatiivikoot" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Negatiivikoot</name>
+        </label>
+      </labels>
+    </list>
 
+    <list code="negatiivityypit" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Negatiivityypit</name>
+        </label>
+      </labels>
+    </list>
+
+    <list code="negpohjamateriaalit" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Negatiivipohjamateriaalit</name>
+        </label>
+      </labels>
+    </list>
+
+    <list code="pohjamateriaalit" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Kuvan pohjamateriaalit</name>
+        </label>
+      </labels>
+    </list>
+
+    <list code="kategoriat" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Kuvakategoriat</name>
+        </label>
+      </labels>
+    </list>
 
     <list code="yleisnimet" hierarchical="0" system="1" vocabulary="1">
       <labels>
@@ -199,7 +237,7 @@
           <labels>
             <label locale="fi_FI" preferred="1">
               <name_singular>kuvattu/kopioitu museon toimesta</name_singular>
-              <name_plural>osto</name_plural>
+              <name_plural>kuvattu/kopioitu museon toimesta</name_plural>
             </label>
           </labels>
          </item>
@@ -1632,6 +1670,61 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+    <metadataElement code="asiasanat" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Keywords</name>
+          <description>Keywords.</description>
+        </label>
+        <label locale="fi_FI">
+          <name>asiasanat</name>
+          <description>Asiasanat hakujen tehostamiseksi.</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="julkaisut" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Publications</name>
+          <description></description>
+        </label>
+        <label locale="fi_FI">
+          <name>julkaisut</name>
+          <description>Julkaisut, joissa kuvia on käytetty.</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>valokuva</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    
     <metadataElement code="loan_purpose" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -2261,33 +2354,10 @@
       </typeRestrictions>
     </metadataElement>
     
-    <metadataElement code="konservointi" datatype="Text">
-      <labels>
-        <label locale="fi_FI">
-          <name>konservointi</name>
-          <description>Konservointikuvauksen ohje tähän.</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">3</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-
-      </typeRestrictions>
-    </metadataElement>    
 
 
 
-    <metadataElement code="date" datatype="Container">
+    <metadataElement code="work_date" datatype="DateRange">
       <labels>
         <label locale="en_US">
           <name>Date</name>
@@ -2300,23 +2370,8 @@
       </labels>
       <settings>
         <setting name="doesNotTakeLocale">1</setting>
+        <setting name="useDatePicker">1</setting>
       </settings>
-      <elements>
-        <metadataElement code="dates_value" datatype="DateRange">
-          <labels>
-            <label locale="en_US">
-              <name>Date</name>
-            </label>
-            <label locale="fi_FI">
-              <name>Päivämäärä</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">40</setting>
-            <setting name="useDatePicker">1</setting>
-          </settings>
-        </metadataElement>
-      </elements>
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
@@ -2566,120 +2621,35 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="conservation_description" datatype="Container">
+ 
+    <metadataElement code="konservointi" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>Conservation/Treatment History</name>
+          <name>Conservation</name>
+          <description>Notes about conservation</description>
+        </label>
+        <label locale="fi_FI">
+          <name>konservointitiedot</name>
+          <description>Tiedot tehdyistä konservoinneista/korjauksista</description>
         </label>
       </labels>
-      <elements>
-        <metadataElement code="general_conservation_line1" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>Conservation Line 2</name>
-            </label>
-          </labels>
-          <settings/>
-          <elements>
-            <metadataElement code="general_conservation_specific" datatype="Entities">
-              <labels>
-                <label locale="en_US">
-                  <name>Agent</name>
-                  <description>The identification of the person who performed a specific conservation procedure, including his or her name, role or title, and institutional affiliation.</description>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">70</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
-        <metadataElement code="general_conservation_line2" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>Conservation Line 3</name>
-            </label>
-          </labels>
-          <settings/>
-          <elements>
-            <metadataElement code="general_conservation_date" datatype="DateRange">
-              <labels>
-                <label locale="en_US">
-                  <name>Date</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="useDatePicker">1</setting>
-                <setting name="fieldWidth">40</setting>
-              </settings>
-            </metadataElement>
-            <metadataElement code="general_conservation_place" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>Place</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">40</setting>
-                <setting name="fieldHeight">1</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
-        <metadataElement code="general_conservation_line3" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>Conservation Line 4</name>
-            </label>
-          </labels>
-          <settings/>
-          <elements>
-            <metadataElement code="general_conservation_comments" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>Description</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">100</setting>
-                <setting name="fieldHeight">3</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
-        <metadataElement code="general_conservation_line4" datatype="Container">
-          <labels>
-            <label locale="en_US">
-              <name>Conservation Line 5</name>
-            </label>
-          </labels>
-          <settings/>
-          <elements>
-            <metadataElement code="general_conservation_remarks" datatype="Text">
-              <labels>
-                <label locale="en_US">
-                  <name>Remarks</name>
-                </label>
-              </labels>
-              <settings>
-                <setting name="fieldWidth">100</setting>
-                <setting name="fieldHeight">2</setting>
-              </settings>
-            </metadataElement>
-          </elements>
-        </metadataElement>
-      </elements>
+      <settings>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">4</setting>
+        <setting name="doesNotTakeLocale">1</setting>
+      </settings>
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">100</setting>
+            <setting name="maxAttributesPerRow">1</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
       </typeRestrictions>
     </metadataElement>
+ 
     <metadataElement code="geonames" datatype="GeoNames">
       <labels>
         <label locale="en_US">
@@ -2935,7 +2905,7 @@
           <name>Accession date</name>
         </label>
         <label locale="fi_FI">
-          <name>hankintapäivämäärä</name>
+          <name>luettelointipäivämäärä</name>
         </label>
       </labels>
       <settings>
@@ -2954,8 +2924,34 @@
             <setting name="maxAttributesPerRow">1</setting>
           </settings>
         </restriction>
+
       </typeRestrictions>
     </metadataElement>
+   
+    <metadataElement code="valmistuspaikkakunta" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Manufacture in</name>
+        </label>
+        <label locale="fi_FI">
+          <name>valmistuspaikkakunta</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement> 
+   
     <metadataElement code="notes" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -4040,6 +4036,230 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
       <typeRestrictions>
         <restriction>
           <table>ca_object_lots</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="repro" datatype="Container">
+      <labels>
+        <label locale="fi_FI">
+          <name>Repro</name>
+          <description>Tiedot reprokuvista</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="canBeUsedInSearchForm">0</setting>
+        <setting name="canBeUsedInDisplay">0</setting>
+      </settings>
+      <elements>
+        <metadataElement code="repro_date" datatype="DateRange">
+          <labels>
+            <label locale="fi_FI">
+              <name>repro päivämäärä</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="dateRangeBoundaries"/>
+            <setting name="fieldWidth"/>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="useDatePicker">0</setting>
+            <setting name="datePickerDateFormat">yy-mm-dd</setting>
+            <setting name="mustNotBeBlank">0</setting>
+            <setting name="isLifespan">0</setting>
+            <setting name="default_text"/>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">,</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="repro_kuvaaja" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>Reprokuvaaja</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="repro_info" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>Reprolisätiedot</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>valokuva</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+
+    <metadataElement code="negatiivikoko" datatype="List" list="negatiivikoot">
+      <labels>
+        <label locale="fi_FI">
+          <name>negatiivikoko</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="render">select</setting>
+        <setting name="restrictToTypes">2</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>valokuva</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="negatiivityyppi" datatype="List" list="negatiivityypit">
+      <labels>
+        <label locale="fi_FI">
+          <name>negatiivityyppi</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="render">select</setting>
+        <setting name="restrictToTypes">2</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>valokuva</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="pohjamateriaali" datatype="List" list="pohjamateriaalit">
+      <labels>
+        <label locale="fi_FI">
+          <name>pohjamateriaali</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="render">select</setting>
+        <setting name="restrictToTypes">2</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>valokuva</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="negpohjamateriaali" datatype="List" list="negpohjamateriaalit">
+      <labels>
+        <label locale="fi_FI">
+          <name>negatiivin pohjamateriaali</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="render">select</setting>
+        <setting name="restrictToTypes">2</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>valokuva</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="kuvakategoriat" datatype="List" list="kategoriat">
+      <labels>
+        <label locale="fi_FI">
+          <name>Kuvakategoriat</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="render">select</setting>
+        <setting name="restrictToTypes">2</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>valokuva</type>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -6085,6 +6305,44 @@ ei käytetä.</setting>
                 <setting name="disableSorts">0</setting>
               </settings>
             </placement>
+
+            <placement code="ca_attribute_valmistusaika">
+              <bundle>ca_attribute_work_date</bundle>
+              <settings>
+                <setting name="label" locale="en_US">manufacture date</setting>
+                <setting name="label" locale="fi_FI">valmistusaika</setting>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+
+            <placement code="ca_attribute_valmistuspaikkakunta">
+              <bundle>ca_attribute_valmistuspaikkakunta</bundle>
+              <settings>
+                <setting name="label" locale="en_US">manufacture place</setting>
+                <setting name="label" locale="fi_FI">valmistuspaikkakunta</setting>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+
+            <placement code="ca_attribute_repro6">
+              <bundle>ca_attribute_repro</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+            
             <placement code="ca_attribute_lehtinimeke7">
               <bundle>ca_attribute_lehtinimeke</bundle>
               <settings>
@@ -6120,6 +6378,16 @@ kirjoitetaan myös av-aineiston tai visuaalisen teoksen sisällöstä.
                 <setting name="sortDirection">ASC</setting>
               </settings>
             </placement>
+            
+            <placement code="ca_attribute_kuvakategoriat">
+              <bundle>ca_attribute_kuvakategoriat</bundle>
+              <settings>
+				<setting name="label" locale="fi_FI">kuvakategoriat</setting>
+				<setting name="description" locale="fi_FI">Kuvan luokat</setting>
+              </settings>
+              
+            </placement>
+            
             <placement code="ca_attribute_work_dimensions">
               <bundle>ca_attribute_work_dimensions</bundle>
               <settings>
@@ -6166,6 +6434,9 @@ olevasta merkinnästä.
             <placement code="ca_attribute_varitieto5">
               <bundle>ca_attribute_varitieto</bundle>
             </placement>
+            <placement code="ca_attribute_kirjallisuus">
+              <bundle>ca_attribute_kirjallisuus</bundle>
+            </placement>
             <placement code="ca_attribute_kayttotarkoitus22">
               <bundle>ca_attribute_kayttotarkoitus</bundle>
               <settings>
@@ -6188,15 +6459,8 @@ olevasta merkinnästä.
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_attribute_accession_date">
-              <bundle>ca_attribute_accession_date</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_kaytto3" typeRestrictions="audio,dokumentti,esine,kirja,lehtileike,tallenne,video,valokuva">
+
+            <placement code="ca_attribute_kaytto3" typeRestrictions="esine">
               <bundle>ca_attribute_kaytto</bundle>
               <settings>
                 <setting name="readonly"/>
@@ -6231,6 +6495,15 @@ olevasta merkinnästä.
               <bundle>ca_attribute_custodial_notes</bundle>
               <settings>
                 <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_konservointi">
+              <bundle>ca_attribute_konservointi</bundle>
+              <settings>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
                 <setting name="sort">1</setting>
@@ -6355,8 +6628,48 @@ olevasta merkinnästä.
             <placement code="ca_attribute_vakuutustiedot5">
               <bundle>ca_attribute_vakuutustiedot</bundle>
             </placement>
+            
+            <placement code="ca_attribute_asiasanat" includeSubtypes="1">
+              <bundle>ca_attribute_asiasanat</bundle>
+              <settings>
+                <setting name="label" locale="en_US">asiasanat</setting>
+                <setting name="label" locale="fi_FI">asiasanat</setting>
+                <setting name="description" locale="fi_FI">Kohteen asiasanat perustmuotoisina vapaana tekstinä.</setting>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="sortDirection">ASC</setting>
+              </settings>
+            </placement>
+            
           </bundlePlacements>
         </screen>
+        
+        <screen idno="screen_15_7" default="0" color="000000">
+          <labels>
+            <label locale="fi_FI">
+              <name>Kuva ja repro</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_attribute_negkoko">
+              <bundle>ca_attribute_negatiivikoko</bundle>
+            </placement>
+            <placement code="ca_attribute_pohjamateriaali">
+              <bundle>ca_attribute_pohjamateriaali</bundle>
+            </placement>
+            <placement code="ca_attribute_negtyyppi">
+              <bundle>ca_attribute_negatiivityyppi</bundle>
+            </placement>
+            <placement code="ca_attribute_negpohja">
+              <bundle>ca_attribute_negpohjamateriaali</bundle>
+            </placement>
+            <placement code="ca_attribute_repro2">
+              <bundle>ca_attribute_repro</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+        
       </screens>
     </userInterface>
     <userInterface code="entities_ui" type="ca_entities">
@@ -9952,11 +10265,15 @@ olevasta merkinnästä.
             <setting name="bottom_line"><![CDATA[]]></setting>
           </settings>
         </placement>
-        <placement code="ca_objects_date">
-          <bundle>ca_objects.date</bundle>
+
+        <placement code="ca_objects_merkinnat">
+          <bundle>ca_objects.merkinnat</bundle>
         </placement>
         <placement code="ca_objects_type_id">
           <bundle>ca_objects.type_id</bundle>
+        </placement>
+        <placement code="ca_objects_date">
+          <bundle>ca_objects.work_date</bundle>
         </placement>
         <placement code="ca_entities">
           <bundle>ca_entities</bundle>
@@ -10078,39 +10395,7 @@ olevasta merkinnästä.
     </searchForm>
     
 
-    
-    <searchForm code="ca_occurrences_adv_search" type="ca_occurrences" system="1">
-      <labels>
-        <label locale="fi_FI">
-          <name>tapahtumahaku</name>
-        </label>
-        <label locale="en_US">
-          <name>Extended search</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="form_width">3</setting>
-      </settings>
-      <bundlePlacements>
-        <placement code="fulltext_occur">
-          <bundle>_fulltext</bundle>
-          <settings>
-            <setting name="label" locale="en_US"/>
-            <setting name="label" locale="fi_FI"/>
-            <setting name="width">400px</setting>
-          </settings>
-        </placement>
-        <placement code="p19">
-          <bundle>ca_occurrence_labels.name</bundle>
-          <settings>
-            <setting name="label" locale="en_US">Title</setting>
-          </settings>
-        </placement>
-        <placement code="p20">
-          <bundle>ca_occurrences.idno</bundle>
-        </placement>
-      </bundlePlacements>
-    </searchForm>
+
     
 
     

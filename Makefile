@@ -26,6 +26,10 @@ create_db:
 
 build:
 	docker build -t artturimatias/collectiveaccess:$(VERSION) .
+
+build_dev:
+	docker build -f Dockerfile_dev -t artturimatias/collectiveaccess:dev .
+	
 	
 start:
 	docker run -d --name collectiveaccess \
@@ -38,6 +42,16 @@ start:
 	-e DB_NAME=$(DB) \
 	artturimatias/collectiveaccess:$(VERSION)
 
+start_dev:
+	docker run -d --name collectiveaccess_dev \
+	-p 80:80 \
+	-v $(VOLUME):/var/www/providence/media \
+	--network $(NETWORK) \
+	-e DB_HOST=$(HOST) \
+	-e DB_USER=root \
+	-e DB_PW=root \
+	-e DB_NAME=$(DB) \
+	artturimatias/collectiveaccess:dev
 	
 start_debug:
 	docker run -it --name collectiveaccess \
