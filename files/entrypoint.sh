@@ -2,8 +2,8 @@
 set -e
 
 #DATABASE INIT/CONFIG
-mysql -h $DB_HOST -u$DB_USER -p$DB_PW -e "CREATE DATABASE IF NOT EXISTS $DB_NAME CHARACTER SET utf8 COLLATE utf8_swedish_ci;"
-mysql -h $DB_HOST -u$DB_USER -p$DB_PW -e "GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER' IDENTIFIED BY '$DB_PW';"
+#mysql -h $DB_HOST -u$DB_USER -p$DB_PW -e "CREATE DATABASE IF NOT EXISTS $DB_NAME CHARACTER SET utf8 COLLATE utf8_swedish_ci;"
+#mysql -h $DB_HOST -u$DB_USER -p$DB_PW -e "GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER' IDENTIFIED BY '$DB_PW';"
 
 cd $CA_PROVIDENCE_DIR/media/collectiveaccess && mkdir -p tilepics
 

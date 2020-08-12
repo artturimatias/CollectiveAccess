@@ -78,32 +78,7 @@
           <settings>
             <setting name="render_in_new_menu">0</setting>
           </settings>
-          <items>
-			<item idno="video" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="0">
-				  <name_singular>Video recording</name_singular>
-				  <name_plural>Video recordings</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>Videotallenne</name_singular>
-				  <name_plural>Videotallenteet</name_plural>
-				</label>
-			  </labels>
-			</item> 
-			<item idno="audio" enabled="1" default="0">
-			  <labels>
-				<label locale="en_US" preferred="0">
-				  <name_singular>Sound recording</name_singular>
-				  <name_plural>Sound recordings</name_plural>
-				</label>
-				<label locale="fi_FI" preferred="1">
-				  <name_singular>äänitallenne</name_singular>
-				  <name_plural>äänitallenteet</name_plural>
-				</label>
-			  </labels>
-			</item>           
-          </items>
+
         </item>
 		<item idno="lehtileike" enabled="1" default="0">
           <labels>
@@ -1267,7 +1242,49 @@
         </label>
       </labels>
     </list>
-    
+  
+    <list code="tallennetyypit" hierarchical="0" system="1" vocabulary="0">
+      <labels>
+        <label locale="fi_FI">
+          <name>Tallennetyypit</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="unknown" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>?</name_singular>
+              <name_plural>?</name_plural>
+            </label>
+          </labels>
+         </item>   
+        <item idno="multimedia" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>multimedia</name_singular>
+              <name_plural>multimedia</name_plural>
+            </label>
+          </labels>
+         </item>
+        <item idno="audio" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Äänitallenne</name_singular>
+              <name_plural>Äänitallenne</name_plural>
+            </label>
+          </labels>
+         </item>  
+        <item idno="video" enabled="1" default="0">
+          <labels>
+            <label locale="fi_FI" preferred="1">
+              <name_singular>Kuvatallenne</name_singular>
+              <name_plural>Kuvatallenne</name_plural>
+            </label>
+          </labels>
+         </item>         
+      </items>
+    </list>
+  
   </lists>
 
  <elementSets>
@@ -2357,44 +2374,83 @@
 
 
 
-    <metadataElement code="work_date" datatype="DateRange">
+    <metadataElement code="pvm_cont" datatype="Container">
       <labels>
-        <label locale="en_US">
-          <name>Date</name>
-          <description>A point or period of time associated with an event in the lifecycle of the resource.</description>
-        </label>
         <label locale="fi_FI">
           <name>päivämäärät</name>
-          <description>A point or period of time associated with an event in the lifecycle of the resource.</description>
         </label>
       </labels>
       <settings>
-        <setting name="doesNotTakeLocale">1</setting>
-        <setting name="useDatePicker">1</setting>
+        <setting name="canBeUsedInSearchForm"/>
+        <setting name="canBeUsedInDisplay"/>
       </settings>
+      <elements>
+        <metadataElement code="pvm" datatype="DateRange">
+          <labels>
+            <label locale="fi_FI">
+              <name>päivämäärä</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="dateFormat"/>
+            <setting name="dateRangeBoundaries"/>
+            <setting name="fieldWidth"/>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="allowDuplicateValues"/>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="useDatePicker"/>
+            <setting name="datePickerDateFormat">yy-mm-dd</setting>
+            <setting name="mustNotBeBlank"/>
+            <setting name="isLifespan"/>
+            <setting name="default_text"/>
+            <setting name="suggestExistingValues"/>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF"/>
+            <setting name="canMakePDFForValue"/>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">,</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="pvm_info" datatype="Text">
+          <labels>
+            <label locale="fi_FI">
+              <name>päivämäärän lisätieto</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="minChars"/>
+            <setting name="maxChars">65535</setting>
+            <setting name="regex"/>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="usewysiwygeditor"/>
+            <setting name="doesNotTakeLocale"/>
+            <setting name="allowDuplicateValues"/>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues"/>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="default_text"/>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF"/>
+            <setting name="canMakePDFForValue"/>
+            <setting name="displayTemplate"/>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue"/>
+            <setting name="mustBeUnique"/>
+          </settings>
+        </metadataElement>
+      </elements>
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
+          <includeSubtypes>1</includeSubtypes>
           <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_occurrences</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_collections</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+            <setting name="minAttributesPerRow"/>
+            <setting name="maxAttributesPerRow"/>
+            <setting name="minimumAttributeBundlesToDisplay"/>
           </settings>
         </restriction>
       </typeRestrictions>
@@ -3597,7 +3653,7 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
       </settings>
       <typeRestrictions>
         <restriction>
-          <table>ca_occurrences</table>
+          <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">255</setting>
@@ -3623,7 +3679,7 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
       </settings>
       <typeRestrictions>
         <restriction>
-          <table>ca_occurrences</table>
+          <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">255</setting>
@@ -4042,6 +4098,14 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
             <setting name="minimumAttributeBundlesToDisplay">0</setting>
           </settings>
         </restriction>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
       </typeRestrictions>
     </metadataElement>
 
@@ -4264,6 +4328,29 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
             <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="tallennetyyppi" datatype="List" list="tallennetyypit">
+      <labels>
+        <label locale="fi_FI">
+          <name>tallennetyyppi</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="render">select</setting>
+        <setting name="restrictToTypes">2</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <type>tallenne</type>
+          <settings>
+            <setting name="minAttributesPerRow"/>
+            <setting name="maxAttributesPerRow"/>
+            <setting name="minimumAttributeBundlesToDisplay"/>
           </settings>
         </restriction>
       </typeRestrictions>
@@ -6281,6 +6368,11 @@ ei käytetä.</setting>
                 <setting name="usewysiwygeditor"/>
               </settings>
             </placement>
+            
+            <placement code="ca_attribute_tallennetyyppi5">
+              <bundle>ca_objects.tallennetyyppi</bundle>
+            </placement>
+            
             <placement code="ca_entities_author">
               <bundle>ca_entities</bundle>
               <settings>
@@ -6307,7 +6399,7 @@ ei käytetä.</setting>
             </placement>
 
             <placement code="ca_attribute_valmistusaika">
-              <bundle>ca_attribute_work_date</bundle>
+              <bundle>ca_attribute_pvm_cont</bundle>
               <settings>
                 <setting name="label" locale="en_US">manufacture date</setting>
                 <setting name="label" locale="fi_FI">valmistusaika</setting>
@@ -6361,7 +6453,7 @@ ei käytetä.</setting>
               <name>Description</name>
             </label>
             <label locale="fi_FI">
-              <name>Kuvailu ja mitat</name>
+              <name>Mitat ja merkinnät</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -6628,6 +6720,11 @@ olevasta merkinnästä.
             <placement code="ca_attribute_vakuutustiedot5">
               <bundle>ca_attribute_vakuutustiedot</bundle>
             </placement>
+
+            <placement code="ca_attribute_rights2">
+              <bundle>ca_attribute_rights</bundle>
+            </placement>
+            
             
             <placement code="ca_attribute_asiasanat" includeSubtypes="1">
               <bundle>ca_attribute_asiasanat</bundle>
@@ -10273,7 +10370,7 @@ olevasta merkinnästä.
           <bundle>ca_objects.type_id</bundle>
         </placement>
         <placement code="ca_objects_date">
-          <bundle>ca_objects.work_date</bundle>
+          <bundle>ca_objects.pvm_cont</bundle>
         </placement>
         <placement code="ca_entities">
           <bundle>ca_entities</bundle>

@@ -4,7 +4,7 @@ CONTAINERS := $(shell docker ps -a -q -f status=exited)
 VOLUME := collectiveaccess-data
 NETWORK := oscari-net
 DB := c_access
-HOST := 172.19.0.2
+HOST := mariadb
 VERSION := 1.7.8
 
 clean:
@@ -20,6 +20,7 @@ create_volume:
 create_db:
 	docker run --name mariadb \
 	--network $(NETWORK) \
+	--network-alias mariadb \
 	-v mariadb_ca:/var/lib/mysql \
  	-e MYSQL_ROOT_PASSWORD=root \
 	 -d mariadb:10.3.7
@@ -70,3 +71,7 @@ remove:
 
 bash:
 	docker exec -it collectiveaccess bash
+
+bash_dev:
+	docker exec -it collectiveaccess_dev bash
+
