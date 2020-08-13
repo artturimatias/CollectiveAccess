@@ -31,7 +31,6 @@ RUN apt-get update && apt-get install -y apache2 \
 					libreoffice \
 					php-zip \
 					vim \
-					
 					php-mbstring \
 					git
 
