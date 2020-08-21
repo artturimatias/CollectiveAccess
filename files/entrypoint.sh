@@ -15,6 +15,8 @@ sweep() {
 	sed -i "s@define(\"__CA_DB_USER__\", 'db_user');@define(\"__CA_DB_USER__\", \'$DB_USER\');@g" setup.php
 	sed -i "s@define(\"__CA_DB_PASSWORD__\", 'db_password');@define(\"__CA_DB_PASSWORD__\", \'$DB_PW\');@g" setup.php
 	sed -i "s@define(\"__CA_DB_DATABASE__\", 'db_name');@define(\"__CA_DB_DATABASE__\", \'$DB_NAME\');@g" setup.php
+	sed -i "s@site_protocol = __CA_SITE_PROTOCOL__@site_protocol = $SITE_PROTOCOL@g" app/conf/global.conf
+	sed -i "s@site_hostname = __CA_SITE_HOSTNAME__@site_hostname = $SITE_HOSTNAME@g" app/conf/global.conf
 }
 cd $CA_PROVIDENCE_DIR
 ca='pro'

@@ -5,7 +5,8 @@ VOLUME := collectiveaccess-data
 NETWORK := oscari-net
 DB := c_access
 HOST := mariadb
-VERSION := 1.7.8
+PROTOCOL := http
+HOSTNAME := localhost
 
 clean:
 	docker rm -f $(CONTAINERS)
@@ -25,23 +26,14 @@ create_db:
  	-e MYSQL_ROOT_PASSWORD=root \
 	 -d mariadb:10.3.7
 
-build:
-	docker build -t artturimatias/collectiveaccess:$(VERSION) .
 
 build_dev:
-	docker build -f Dockerfile_dev -t artturimatias/collectiveaccess:dev .
+	docker build -t artturimatias/collectiveaccess:dev .
 	
+
+build_stock:
+	docker build -f Dockerfile_stock -t artturimatias/collectiveaccess:stock .
 	
-start:
-	docker run -d --name collectiveaccess \
-	-p 80:80 \
-	-v $(VOLUME):/var/www/providence/media \
-	--network $(NETWORK) \
-	-e DB_HOST=$(HOST) \
-	-e DB_USER=root \
-	-e DB_PW=root \
-	-e DB_NAME=$(DB) \
-	artturimatias/collectiveaccess:$(VERSION)
 
 start_dev:
 	docker run -d --name collectiveaccess_dev \
@@ -52,6 +44,8 @@ start_dev:
 	-e DB_USER=root \
 	-e DB_PW=root \
 	-e DB_NAME=$(DB) \
+	-e SITE_PROTOCOL=$(PROTOCOL) \
+	-e SITE_HOSTNAME=$(HOSTNAME) \
 	artturimatias/collectiveaccess:dev
 	
 start_debug:
@@ -65,12 +59,16 @@ start_debug:
 	artturimatias/collectiveaccess:$(VERSION)
 
 
-remove:
-	docker stop collectiveaccess
-	docker rm collectiveaccess
+remove_dev:
+	docker stop collectiveaccess_dev
+	docker rm collectiveaccess_dev
 
-bash:
-	docker exec -it collectiveaccess bash
+restart_dev:
+	docker stop collectiveaccess_dev
+	docker rm collectiveaccess_dev
+	$(MAKE) start_dev 
+
+
 
 bash_dev:
 	docker exec -it collectiveaccess_dev bash
