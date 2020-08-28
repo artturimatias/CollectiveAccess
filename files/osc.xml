@@ -2053,6 +2053,21 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+    <metadataElement code="tapahtuma_info" datatype="Text">
+      <labels>
+        <label locale="fi_FI">
+          <name>Tuottaja lisätieto</name>
+          <description>Lisätietoja tuottajan ja tapahtuman suhteesta</description>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities_x_occurrences</table>
+          <includeSubtypes>1</includeSubtypes>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
     
     <metadataElement code="materiaalit" datatype="Container">
       <labels>
@@ -3940,11 +3955,11 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="duo_tiedosto" datatype="Text">
+    <metadataElement code="original_file" datatype="Text">
       <labels>
         <label locale="fi_FI">
-          <name>DUO-tiedosto</name>
-          <description>DUO:n tiedostlinkki importtia varten</description>
+          <name>alkuperäinen tiedosto</name>
+          <description>Tiedoston sijainti jos tiedosto on CollectiveAccesin ulkopuolella</description>
         </label>
       </labels>
       <settings>
@@ -3973,6 +3988,14 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
       <typeRestrictions>
         <restriction>
           <table>ca_object_lots</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">1</setting>
@@ -6165,66 +6188,7 @@ kirjaa tieto siitä vain, jos se on merkityksellistä. </description>
         </screen>
       </screens>
     </userInterface>
-    <userInterface code="standard_representation_ui" type="ca_object_representations">
-      <labels>
-        <label locale="en_CA">
-          <name>Object representation editor</name>
-        </label>
-      </labels>
-      <screens>
-        <screen idno="screen_23_0" default="0">
-          <labels>
-            <label locale="en_CA">
-              <name>Basic info</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="preferred_labels1">
-              <bundle>preferred_labels</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="usewysiwygeditor"/>
-              </settings>
-            </placement>
-            <placement code="idno2">
-              <bundle>idno</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="usewysiwygeditor"/>
-              </settings>
-            </placement>
-            <placement code="media3">
-              <bundle>media</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="access4">
-              <bundle>access</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="status5">
-              <bundle>status</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
-        </screen>
-      </screens>
-    </userInterface>
+
     <userInterface code="objects_ui" type="ca_objects">
       <labels>
         <label locale="en_US">
@@ -6640,8 +6604,8 @@ olevasta merkinnästä.
                 <setting name="disableSorts">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_duo_tiedosto2">
-              <bundle>ca_attribute_duo_tiedosto</bundle>
+            <placement code="ca_attribute_original_file2">
+              <bundle>ca_attribute_original_file</bundle>
               <settings>
                 <setting name="readonly"/>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -7816,7 +7780,7 @@ olevasta merkinnästä.
         </screen>
       </screens>
     </userInterface>
-    <userInterface code="object_representation_ui" type="ca_object_representations">
+    <userInterface code="standard_representation_ui" type="ca_object_representations">
       <labels>
         <label locale="en_US">
           <name>Object representation editor</name>
@@ -7912,6 +7876,16 @@ olevasta merkinnästä.
                 <setting name="readonly"/>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_original_file3">
+              <bundle>ca_attribute_original_file</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -8229,16 +8203,17 @@ olevasta merkinnästä.
         </screen>
       </screens>
     </userInterface>
-    <userInterface code="tuottaja_info_ui" type="ca_objects_x_entities">
+    
+    <userInterface code="tuottaja_rel_info_ui" type="ca_objects_x_entities">
       <labels>
         <label locale="en_US">
-          <name>Author information</name>
+          <name>suhteen lisätieto</name>
         </label>
       </labels>
       <screens>
         <screen idno="screen_23_0" default="0" color="000000">
           <labels>
-            <label locale="en_US">
+            <label locale="fi_FI">
               <name>info</name>
             </label>
           </labels>
@@ -8255,6 +8230,34 @@ olevasta merkinnästä.
         </screen>
       </screens>
     </userInterface>
+
+    <userInterface code="tapahtuma_rel_info_ui" type="ca_entities_x_occurrences">
+      <labels>
+        <label locale="fi_FI">
+          <name>lisätieto</name>
+        </label>
+      </labels>
+      <screens>
+        <screen idno="screen_23_1" default="0" color="000000">
+          <labels>
+            <label locale="fi_FI">
+              <name>info</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_attribute_tapahtuma_info">
+              <bundle>ca_entities_x_occurrences.tapahtuma_info</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+              </settings>
+            </placement>
+          </bundlePlacements>
+        </screen>
+      </screens>
+    </userInterface>
+    
     <userInterface code="ui_editor" type="ca_editor_uis" color="000000">
       <labels>
         <label locale="fi_FI">
@@ -9666,12 +9669,12 @@ olevasta merkinnästä.
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="haastateltu" default="0">
+        <type code="haastateltava" default="0">
           <labels>
 
             <label locale="fi_FI">
-              <typename>haastateltu</typename>
-              <typename_reverse>haastateltu</typename_reverse>
+              <typename>haastateltava</typename>
+              <typename_reverse>haastateltava</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -10408,30 +10411,67 @@ olevasta merkinnästä.
         <setting name="form_width">3</setting>
       </settings>
       <bundlePlacements>
-        <placement code="fulltext_obj">
+        <placement code="p1">
           <bundle>_fulltext</bundle>
           <settings>
-            <setting name="label" locale="en_US"/>
-            <setting name="label" locale="fi_FI"/>
             <setting name="width">400px</setting>
-          </settings>
-        </placement>
-        <placement code="p1">
-          <bundle>ca_object_labels.name</bundle>
-          <settings>
-            <setting name="label" locale="en_US">Title</setting>
+             <setting name="label" locale="fi_FI">kokoteksti</setting>
           </settings>
         </placement>
         <placement code="p2">
-          <bundle>ca_objects.idno</bundle>
+          <bundle>ca_object_labels.name</bundle>
+          <settings>
+            <setting name="label" locale="en_US">Title</setting>
+            <setting name="label" locale="fi_FI">erikoisnimi</setting>
+          </settings>
         </placement>
         <placement code="p3">
-          <bundle>ca_objects.type_id</bundle>
+          <bundle>ca_objects.idno</bundle>
+          <settings>
+            <setting name="label" locale="en_US">tunniste</setting>
+            <setting name="label" locale="fi_FI">tunniste</setting>
+            <setting name="width">100px</setting>
+          </settings>
         </placement>
         <placement code="p4">
+          <bundle>ca_objects.type_id</bundle>
+          <settings>
+            <setting name="label" locale="en_US">tyyppi</setting>
+            <setting name="label" locale="fi_FI">tyyppi</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p5">
           <bundle>ca_entity_labels.displayname</bundle>
           <settings>
-            <setting name="label" locale="fi_FI">Objektiin liittyvä toimija</setting>
+            <setting name="label" locale="fi_FI">objektiin liittyvä toimija</setting>
+          </settings>
+        </placement>
+        <placement code="p33">
+          <bundle>ca_objects.asiasanat</bundle>
+        </placement>
+        <placement code="p34">
+          <bundle>ca_object_lots.idno_stub</bundle>
+          <settings>
+            <setting name="label" locale="en_US">hankinnan numero</setting>
+            <setting name="label" locale="fi_FI">hankinnan numero</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p35">
+          <bundle>ca_collections.idno</bundle>
+          <settings>
+            <setting name="label" locale="en_US">kokoelman tunniste</setting>
+            <setting name="label" locale="fi_FI">kokoelman tunniste</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p36">
+          <bundle>ca_objects.pvm_cont</bundle>
+          <settings>
+            <setting name="label" locale="en_US">valmistuspäivämäärä</setting>
+            <setting name="label" locale="fi_FI">valmistuspäivämäärä</setting>
+            <setting name="width">100px</setting>
           </settings>
         </placement>
       </bundlePlacements>
