@@ -25,10 +25,10 @@ RUN apt-get update && apt-get install -y apache2 \
 					zip \
 					wget \
 					ffmpeg \
+					poppler-utils \
 					ghostscript \
 					imagemagick \
 					php-gd \
-					libreoffice \
 					php-zip \
 					vim \
 					php-mbstring \
@@ -78,12 +78,14 @@ COPY files/global.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/browse.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/app.conf.dev /$CA_PROVIDENCE_DIR/app/conf/app.conf
 COPY files/search.conf /$CA_PROVIDENCE_DIR/app/conf/
+COPY files/services.conf /$CA_PROVIDENCE_DIR/app/conf/
 COPY files/multipart_id_numbering.conf /$CA_PROVIDENCE_DIR/app/conf/
 #COPY files/TileViewer.php /$CA_PROVIDENCE_DIR/app/lib/core/Media/MediaViewers/
 COPY files/menu_logo_osc.png /$CA_PROVIDENCE_DIR/themes/default/graphics/logos/menu_logo.png
 COPY files/setup.php /$CA_PROVIDENCE_DIR/setup.php
 COPY files/vendor /$CA_PROVIDENCE_DIR/vendor
 COPY files/entrypoint.sh /entrypoint.sh
+
 RUN chown -R www-data:www-data /var/www
 
 RUN chmod 777 /entrypoint.sh
