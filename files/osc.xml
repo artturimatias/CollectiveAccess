@@ -767,10 +767,6 @@
       <items>
         <item idno="individual" enabled="1" default="1">
           <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>individual</name_singular>
-              <name_plural>individuals</name_plural>
-            </label>
             <label locale="fi_FI" preferred="1">
               <name_singular>henkilö</name_singular>
               <name_plural>henkilöt</name_plural>
@@ -779,10 +775,6 @@
         </item>
         <item idno="organization" enabled="1" default="0">
           <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>organization</name_singular>
-              <name_plural>organizations</name_plural>
-            </label>
             <label locale="fi_FI" preferred="1">
               <name_singular>organisaatio/ryhmä</name_singular>
               <name_plural>organisaatiot/ryhmät</name_plural>
@@ -791,10 +783,6 @@
         </item>
         <item idno="fictional_individual" enabled="1" default="0">
           <labels>
-            <label locale="en_US" preferred="0">
-              <name_singular>fictional individual</name_singular>
-              <name_plural>fictional individuals</name_plural>
-            </label>
             <label locale="fi_FI" preferred="1">
               <name_singular>fiktiivinen henkilö</name_singular>
               <name_plural>fiktiiviset henkilöt</name_plural>
@@ -803,10 +791,6 @@
         </item>
         <item idno="animal" enabled="1" default="0">
           <labels>
-            <label locale="en_US" preferred="0">
-              <name_singular>animal</name_singular>
-              <name_plural>animals</name_plural>
-            </label>
             <label locale="fi_FI" preferred="1">
               <name_singular>eläin/lemmikki</name_singular>
               <name_plural>eläimet/lemmikit</name_plural>
@@ -10453,8 +10437,8 @@ olevasta merkinnästä.
         <placement code="p34">
           <bundle>ca_object_lots.idno_stub</bundle>
           <settings>
-            <setting name="label" locale="en_US">hankinnan numero</setting>
-            <setting name="label" locale="fi_FI">hankinnan numero</setting>
+            <setting name="label" locale="en_US">päänumero</setting>
+            <setting name="label" locale="fi_FI">päänumero</setting>
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -10474,6 +10458,22 @@ olevasta merkinnästä.
             <setting name="width">100px</setting>
           </settings>
         </placement>
+        <placement code="p37">
+          <bundle>ca_objects.asiasanat</bundle>
+          <settings>
+            <setting name="label" locale="en_US">asiasana</setting>
+            <setting name="label" locale="fi_FI">asiasana</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p37">
+          <bundle>ca_objects.yleisnimet</bundle>
+          <settings>
+            <setting name="label" locale="en_US">yleisnimi</setting>
+            <setting name="label" locale="fi_FI">yleisnimi</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
       </bundlePlacements>
     </searchForm>
     
@@ -10490,29 +10490,45 @@ olevasta merkinnästä.
         <setting name="form_width">3</setting>
       </settings>
       <bundlePlacements>
-        <placement code="p7">
-          <bundle>ca_entity_labels.forename</bundle>
-        </placement>
-        <placement code="p8">
-          <bundle>ca_entity_labels.middlename</bundle>
-        </placement>
-        <placement code="p9">
-          <bundle>ca_entity_labels.surname</bundle>
-        </placement>
         <placement code="p10">
-          <bundle>ca_entities.idno</bundle>
-        </placement>
-        <placement code="p11">
           <bundle>ca_entities.type_id</bundle>
+          <settings>
+            <setting name="label" locale="en_US">tyyppi</setting>
+            <setting name="label" locale="fi_FI">tyyppi</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p37">
+          <bundle>ca_entities.elinaika</bundle>
+        </placement>
+        <placement code="p43">
+          <bundle>ca_entity_labels.displayname</bundle>
+          <settings>
+            <setting name="label" locale="en_US">names</setting>
+            <setting name="label" locale="fi_FI">names</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p44">
+          <bundle>ca_entities.opiskeluaika</bundle>
+          <settings>
+            <setting name="label" locale="en_US">opiskeluaika</setting>
+            <setting name="label" locale="fi_FI">opiskeluaika</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p45">
+          <bundle>_fulltext</bundle>
+          <settings>
+            <setting name="label" locale="en_US">kokoteksti</setting>
+            <setting name="label" locale="fi_FI">kokoteksti</setting>
+            <setting name="width">100px</setting>
+          </settings>
         </placement>
       </bundlePlacements>
     </searchForm>
-    
 
 
-    
-
-    
     <searchForm code="ca_object_lots_adv_search" type="ca_object_lots" system="1">
       <labels>
         <label locale="fi_FI">
@@ -10526,11 +10542,45 @@ olevasta merkinnästä.
         <setting name="form_width">3</setting>
       </settings>
       <bundlePlacements>
-        <placement code="fulltext_lots">
+        <placement code="p30">
           <bundle>_fulltext</bundle>
+        </placement>
+        <placement code="p39">
+          <bundle>ca_object_lots.lot_content</bundle>
+          <settings>
+            <setting name="label" locale="en_US">sisältö</setting>
+            <setting name="label" locale="fi_FI">sisältö</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p40">
+          <bundle>created</bundle>
+          <settings>
+            <setting name="label" locale="en_US">talletuspäivämäärä</setting>
+            <setting name="label" locale="fi_FI">talletuspäivämäärä</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p41">
+          <bundle>ca_object_lots.idno_stub</bundle>
+          <settings>
+            <setting name="label" locale="en_US">päänumero</setting>
+            <setting name="label" locale="fi_FI">päänumero</setting>
+            <setting name="width">100px</setting>
+          </settings>
+        </placement>
+        <placement code="p42">
+          <bundle>ca_entity_labels.displayname</bundle>
+          <settings>
+            <setting name="label" locale="en_US">lahjoittaja</setting>
+            <setting name="label" locale="fi_FI">lahjoittaja</setting>
+            <setting name="width">100px</setting>
+          </settings>
         </placement>
       </bundlePlacements>
     </searchForm>
+
+
 
     <searchForm code="lehtileikehaku" type="ca_objects" system="1" typeRestrictions="lehtileike" includeSubtypes="0">
       <labels>
